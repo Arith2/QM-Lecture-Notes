@@ -1,0 +1,776 @@
+\chapter{Formalism of quantum mechanics}
+\section{Hilbert space}
+The validity of the superposition principle implies as a mathematical basis for the description of the QM a linear function space with scalar product (for normalization), generally a Hilbert space.
+A Hilbert space $\mathcal{H}$ is defined as a set of abstract elements (vectors) $\phi,\psi$, we usually call them states, (The states in Hilbert space describe physical states (QM postulate)) with the following structures/properties:
+\begin{enumerate}
+    \item $\mathcal{H}$ is a linear (vector/functions) space, Pd.h. with $\phi_i\in\mathcal{H},a_i\in\mathbb{C}$ is also $\sum_ia_i\phi_i\in\mathcal{H}$.
+    \item There exists a scalar product $\langle\cdot|\cdot\rangle$ with the properties
+    %插入 公式
+    $$
+    \begin{aligned}
+        -\phi, \psi & \in \mathcal{H},\langle\phi | \psi\rangle \in \mathbb{C}, \text { linear in } \psi, \text { antilinear in } \phi, \text { that is }( \text { with } \\
+        & \left.a_{1}, a_{2} \in \mathbb{C}\right) \\
+        & \left\langle a_{1} \phi_{1}+a_{2} \phi_{2} | \psi\right\rangle= a_{1}^{*}\left\langle\phi_{1} | \psi\right\rangle+ a_{2}^{*}\left\langle\phi_{2} | \psi\right\rangle \\
+        & \left\langle\phi | a_{1} \psi_{1}+a_{2} \psi_{2}\right\rangle = a_{1}\left\langle\phi | \psi_{1}\right\rangle+ a_{2}\left\langle\phi | \psi_{2}\right\rangle\\
+        -\langle\phi | \psi\rangle & =\langle\psi | \phi\rangle^{*} \text { ist hermitesch. } \\
+        -\langle\phi | \phi\rangle & \geq 0 ; \text { falls }\langle\phi | \phi\rangle= 0 \text { ist } \phi \equiv 0 
+    \end{aligned}
+    $$
+    \item $\mathcal{H}$ is completely constant, that is, for every convergent sequence $\phi_n$ with $\phi_n\in\mathcal{H}$ applies $\lim_{n\to\infty}\in\mathcal{H}$ (a sequence $\phi_n$ is called convergent if $\parallel\phi_n-\phi_m\parallel\to0$ for $n,m\to\infty$ where $\parallel\phi\parallel^2\equiv\langle\phi|\phi\rangle$).\\ One also often requires:
+    \item $dim\mathcal{H} = \infty$, which means that there are $\infty$ many linearly independent elements in $\mathcal{H}$. Otherwise one speaks of a finite-dimensional Hilbert space.
+    \item $\mathcal{H}$ separable, i.e. there is a countable set ${\psi_n}\in\mathcal{H}$, so that every $\phi\in\mathcal{H}$ can be arbitrarily approximated by elements from ${\psi_n}$.
+\end{enumerate}
+
+Two examples are mentioned:
+\begin{itemize}
+    \item[-] Complex vector space, a finite-dimensional Hilbert space with finitely many basis vectors.
+    \item[-] Space of square integrable functions L2 (Rn), a 1-dimensional vector space. This is the typical Hilbert space we consider in quantum mechanics.
+\end{itemize}
+
+\subsection{Scalar Product}
+With the aid of the scalar product, we define the norm of $\phi\in\mathcal{H}$ as
+%公式 2.1
+\begin{equation}
+    \|\phi\| \equiv\langle\phi | \phi\rangle^{1 / 2}
+\end{equation}
+The scalar product of two states satisfies the following inequalities: S Black's inequality: Let $\phi,\psi\in\mathcal{H}$, then hold
+%公式 2.2
+\begin{equation}
+    |\langle\phi | \psi\rangle|^{2} \leq\langle\phi | \phi\rangle\langle\psi | \psi\rangle
+\end{equation}
+Triangle inequality: Let $\phi,\psi\in\mathcal{H}$, then hold
+%公式 2.3
+\begin{equation}
+    \|\phi+\psi\| \leq\|\phi\|+\|\psi\|
+\end{equation}
+$\langle\phi|\psi\rangle$ and $\langle\phi,\psi\rangle$ are equivalent notations. In the space of the square integrable functions $\phi(\vec{r})\in\mathbb{C},\vec{r}\in\mathbb{R}^n$, the scalar product (of $\psi,\phi\in\mathcal{H}$ is defined by
+%公式 2.4
+\begin{equation}
+    \langle\psi, \phi\rangle=\int d^{n} r \psi^{*}(\vec{r}) \phi(\vec{r})
+\end{equation}
+
+%Page 51
+\section{vectors/states}
+A state $\phi\in\mathcal{H}$ is called normalized if
+%公式 2.5
+\begin{equation}
+    \|\phi\|=1
+\end{equation}
+For $\psi\in\mathbb{L}_2$ (that is, $\psi$ is square integrable), $\psi$ is normalizable, $\psi\to\psi/\parallel\psi\parallel$. We define the orthogonality of $\phi,\psi\in\mathcal{H}$ as
+%公式 2.6
+\begin{equation}
+    \langle\phi | \psi\rangle= 0 \leftrightarrow \phi \text { is orthogonal to } \psi
+    \end{equation}
+\subsection{Orthonormation and completeness}
+A set {$\phi_n$}, $\phi_n\in\mathcal{H}$ is called orthonormal if
+%公式 2.7
+\begin{equation}
+    \left\langle\phi_{m}, \phi_{n}\right\rangle=\delta_{m n}
+    \end{equation}
+A set {$\psi_n$} $\in\mathcal{H}$ ($\mathcal{H}$ separable) is called completely if every $\psi\in\mathcal{H}$ can be represented by the {$\psi_n$},
+%公式 2.8
+\begin{equation}
+    \psi=\sum_{n} c_{n} \psi_{n}
+    \end{equation}
+A system of states ${\psi_n}\in\mathcal{H}$ is called complete and orthonormal (vONS) if (2.7) and (2.8) are satisfied. This system is called a Ba¨sis in Hilbert space $\mathcal{H}$ (or {$\psi_n$} spans $\mathcal{H}$). For a set of orthonormal functions ${\psi_n(x)}\subset\mathbb{L}_2$, the completeness can be expressed
+%公式 2.9
+\begin{equation}
+    \sum_{n} \psi_{n}^{*}(y) \psi_{n}(x)=\delta(x-y)
+    \end{equation}
+then functions $\phi(x)\in\mathbb{L}_2$ can be represented as
+%公式 2.10
+\begin{equation}
+\begin{aligned} \phi(x) &=\int d y \delta(x-y) \phi(y)=\int d y \sum_{n} \psi_{n}^{*}(y) \psi_{n}(x) \phi(y) \\ &=\sum_{n}\left\langle\psi_{n}, \phi\right\rangle \psi_{n}(x)=\sum_{n} c_{n} \psi_{n}(x) \end{aligned}
+\end{equation}
+In general, for an orthonormal system (ONS), Bessel's inequality holds,
+%公式 2.11
+\begin{equation}
+    \sum_{n}\left|c_{n}\right|^{2}=\sum_{n}\left\langle\phi, \psi_{n}\right\rangle\left\langle\psi_{n}, \phi\right\rangle \leq\langle\phi, \phi\rangle
+    \end{equation}
+for a vONS, in (2.11) using inequality $\leq$ instead of  equality =.
+
+%Page 52
+\subsection{Schmidt's orthogonalization method}
+Let {$\phi_n$} be a set of elements in $\mathbb{L}_2(\mathbb{R}^n)$. We construct an orthonormal system
+%公式 2.12
+\begin{equation}
+    \psi_{1} \equiv \phi_{1} /\left\|\phi_{1}\right\|
+    \end{equation}
+%公式 2.13
+\begin{equation}
+\begin{array}{l}
+{\left\{\begin{array}{ll}{h_{2}=} & {\phi_{2}-\left\langle\psi_{1}, \phi_{2}\right\rangle \psi_{1}} \\ 
+{\psi_{2}=} & {\left.h_{2} / \| h_{2}\right\rangle \psi_{1}}\end{array}\right.} \\ 
+\vdots\\
+{\left\{
+    \begin{array}{ll}
+        {h_{n}} & {=\phi_{n}-\sum_{k=1}^{n-1}\left\langle\psi_{k}, \phi_{n}\right\rangle \psi_{k}} \\ 
+        {\psi_{n}} & {=h_{n} /\left\|h_{n}\right\|}\end{array}\right.}
+    \end{array}
+\end{equation}
+\section{operators}
+A linear operator $A$ on $\mathcal{H}$ is a linear mapping from $\mathcal{H}$ to $\mathcal{H}$,
+%公式 2.14
+\begin{equation}
+\begin{array}{ll}{A:} & {\mathcal{H} \rightarrow \mathcal{H}} \\ {A:} & {\phi \in \mathcal{H} \rightarrow A \phi \in \mathcal{H}}\end{array}
+\end{equation}
+%公式 2.15
+\begin{equation}
+\begin{array}{ll}{\phi, \psi \in \mathcal{H},} & {a, b \in \mathbb{C}} \\ {A \text { linear : }} & {A(a \phi+b \psi)=a A \phi+b A \psi}\end{array}
+\end{equation}
+\subsection{Example: Pulse operator}
+Task: Compute $\langle\vec{p}\rangle$ in the location representation:
+%公式 2.16
+\begin{equation}
+\begin{aligned}\langle\vec{p}\rangle &=\int \frac{d^{n} p}{(2 \pi \hbar)^{n}} \psi^{*}(\vec{p}, t) \vec{p} \psi(\vec{p}, t) \\ &=\int \underbrace{d^{n} r d^{n} r^{\prime}} \int \frac{d^{n} p}{(2 \pi \hbar)^{n}} \underbrace{e^{i \vec{p} \cdot \vec{r}^{\prime} / \hbar} \psi^{*}\left(\vec{r}^{\prime}, t\right)}_{\psi^{*}(\vec{p}, t)} \vec{p} \underbrace{e^{-i \vec{p} \cdot \vec{r} / \hbar} \psi(\vec{r}, t)}_{\psi(\vec{p}, t)} \\ & \downarrow \vec{p} e^{-i \vec{p} \cdot \vec{r} / \hbar} \psi=\left(-\frac{\hbar}{i} \nabla e^{-i \vec{p} \cdot \vec{r} / \hbar}\right) \psi^{\text {part.Int. }}= e^{-i \vec{p} \cdot \vec{r} / \hbar} \frac{\hbar}{i} \nabla \psi \\ &=\int d^{n} r \psi^{*}(\vec{r}, t)\left[\frac{\hbar}{i} \nabla \psi(\vec{r}, t)\right] \end{aligned}
+\end{equation}
+%Page 53
+The momentum operator in the location representation is (see page 38)
+%公式 2.17
+\begin{equation}
+    \vec{p}=-i\hbar\nabla
+\end{equation}
+\subsection{General Definitions \& Properties}
+We define the following terms:
+\begin{itemize}
+    \item[-] $A$ is linear if          $A\sum_ia_i\psi_i=\sum_ia_iA\psi_i$ for ¨ $a_i \in \mathbb{C}$.
+    \item[-] $A^{\dagger}$ is the adjoint to $A$ if $\langle A^{\dagger}\phi,\psi=\langle\phi,A\psi\rangle,\forall\phi,\psi\in\mathbb{L}_2$.
+    \item[-] $A$ is Hermitian (physical observables correspond to Hermitian operators (QM postulate).) (self-adjoint) if $A=A^{\dagger}$. It holds: $(AB)^{\dagger}=B^{\dagger}A^{\dagger}$.
+\end{itemize}
+Examples of linear Hermitian operators are:
+\begin{itemize}
+    \item[-] $\vec{r}$, multiplication with $\vec{r}$, the location operator.
+    \item[-] $\vec{p}$, derivative $-i\hbar\nabla$, the momentum operator.
+    \item[-] $\mathcal{H}$, the Hamiltonian.
+    \item[-] $f(\vec{r})$, multiplication by $f(\vec{r}),f:\mathbb{R}^n\to\mathbb{R}^n$, e.g. $V(\vec{r})$.
+    \item[-] $g(\vec{p})$, like $f(\vec{r})$ but in momentum space, or $g(\vec{r}),=\sum_n\frac{g^{(n)}}{n!}(-i\hbar\nabla)^n$ in space if a Taylor series exists.
+\end{itemize}
+
+While products from operators $x_n$ or $p_n$ are easy to handle, we need to be careful with mixed products, such as $xp$; although $x$ and $p$ are hermich this is no longer true for the product $xp$: it is $(xp)^{\dagger}=p^{\dagger}x^{\dagger}=px$ and applying to a function $\psi(x)$ yields
+%公式2.18
+\begin{equation}
+\begin{aligned} p x \psi(x) &=-i \hbar \partial_{x}(x \psi)=-i \hbar\left(\psi+x \psi^{\prime}\right) \\ x p \psi(x) &=x\left(-i \hbar \partial_{x}\right) \psi=-i \hbar x \psi^{\prime} \end{aligned}
+\end{equation}
+$\Rightarrow xp-px=i\hbar$ (as an operator identity). Thus, with $\vec{r}$ also $f(\vec{r})$, with $\vec{p}$ also $g(\vec{p})$ hermitian, but a mixed product of Hermitian operators (for example, $h(\vec{r}\dot\vec{p})$) does not lead to a new Hermitian operator. You can hermitize xp,
+%公式 2.19
+\begin{equation}
+    \frac{1}{2}(xp+px)
+\end{equation}
+
+%Page 54
+\subsection{commutator}
+Let $A$ and $B$ be linear operators. Then means
+%公式 2.20
+\begin{equation}
+    [A,B]=AB-BA \text{Commutator from A \text{ with } B
+\end{equation}
+Examples of commutators:
+%公式
+$$
+    [x_i,p_k]=i\hbar \delta_{ik}; \\i=k \text{ are (canonical) conjugate variables}\\
+    \left.
+    \begin{array}{l}{\left[x_{i}, x_{j}\right]=0} \\ {\left[p_{i}, p_{j}\right]=0}
+    \end{array}\right\}\text{Operator commute}
+$$
+\subsection{Useful identities}
+%公式 2.21
+\begin{equation}
+\begin{array}{l}{[A B, C]=A[B, C]+[A, C] B} \\ {[A, B]^{\dagger}=\left[B^{\dagger}, A^{\dagger}\right]}\end{array}
+\end{equation}
+Baker-Hausdorff: with $exp[A]=\sum^{\infty}_{n=0}A^n/n!$ applies
+%公式 2.22
+\begin{equation}
+    e^{A} B e^{-A}=B+[A, B]+\frac{1}{2}[A,[A, B]]+\cdots
+    \end{equation}
+If $[A, B]$ commutes with $A$ and $B$, then $[[A, B], A] = [[A, B], B] = 0$, especially if $[A, B] \in \mathbb{C}$, then
+%公式 2.23
+\begin{equation}
+    e^{A} e^{B}=e^{B} e^{A} e^{[A, B]}, \quad e^{A+B}=e^{A} e^{B} e^{-[A, B] / 2}
+    \end{equation}
+\subsection{Expected values}
+Given a state $\psi\in\mathcal{H}$ and a (hermitian) operator $A$. We define
+%公式 2.24
+\begin{equation}
+\begin{aligned}\langle A\rangle &=\langle\psi, A \psi\rangle=\int d^{n} r \psi^{*}(r) A \psi(r) \text { the expected value of } A \\\langle\Delta A\rangle &=\left\langle(A-\langle A\rangle)^{2}\right\rangle^{1 / 2} \\ \&=\left(\left\langle A^{2}\right\rangle-\langle A\rangle^{2}\right)^{1 / 2} \text { the fluctuation of } A \end{aligned}
+\end{equation}
+
+%Page 55
+\subsection{Component decomposition of $A\psi$}
+$\phi$ means orthogonal to $\psi$ if $\langle\phi,\psi\rangle=0$. We denote by $\psi_{\bot}$ an orthogonal function to $\psi$. Let $A$ be Hermitesh, $\psi_{\bot}$ normalized, $\parallel\psi_{\bot}\parallel=1$, then let $A\psi$ be dismantled
+%公式 2:25
+\begin{equation}
+\begin{array}{c}{A \psi=\langle A\rangle_{\psi} \psi+\langle\Delta A\rangle_{\psi} \psi_{\perp}} \end{array}
+\end{equation}
+(Note: For $A\psi\neq\langle A\rangle\psi, \psi_{\bot}=(A-\langle A\rangle)\psi/\parallel(A-\langle A\rangle)\psi\parallel$/)
+\subsection{operators with discrete spectrum}
+Let $A$ be a linear operator and $\psi_n$ fill
+%公式 2.26
+\begin{equation}
+    A\psi_n=a_n\psi_n, a_n\in \mathbb{C}
+\end{equation}
+$a_n$ eigenvalue of $A$, $\psi_n$ is the associated eigenvector. The (discrete)
+Set ${a_n}$ means (discrete) spectrum of $A$.
+Let $A$ be Hermitian, then $a_n=a_n^*\Rightarrow a_n\in\mathbb{R}$, that is, the spectrum (the
+Eigenvalues) of Hermitian operators is (are) real.
+Let $a_n\neq a_m$, then the associated eigenvectors are orthogonal, $\langle \psi_n, \psi_m\rangle=0$ or $\psi_n \bot\psi_m$.
+Let $a_n=a_m$ degenerate eigenvalue, then let the corresponding ones be orthogonalize eigenvectors {$\psi_n$}: we define the matrix elements
+%公式 2.27
+\begin{equation}
+    \left\langle\psi_{m}, \psi_{n}\right\rangle= C_{m n}=C_{n m}^{*}
+    \end{equation}
+$C_{mn}$ is Hermitian, so $\exists U_{nm},U$ is unitary, so that $U_{m\alpha}^*C_{mn}U_{n\beta}=c_{\alpha}\delta_{\alpha\beta}$ is diagonal. Then $\varphi_{\alpha}=\mathcal{X}_{\alpha}/\parallel\mathcal{X}_{\alpha}\parallel$ with $\mathcal{X}_{\alpha}=U_{n\alpha}\psi_n$, orthonormated (see also Schmidt's Orthogonalisierungsverfahren).
+We can conclude that a system of eigenvectors {$\psi_n$} for a Hermitian operator can always be orthonormalized, $\langle\psi_m,\psi_n\rangle=\delta_{mn}$. In addition, the eigensystem {$\psi_n$} becomes a hermitian operator with discrete spectrum complete; such an operator always defines a vONS (a base in Hilbert space).
+\subsection{Operators with continuous spectra}
+Example: We consider the operators $x, p$ on $\mathbb{L}_2(\mathbb{R})$ (Warning: this
+Considerations do not claim mathematical rigor).
+%Page 56
+The eigenfunctions to $x, p$ are not regular (see page 44)
+%公式 2.28
+\begin{equation}
+\begin{aligned} x \psi_{x_{0}}(x) &=x_{0} \psi_{x_{0}}(x), & & \psi_{x_{0}}(x)=\delta\left(x-x_{0}\right) \\ p \psi_{p_{0}}(x) &=p_{0} \psi_{p_{0}}(x), & & \psi_{p_{0}}(x)=\frac{e^{i p_{0} x / \hbar}}{\sqrt{2 \pi \hbar}} \end{aligned}
+\end{equation}
+$\psi_{x0}(x)$ is a distribution, $\psi_{p0}(x)$ is not normable. Accordingly, we need distributions and integrals (Mass!) Instead of sums to formulate the orthogonality and completeness.\\
+Now let {$\psi_a$} be an eigensystem to $A,A\psi_a=a\psi_a$.\\\\
+\textbf{Orthogonality} The set of functions {$\psi_a$} is orthogonal if
+%公式 2.29
+\begin{equation}
+    \int d x \psi_{a_{1}}^{*}(x) \psi_{a_{2}}(x)=\delta\left(a_{1}-a_{2}\right), \quad a=x_{0}, p_{0}, \cdots
+    \end{equation}
+\textbf{Completeness} The set of functions {$\psi_a$} is complete when
+%公式 2.30
+\begin{equation}
+    \int d a \psi_{a}^{*}(y) \psi_{a}(x)=\delta(x-y), \quad a=x_{0}, p_{0}, \cdots
+    \end{equation}
+A hermitian operator (for example, $x$ or $p$) again produces a complete system {$\psi_a$}. A clean formulation can be given with the spectral representation of the operators.\\\\
+\textbf{Development} according to $\psi_a(x)$ every function $\phi$ can be developed into {$\psi_a$},
+%公式 2.31
+\begin{equation}
+\begin{aligned} \phi(x) &=\int d y \delta(x-y) \phi(y)=\int d a \int d y \psi_{a}^{*}(y) \psi_{a}(x) \phi(y) \\ &=\int d a\left\langle\psi_{a}, \phi\right\rangle \psi_{a}(x)=\int d a c(a) \psi_{a}(x) \end{aligned}
+\end{equation}
+Continuous and discrete spectra are quite different:
+%公式 2:32
+\begin{equation}
+\begin{array}{l}{\text { Continuous spectra } \longleftrightarrow \text { Discrete spectra }} \\ {\qquad \begin{aligned} c(a)=\left\langle\psi_{a}, \phi\right\rangle & \stackrel{(2.10)}{\longrightarrow} c_{n}=\left\langle\psi_{n}, \phi\right\rangle \\ \int d a \cdots & \longleftrightarrow \sum_{n} \cdots \end{aligned}}\end{array}
+\end{equation}
+%Page 57
+In general, there may be operators with mixed spectra, partly discrete, partly continuous (for example, bound and scattering states of a Hamiltonian $H=p^2/2m+V(\vec{r})$ with attractive potential V).
+\textbf{Remark}, for the operators $x$ and $p$ (Eig $x$ = eigenvalue to the operator $x$)
+%公式 2:33
+\begin{equation}
+\begin{aligned} \phi(x) &=c(a) \text { for } a \in \operatorname{Eig} x \\ \phi(p) &=c(a) \text { for } a \in \operatorname{Eig} p \end{aligned}
+\end{equation}
+Thus, $\phi(x)$ and $\phi(p)$ are the development coefficients if the vONS of the operators $x\&p=-i\hbar\partial_x$ are chosen as the basis (eg, for $a=x_0,c(x_0)=\langle\psi_{x0},\phi\rangle=\int dx\delta(x_0-x)\phi(x)=\phi(x_0)$).
+\subsection{Matrix representation of an operator}
+Let {$\phi_n$}, $\phi_n\in\mathcal{H}$ be a basis in $\mathcal{H}$, $A$ be a (Hermitian) operator on $\mathcal{H}$, then $A$ can be represented in this basis via the matrix
+%公式 2:34
+\begin{equation}
+    A_{n m}=\left\langle\Psi_{n}, A \Psi_{m}\right\rangle= A_{m n}^{*}
+    \end{equation}
+\section{Observable and correspondence principle}
+We combine the mathematical structures developed above with physical contents; the complex functions $\phi$ now become wave functions $\psi$, the operators become observables: a measure of classical physics, e.g. the place, the momentum, the energy or the angular momentum corresponds in quantum mechanics to a hermitian operator $\to$ observables in quantum mechanics are Hermitian operators. The assignment of the classical measuring quantities to the quantum mechanical observables regulates the correspondence principle:
+\begin{itemize}
+    \item[-] Quantum mechanics assign (hermitian) operators to physical variables (QM postulate).
+    \item[-] The classical relations correspond to quantum mechanical relations.
+\end{itemize}
+
+
+
+%Page 58
+The following mappings and relations are consistent:
+$$
+\begin{array}{cl}{\text { Position } \vec{r}} & {\longrightarrow \vec{r}} \\ {\text { Impulse } \vec{p}} & {\longrightarrow-i \hbar \nabla} \\ {\text { Energy } E} & {\longrightarrow i \hbar \partial_{t}} \\ {\text { for the classic track applies: }} & {E=\frac{p^{2}}{2 m}+V(\vec{r})} \\ {\text { for the qm wavefunction: }} & {i \hbar \partial_{t} \Psi(\vec{r}, t)=\left[-\frac{\hbar^{2}}{2 m} \nabla^{2}+V(\vec{r})\right] \Psi(\vec{r}, t)}\end{array}
+$$
+Remarks: i) The relation $i\hbar\partial_t=-(\hbar^2/2m)\nabla^2+V$ does not apply as an operator identity but applies to a quantum mechanical wave function $\psi$. ii) Generalization: Consider the classical Hamiltonian function $H(\vec{p},\vec{q})$; the classical relation $E=H(\vec{p}_{kl},\vec{q}_{kl})$ holds for the orbit $\vec{p}_{kl},\vec{q}_{kl}$.
+In quantum mechanics we have the corresponding Hermitian $H(-i\hbar\nabla,\vec{q}),H=H^{\dagger}$, and the equation of the equation applies
+%公式 2:35
+\begin{equation}
+    i\hbar \partial_t\Psi=H\Psi
+\end{equation}
+\subsection{Honorary Theorem}
+The Ehrenfest theorem states that the mean values ​​of an observable satisfy the classical equations ($\nrightarrow$ classical equations of motion for $\langle x\rangle$ and $\langle p\rangle$, see later). We construct the dynamic equations for the mean $\langle A\rangle$ of operator $A$ as follows:
+%公式 2:36
+\begin{equation}
+\begin{array}{l}{\text { Schrodinger equation }(\mathrm{SG}): \quad i \hbar \partial_{t} \Psi=H \Psi} \\ {\text { SG complex conjugate }:-i \hbar \partial_{t} \Psi^{*}=H \Psi^{*}} \\ {\text { Observable : } A} \\ {\qquad \begin{aligned} \text { Observable } &: A \\ \text { Dynamic for }\langle A\rangle &=\int d^{n} r \Psi^{*}(\vec{r}, t) A \Psi(\vec{r}, t): \\ \frac{d}{d t}\langle A\rangle &=\int d^{n} r\left[\left(\partial_{t} \Psi^{*}\right) A \Psi+\Psi^{*}\left(\partial_{t} A\right) \Psi+\Psi^{*} A\left(\partial_{t} \Psi\right)\right] \\ &=\frac{i}{\hbar}\langle[H, A]\rangle+\left\langle\partial_{t} A\right\rangle \end{aligned}}\end{array}
+\end{equation}
+The Ehrenfest Theorem of classical mechanics states that
+%公式 2:37
+\begin{equation}
+    \frac{d}{d t} f(p, q, t)=\{H, f\}+\partial_{t} f
+\end{equation}
+%Page 59
+with the Poisson brackets ${H,f}=(\partial_p H)(\partial_q f)-(\partial_p f)(\partial_q H)$, where $\partial_x=d/dx$. The comparison of (2.36) with (2.37) yields the correspondence
+%公式 2:38
+\begin{equation}
+    {f,g}\leftrightarrow\frac{i}{\hbar}[F,G],
+\end{equation}
+where the sizes $f\leftrightarrow F$ and $g\leftrightarrow G$ correspond to the observables.
+Example: Particles in potential $V(\vec{r})$
+%公式 2:39
+\begin{equation}
+\begin{array}{l}{A=\vec{r} \longrightarrow[H, \vec{r}]=\left[\vec{p}^{2} / 2 m, \vec{r}\right]=-i \hbar \vec{p} / m} \\ {A=\vec{p} \longrightarrow[H, \vec{p}]=[V(\vec{r}), \vec{p}]=i \hbar \nabla V}\end{array}
+\end{equation}
+thus follows
+%公式 2:40
+\begin{equation}
+\left.\begin{array}{rl}{\frac{d}{d t}\langle\vec{r}\rangle} & {=\langle\vec{p}\rangle / m} \\ {\frac{d}{d t}\langle\vec{p}\rangle} & {=-\langle\nabla V(\vec{r})\rangle} \\ { m \frac{d^{2}}{d t^{2}}\langle\vec{r}\rangle} & {=-\langle\nabla V(\vec{r})\rangle}\end{array}\right\} \text { Ehrenfest theorem. }
+\end{equation}
+However, it does not hold that $m\partial_t^2\langle\vec{r}\rangle=-\nabla V(\langle\vec{r}\rangle)$; the expectation $\langle x\rangle$ does not follow the classical trajectory since $\langle\nabla V(\vec{r})\rangle\neq\nabla V(\langle\vec{r}\rangle)$ (the corrections are given by $\vec{r}=\langle\vec{r}\rangle + (\vec{r}-\langle\vec{r}\rangle)$ and subsequent development by $\langle \vec{r}\rangle$).
+\subsection{Probabilistic densities and continuity equation}
+The interpretation of
+%公式 2:41
+\begin{equation}
+    \rho(\vec{r})\Psi^*(\vec{r})\Psi(\vec{r})
+\end{equation}
+as probability density leads to the question of the definition of probability current density $\vec{j}(\vec{r})$. The following consideration applies to one Hamiltonian of type $H=p^2/2m+V(\vec{r})$. Let $\rho=\Psi^*(\vec{r},t)\Psi(\vec{r},t)$ the
+Probability density, then is
+%公式 2:42
+\begin{equation}
+\begin{aligned} \partial_{t} \rho &=\left(\partial_{t} \Psi^{*}\right) \Psi+\Psi^{*}\left(\partial_{t} \Psi\right) \\ & \stackrel{\mathrm{S}_{\mathrm{G}}}{=} \frac{-1}{i \hbar}\left(H \Psi^{*}\right) \Psi+\frac{1}{i \hbar} \Psi^{*}(H \Psi) \\ &=\frac{\hbar}{2 m i}\left[\left(\nabla^{2} \Psi^{*}\right) \Psi-\Psi^{*}\left(\nabla^{2} \Psi\right)\right] \\
+&=-\frac{\hbar}{2 m i} \nabla \cdot\left(\Psi^{*} \nabla \Psi-\Psi \nabla \Psi^{*}\right) \\ &\downarrow \quad \vec{j} \equiv \frac{\hbar}{2 m i}\left(\Psi^{*} \nabla \Psi-\Psi \nabla \Psi^{*}\right) \\ &=-\nabla \cdot \vec{j}\end{aligned}
+\end{equation}
+\\
+%Page 60
+Thus the continuity equation holds
+%公式 2:43
+\begin{equation}
+    \partial_t\rho+\text{div}\vec{j}=0
+\end{equation}
+if we define the current density $\vec{j}$ via (2.42).\\\\
+Remarks: 
+\begin{itemize}
+    \item[-] $\vec{j}$ is defined such that with $i\hbar\partial_t\Psi=H\Psi$ the continuity equation holds and the dynamics does not generate any particle loss. Thus we have a method with known probability density $\rho(\Psi)$ and Hamiltonian $H$ to find the probability current density $\vec{j}(\Psi)$.
+    \item[-] Let $\Psi=\sqrt{\rho(\vec{r},t)}exp[i\varphi(\vec{r},t)]$ represented by amplitude and phase. Then $\vec{j}=(\hbar/m)\rho(\vec{r},t)\nabla\varphi(\vec{r},t)$, the particle flow, only when $\neq 0$, if $\Psi$ has a location-dependent phase $\varphi(\vec{r},t)$. It is the phase gradient which drives the currents (compare with Ohm's law in the electrodynamics, where a particle stream in the material usually is driven by a electric field).
+\end{itemize}
+ 
+\subsection{Stationary states and evolution}
+If $\partial_t H=0, H$ is time-independent, then we can separate the dynamics,
+%公式 2:44
+\begin{equation}
+\begin{aligned}  \text{ with } i \hbar \partial_{t} \Psi=H \Psi \text{ applies }\left\{\begin{aligned}\Psi(\vec{r}, t) &=\chi(t) \varphi(\vec{r})\\ \chi(t) &=\exp [-i E t / \hbar] \\ H \varphi(\vec{r}) &=E \varphi(\vec{r}) \end{aligned}\right.\end{aligned}
+\end{equation}
+the position-dependent component $\varphi(\vec{r})$ is the solution of the time-independent Schrodinger equation $H\varphi = E\varphi$, an eigenvalue problem which is under consideration of the boundary condition. $\Psi(\vec{r},t)=e^{-iEt/\hbar}\varphi(\vec{r})$Stationary state, the associated density $\rho=|\Psi|^2=|\varphi|^2$is time-independent. The boundary condition/normalization condition of the eigenvalue problem $H\varphi_n=E_n\varphi_n$ specifies the allowed energies $E_n$.\\\\
+The time-independent Schrodinger equation defines a useful vONS {$\varphi_n$}: The time evolution of a general state $\Psi(\vec{r},t)$ with initial value $P_{si}(\vec{r},t=0)=\Psi_0(\vec{r})$ results from the decomposition vin $\Psi_0$ into components
+%公式 2:45
+\begin{equation}
+    \Psi_{0}(\vec{r})=\sum\left\langle\varphi_{n}, \Psi_{0}\right\rangle \varphi_{n}(\vec{r})
+    \end{equation}
+and their individual evolutions with the energies $E_n$ (compare with the discussion in section 1.6)
+%公式 2:46
+\begin{equation}
+    \Psi(\vec{r}, t)=\sum_{n}\left\langle\varphi_{n}, \Psi_{0}\right\rangle \varphi_{n}(\vec{r}) e^{-i E_{n} t / \hbar}
+    \end{equation}
+\section{measuring process}
+In quantum mechanics, we can determine only one distribution function $w (a)$ for the measurement of an observable; the quantities $w (a) da$ gives the probability of finding a measured value a in the interval $[a, a + da]$. The distribution function $w (a)$ is defined in quantum mechanics by the observable $A$ and the state $\Psi$ of the system. Probably, a measurement process {$A,\Psi$} corresponds to a random variable $A$, which takes values ​​a according to $w (a)$. We define
+%公式 2:47
+\begin{equation}
+    m_{n} \equiv \int d a a^{n} w(a)
+    \end{equation}
+as the $n^{tes}$ moment of $w (a)$, and
+%公式 2:48
+\begin{equation}
+    \chi(\tau)=\mathcal{F}_{\tau}(w)=\int d a e^{-i a \tau} w(a)
+    \end{equation}
+as a characteristic function, the Fourier transform of the distribution function $w (a)$. The characteristic function $\mathcal{X}(tau)$ gives all moments $m_n$ of the distribution function,
+%公式 2:49
+\begin{equation}
+    m_{n}=i^{n} \frac{d^{n} \chi}{d \tau^{n}}
+    \end{equation}
+Thus $w (a)$ can be determined from the moments $m_n$
+%公式 2:50
+\begin{equation}
+\begin{aligned} \chi(\tau) &=\sum_{n=0}^{\infty} \frac{(-i \tau)^{n}}{n !} m_{n} \\ w(a) &=\int_{-\infty}^{\infty} \frac{d \tau}{2 \pi} e^{i a \tau} \chi(\tau) \end{aligned}
+\end{equation}
+%page 62
+\textbf{Note}, often the cumulants $c_k$ are used instead of the moments,
+%公式 2:51
+\begin{equation}
+\begin{aligned} \sum_{n} \frac{x^{n}}{n !} m_{n} &=\exp \left[\sum_{k} \frac{x^{k}}{k !} c_{k}\right] \\ c_{1} &=m_{1} \\ c_{2} &=m_{2}-m_{1}^{2} \\ c_{3} &=m_{3}-3 m_{2} m_{1}+2 m_{1}^{3} \\ c_{4} &=m_{4}-4 m_{3} m_{1}-3 m_{2}^{2}+12 m_{2} m_{1}^{2}-6 m_{1}^{4} \\ \ldots &=\cdots \end{aligned}
+\end{equation}
+Application to the quantum mechanical measuring process {$A,\Psi$}:
+\begin{itemize}
+    \item[-] Let $\Psi=\Psi_n$ be an eigenstate of $A$, $A\Psi_n=a_n\Psi_n$. The expected value $\langle A\rangle$ is equal to the physical mean of the measurement results over many equivalent measurements {$A,\Psi$}; same for the moments    (QM postulate). Then $\langle A^k\rangle=a_n^k$ the $k_{th}$ moment,%公式 2:52
+    \begin{equation}
+    \begin{aligned} \chi(\tau) &=\sum_{k} \frac{(-i)^{k}}{k !}\left(a_{n} \tau\right)^{k}=\exp \left(-i a_{n} \tau\right) \\ w(a) &=\int_{-\infty}^{\infty} \frac{d \tau}{2 \pi} e^{i a \tau} e^{-i a_{n} \tau}=\delta\left(a-a_{n}\right) \end{aligned}
+    \end{equation}
+    and it is certainly measured, since the measurement is a pure state with an eigenfunction.
+    \item[-] Let $\Psi=\sum_n c_n\Psi_n$ a superposition, then the $k_{th}$ moment
+    \begin{equation}
+    \begin{aligned}\left\langle A^{k}\right\rangle &=\sum_{n}\left|c_{n}\right|^{2} a_{n}^{k} \\ \chi(\tau) &=\sum_{n}\left|c_{n}\right|^{2} e^{-i a_{n} \tau} \\ w(a) &=\sum_{n}\left|c_{n}\right|^{2} \delta\left(a-a_{n}\right) \end{aligned}
+    \end{equation}
+    that is, it is measured with the probability $| c_n|^2$ of the eigenvalue $a_n$.
+\end{itemize}
+%公式 2:53
+%Page 63
+\textbf{In summary}, let {$\Psi_n$} be a vONS to $A$ with (discrete) spectrum {$a_n$} (continuous parts in the spectrum are treated according to (2.32)). Every state of a system can be written as
+%公式 2:54
+\begin{equation}
+    \Psi=\sum_{n} c_{n} \Psi_{n}, \quad\|\Psi\|^{2}=\sum_{n}\left|c_{n}\right|^{2}=1
+    \end{equation}
+The measurement of observable $A$ on the system in state $\Psi$ shows that
+\begin{itemize}
+    \item[-] with probability $| c_n|^2$ the eigenvalue $a_n$ is measured (Born), in particular only eigenvalues ​​are measured,
+    \item[-] after the measurement of the eigenvalue $a_n$, the system is in the state $\Psi_n$ (von Neumann projection (von Neumann projection postulate (QM postulate))),
+    %公式2.55
+    \begin{equation}
+        \Psi \stackrel{\text { Measurement of } a_{n}}{\longrightarrow} \Psi_{n}
+    \end{equation}
+    The reduction of the wave function to the component $\Psi_n$ is known under the term "collapse of the wave function"; in a modern context, this collapse is a fiction-it is the decoherence via interaction with the environment that reduces the wave function (better the density matrix, see later). Even further is Everett's theory of the multiverse: this is described by a global evolving wave function [see Max Tegmark, Many Lives in many worlds, Nature 448, 23 (2007); Tegmark and Wheeler, 100 Years of the Quantum, Scientific American, February 2001]. The concept of Von Neumann projection comes into play especially in repeated measurements: a repeated measurement of A yields the probability $w (a) =\delta(a-a_n)$, as long as the time evolution of the system $\Psi_n$ is maintained, i.g. $[A, H] = 0$. In general, a second measurement at a later time yields a more complex measure, the (temporal) correlator of a measure of what information about the evolution of the system is. In addition, a system can be prepared by measuring in one state; However, this preparation has a statistical character, since the prepared state is determined only after the measurement.
+\end{itemize}
+
+%Page 64
+\subsection{Several sharp measurements}
+Let $A$ and $B$ be two observables. We are interested in the conditions that allow us to determine $A$ and $B$ simultaneously (sharply). We show,
+%公式 2:56
+\begin{equation}
+[A, B]=0 \quad \Longleftrightarrow \quad | \begin{array}{l}{E_s\text { common eigenfunctions exist }} \\ {\Psi_{m, n}, \text { so that a measurement of } A \text { and } B \text { the }} \\ {\text { eigenvalues } a_{n} \text { and } b_{n} \text { spicy supplies. }}\end{array} |
+\end{equation}
+and distinguish two cases:
+\begin{itemize}
+    \item[-] $A\Psi=a\Psi$ not degenerate $\to AB\Psi=BA\Psi=aB\Psi$ and since the eigenspace $Eig_a$ of a is not degenerate, $B\Psi=b\Psi$.
+    \item[-] $A\Psi=a\Psi_n$ for =$n = 1 · · · k$, a k-fold degenerate eigenspace of $A$.
+    Again $AB\Psi_n=aB\Psi_n$ and thus $B\Psi_n=\sum^k_{m=1}B_{nm}\Psi_{m}$. The coefficient matrix $B_{nm}=\langle \Psi_m,B\Psi_n\rangle$ is Hermitian and thus $U$ unitary exists with
+    %公式 2:57
+    \begin{equation}
+        U^{\dagger} B U=B_{D} \quad \text { diagonal, } \quad U^{\dagger} U=U U^{\dagger}=\mathbb{1}
+        \end{equation}
+    The linear combinations $\Psi_r=\sum^k_{m=1}U^*_{mr}\Psi_m$ are eigenfunctions
+    from both $A$ and $B$, because
+    %公式 2:58
+    \begin{equation}
+    \begin{aligned}\left\langle\Phi_{s}, B \Phi_{r}\right\rangle &=\sum_{m, m^{\prime}}\left\langle\Psi_{m^{\prime}}, U_{m^{\prime} s} B U_{m r}^{*} \Psi_{m}\right\rangle \\ &=\sum_{m, m^{\prime}} U_{m^{\prime} s} B_{m m^{\prime}} U_{m r}^{*}=\sum_{m} U_{m s} B_{\mathcal{D}_{s}} U_{m r}^{*} \\ &=B_{\mathcal{D}_{s}} \delta_{s r} \end{aligned}
+    \end{equation}
+    where $B^*_{mn}=B_{mn}$(obviously) Hermitian, $B^{\dagger}=B, U^{\dagger}U=\sum U^*_{mr}U_{ms}=\delta_{rs}$ and $BU=\sum_{m'}B_{mm'}U_{m's}=B_{ms}B_{Ds}=UB_D$.
+\end{itemize}
+Conversely, let {$\Psi_n$} be a vONS to $A$ and $B$ with eigenvalues ​​$a_n$ and $b_n$, then $A$ and $B$ commute, $[A, B] = 0$.\\\\
+\textbf{Complete set of observables}. We call a set $A_1, \cdots, A_n$ a complete set of observables if $[A_i, A_j] = 0$ and the common system of eigenfunctions is no longer degenerate. Number the eigenvalues ​​$a_1, \cdots,a_n$ on a complete set of observables and characterize the eigenfunctions $Ψ_n = Ψ_{a1, \cdots,a_n}$. The measurements
+from $A_1, \cdots,A_n$ to provide the maximum available information about the system.\\\\
+%Page 65
+\textbf{Remarks}: 
+\begin{itemize}
+    \item[-] Let $A_1, \cdots, A_n$ a set of observables with $\Psi_n$ yet degenerate, then there is a symmetry group (finite or compact) whose
+    generating with the $A_1, \cdots,A_n$ commutated to.
+    \item[-]  If $H \in \{A_n\}$ destroys the dynamics not the sharply measured eigenvalues. 
+    \item[-] For the potential problem in the $\mathbb{R}^1$ are the operators $x$ or $p$ complete (Fourier theorem), generally in the $\mathbb{R}^n$ complete the vector operators $\vec{r}$ or $\vec{p}$. (The Fourier transform, defined on a black space, can be extended to the $\mathbb{L}^2$ space.)
+\end{itemize}
+
+\section{Basic Transformations}
+From the linear algebra is known: $\vec{e}_i,\vec{e}^{\prime}_i$ have two bases with
+%公式 2:59
+\begin{equation}
+    \left(\vec{e}_{i} \cdot \vec{e}_{k}\right)=\sum e_{i}^{j} e_{k}^{j}=\delta_{i k} \quad(\text { ortho })
+    \end{equation}
+and
+%公式 2.60
+\begin{equation}
+    \sum_{i} e_{i}^{n} e_{i}^{l}=\delta_{n l} \quad \text { (full) }
+    \end{equation}
+(also for $\vec{e}^{\prime}_i$) and $\vec{v}\in V$ is an element in vector space. The vector can be represented in the different bases,
+%公式 2.61
+\begin{equation}
+    \vec{v}=\sum_{i} v_{i} \vec{e}_{i}=\sum_{i} v_{i}^{\prime} \vec{e}_{i}^{\prime}
+    \end{equation}
+The components $v_i=(\vec{e}_i\cdot\vec{v}),v^{\prime}_i=(\vec{e}^{\prime}_i\cdot \vec{v})$ transform according to
+%公式 2.62
+\begin{equation}
+\begin{aligned} v_{i}^{\prime} &=\left(\vec{e}_{i}^{\prime} \cdot \vec{v}\right)=\vec{e}_{i}^{\prime} \cdot \sum_{k} v_{k} \vec{e}_{k} \\ &=\sum_{k}\left(\vec{e}_{i}^{\prime} \cdot \vec{e}_{k}\right) v_{k}=\sum_{k} T_{i k} v_{k} \end{aligned}
+\end{equation}
+with the transformation matrix
+%公式 2.63
+\begin{equation}
+    T_{i k}=\left(\vec{e}_{i}^{\prime} \cdot \vec{e}_{k}\right)
+    \end{equation}
+On the other hand, the base transforms according to
+%公式 2.64
+\begin{equation}
+\begin{aligned} e_{i}^{l} &=\sum_{n} \delta_{n l} e_{i}^{n}=\sum_{n k} e_{k}^{\prime n} e_{k}^{\prime l} e_{i}^{n}=\sum_{k}\left(\vec{e}_{k}^{\prime} \cdot \vec{e}_{i}\right) e_{k}^{\prime l} \\ \vec{e}_{i} &=\sum_{k} T_{k i} \vec{e}_{k}^{\prime} \end{aligned}
+\end{equation}
+%Page 66
+with which one finds the following properties of the $T$ matrix,
+%公式 2.65
+\begin{equation}
+\begin{array}{l}{\sum_{i} T_{k i} T_{l i}=\sum_{i m n} e_{k}^{\prime m} e_{i}^{m} e_{l}^{\prime n} e_{i}^{n}=\sum_{m n} \delta_{m n} e_{k}^{\prime m} e_{l}^{\prime n}=\delta_{k l}} \\ {\left.\Rightarrow T^{T} T=1\right), \quad T T^{T}=11}\end{array}
+\end{equation}
+You get consistent with it
+%公式 2.66
+\begin{equation}
+\begin{aligned} v_{i} &=\left(\vec{e}_{i} \cdot \vec{v}\right)=\sum_{k} T_{k i}\left(\vec{e}_{k}^{\prime} \cdot \vec{v}\right)=\sum_{k} T_{k i} v_{k}^{\prime} \\ \vec{e}_{i}^{\prime} &=\sum_{k}\left(\vec{e}_{k} \cdot \vec{e}_{i}^{\prime}\right) \vec{e}_{k}=\sum_{k} T_{i k} \vec{e}_{k} \end{aligned}
+\end{equation}
+This scheme translates directly (except for complexity) to the formalism of quantum mechanics. Let $\mathcal{H}$ be a Hilbert space of complex (wave) functions containing sets {$\Psi_n(x)$}, {$\Psi_n^{\prime}(x)$} two vONS, that is $\langle\Psi_n|\Psi_m\rangle=\delta_{mn},\sum_n\Psi^*_n(y)\Psi_n(x)=\delta(x-y)$. We can change the base perform as follows,
+%公式 2.67
+\begin{equation}
+\begin{aligned} U_{i j} \equiv\left\langle\Psi_{i}^{\prime} | \Psi_{j}\right\rangle, \text { the transformation matrix, } \\ U^{\dagger} U=U U^{\dagger}=11 \text { unitary, where } \\ U^{\dagger}=\left(U^{*}\right)^{T}, &\left(U^{\dagger}\right)_{i j}=U_{j i}^{*} \end{aligned}
+\end{equation}
+Let $\Psi(x)=\sum_ia_i\Psi_i(x)=\sum_ia^{\prime}_i\Psi_i^{\prime}(x)\in\mathcal{H}$, then transform the bases and amplitudes according to
+%公式 2.68
+\begin{equation}
+%\left\{\begin{array}{l}{\Psi_{i}(x)=\sum_{k} U_{k i} \Psi_{k}^{\prime}(x),\end{array}\right}
+\quad\left\{\begin{array}{l}{\Psi_{i}(x)=\sum_{k} U_{k i} \Psi_{k}^{\prime}(x)} \\ {\Psi_{i}^{\prime}(x)=\sum_{k} (U^{\dagger})_{ki} \Psi_k(x)}\end{array}\right.\\
+\quad\left\{\begin{array}{l}{a_{i}=\sum_{k}\left(U^{\dagger}\right)_{i k} a_{k}^{\prime}} \\ {a_{i}^{\prime}=\sum_{k} U_{i k} a_{k}}\end{array}\right.
+\end{equation}
+The state $\Psi(x)$ itself is independent of the base.\\\\
+In addition to the state $\Psi\in\mathcal{H}$, we can also use (Hermitian) operators in a base, see (2.34), Note $A_{nm}=\langle \Psi_n,A\Psi_m\rangle=A^*_{mn}$, where the latter equation holds for a Hermitian $A$. A second base {$\Psi^{\prime}_n$} defined
+the corresponding representation $A_{nm}^{\prime}=\langle\Psi^{\prime}_n,A\Psi_m^{\prime}\rangle$; the two representations are in turn connected via the unitary transformation $U$,
+%公式 2.69
+\begin{equation}
+\begin{aligned} A_{n m}^{\prime}=\left\langle\Psi_{n}^{\prime}, A \Psi_{m}^{\prime}\right\rangle &=\left\langle\sum_{k} U_{n k} \Psi_{k}, A \sum_{l} \underbrace{U_{m l}^{*}} \Psi_{l}\right\rangle \\ &=\sum_{k l} U_{n k} A_{k l} U_{m l}^{*} \\ \Leftrightarrow A^{\prime} &=U A U^{\dagger} \end{aligned}
+\end{equation}
+%page 67
+The representation of $A$ in the eigenbasis defined by $A\Phi^a_n(x)=a_n\Psi_n^a(x)$ is very simple because it is diagonal,
+%公式 2.70
+\begin{equation}
+    A_{n m}=\left\langle\Psi_{n}, A \Psi_{m}\right\rangle=\underbrace{\delta_{n m} a_{m}}_{\text {in the self-base }}
+    \end{equation}\\
+\textbf{Example}: The transition from the location to the momentum base is a base transformation in the above sense,
+%公式 2.71
+\begin{equation}
+    \Psi_{j}(x) \leftrightarrow \Psi_{y}(x)=\delta(y-x), \quad \Psi_{i}^{\prime}(x) \leftrightarrow \Psi_{p}(x)=\frac{1}{\sqrt{2 \pi \hbar}} e^{i p x / \hbar}
+    \end{equation}
+Thus $U_{ij}\leftrightarrow U_{py}=\langle\Psi_p|\Psi_y\rangle=exp[-ipy/\hbar]/\sqrt{2\pi\hbar}$ and it turns out
+%公式 2.72
+\begin{equation}
+\begin{aligned} \Psi_{y}(x) &=\int d p U_{p y} \Psi_{p}(x)=\int d p \frac{e^{-i p y / \hbar}}{\sqrt{2 \pi \hbar}} \frac{e^{i p x / \hbar}}{\sqrt{2 \pi \hbar}}=\delta(y-x) \\ 
+\Psi_{p}(x) &=\int d y\left(U^{\dagger}\right)_{y p} \Psi_{y}(x)=\int d y \frac{e^{i p y / \hbar}}{\sqrt{2 \pi \hbar}} \delta(y-x)=\frac{e^{i p x / \hbar}}{\sqrt{2 \pi \hbar}} \\
+\Phi(x) &=\int d y \underbrace{\Phi(y)}_{\Phi(y) \leftrightarrow a_{i}} \Psi_{y}(x) \\ 
+&=\int d p \underbrace{\left[\int d y \frac{e^{-i p y / \hbar}}{\sqrt{2 \pi \hbar}}\Phi(y)\right]}{\Phi(p) \leftrightarrow a_{i}^{\prime}} \Psi_{p}(x).  \end{aligned}
+\end{equation}
+If one calculates the above formulas, one comes to the conclusion that this is a fairly leisurely formalism. This changes abruptly when we pass to Dirac notation.
+\section{Dirac Notation}
+Basic sizes in formalism are the
+%公式 2.73
+\begin{equation}
+\begin{array}{ll}{\text { conditions }} & {\Psi \in \mathcal{H}, \quad \mathcal{H} \text { the Hilbert room, and the }} \\ {\text { operators }} & {A, A: \Psi \rightarrow A \Psi \in \mathcal{H}}\end{array}
+\end{equation}
+We can represent these sizes in a base {$\Psi_n$}. Different bases give equivalent representations in the sense of the above transformation rules between bases. We therefore introduced a basis-independent vector notation (dirac notation) and denote a state in the Hilbert space $\mathcal{H}$ with
+%Page68
+%公式 2.74
+\begin{equation}
+    | \Psi \rangle\in \mathcal{H}
+\end{equation}
+A quantum mechanical state determines $|\Psi\rangle$ except for one phase,
+%公式 2.75
+\begin{equation}
+    \text{qm-Status}\triangleq e^{i\phi}|\Psi\rangle,\phi\in\mathbb{R} \text{arbitrary but fixed}
+\end{equation}
+The scalar product of two states $|\Psi\rangle$ and $|\Phi\rangle$ is denoted by
+%公式 2.76
+\begin{equation}
+\begin{array}{l}{\langle\Phi | \Psi\rangle \quad \in \mathbb{C}, \quad\langle\Phi|=\text { dual vector too }|\Phi\rangle} \\ {\text{ }\uparrow \text{}\uparrow} \\ {\langle\text {bra}| \text {ket}\rangle}\end{array}
+\end{equation}
+As usual, $\langle\Phi|\Psi\rangle^*=\langle\Psi|\Phi\rangle,\langle\Psi|\Psi\rangle\geq 0$; In addition, of course, the Schwarz's inequality, the triangle inequality, and the (anti-) linearity of the scalar product.\\\\
+\textbf{Basis}: a base is a set {$|\Psi\rangle=| n\rangle$} which is orthonormal (2.77) and is complete (2.78),
+%公式 2.77
+\begin{equation}
+    \langle n| m\rangle = \delta_{nm}
+\end{equation}
+%公式 2.78
+\begin{equation}
+    \sum_n| n\rangle\langle n| = \mathbb{1}
+\end{equation}
+\textbf{Projectors}: The operator $P_n=| n\rangle\langle n|$ is the projection operator on the state $| n\rangle$, because
+%公式 2.79
+\begin{equation}
+\begin{aligned} P_{n}|\Psi\rangle &=|n\rangle \underbrace{\langle n | \Psi\rangle}_{\in \mathbb{C}}=\langle n | \Psi\rangle|n\rangle \\ P_{n}^{2} &=|n\rangle\underbrace{\langle n | n\rangle}\langle n|=| n\rangle\langle n|=P_{n} \end{aligned}
+\end{equation}
+thus $P_n$ is idempotent.
+The representation of $|\Psi\rangle$ in the $| n\rangle$ basis is given by
+%公式 2.80
+\begin{equation}
+\begin{aligned}|\Psi\rangle &= 1|\Psi\rangle=\sum_{n}|n\rangle\langle n | \Psi\rangle \\ &=\sum_{n}\langle n | \Psi\rangle|n\rangle=\sum_{n} a_{n}|n\rangle \end{aligned}
+\end{equation}
+%Page 69
+If the base is determined by a continuum of states, we replace ($n\to a\in\mathbb{R}$)
+%公式 2.81
+\begin{equation}
+    \sum_n\to \int da
+\end{equation}
+\textbf{Special conditions} are
+%公式 2.82
+\begin{equation}
+    \begin{array}{l}{|\vec{x}\rangle \text{  Particles in place }\vec{x},}\\{|\vec{p}\rangle \text{  Particles with Impulse }\vec{p}}  
+    \end{array}
+\end{equation}
+The sets {$|\vec{x}\rangle|\vec{x}\in\mathbb{R}^n$} and {$|\vec{p}\rangle|\vec{p}\in\mathbb{R}^n$} define the position and momentum bases. The location and momentum representation of $|\Psi\rangle$ is then
+%公式 2.83
+\begin{equation}
+\begin{array}{l}{\langle\vec{x} | \Psi\rangle=\Psi(\vec{x}), \quad \text { position representation }} \\ {\langle\vec{p} | \Psi\rangle=\Psi(\vec{p}), \quad \text { momentum representation }}\end{array}
+\end{equation}
+\textbf{Basic transformation}: the basic transformation becomes a triviality,
+%公式 2.84
+\begin{equation}
+\begin{aligned} \Psi(\vec{x})=\langle\vec{x} | \Psi\rangle &=\int d^{n} p\langle\vec{x} | \vec{p}\rangle\langle\vec{p} | \Psi\rangle \\ &=\frac{1}{(2 \pi \hbar)^{n / 2}} \int d^{n} p e^{i \vec{p} \cdot \vec{x} / \hbar} \Psi(\vec{p}) \end{aligned}
+\end{equation}
+%公式 2.85
+\begin{equation}
+\begin{aligned} \Psi(\vec{p})=\langle\vec{p} | \Psi\rangle &=\int d^{n} x\langle\vec{p} | \vec{x}\rangle\langle\vec{x} | \Psi\rangle \\ &=\frac{1}{(2 \pi \hbar)^{n / 2}} \int d^{n} x e^{-i \vec{p} \cdot \vec{x} / \hbar} \Psi(\vec{x}) \end{aligned}
+\end{equation}
+or more generally,
+%公式 2.86
+\begin{equation}
+    \Psi_{\mu}=\langle\mu | \Psi\rangle=\left\langle\mu\left|\underbrace{\sum|\nu\rangle\langle\nu|| \Psi\rangle}_{\mathbb{1}}=\mathcal{Y}\langle\mu | \nu\rangle \Psi_{\nu}\right.\right.
+    \end{equation}
+where $\mu,\upsilon$ can be discrete or continuous. Obviously,
+%公式 2.87
+\begin{equation}
+    |\Psi\rangle=\int d^{n} p\langle\vec{p} | \Psi\rangle|\vec{p}\rangle=\int d^{n} p \Psi(\vec{p})|\vec{p}\rangle
+\end{equation}
+%公式 2.88
+\begin{equation}
+    =\int d^{n} x\langle\vec{x} | \Psi\rangle|\vec{x}\rangle=\int d^{n} x \Psi(\vec{x})|\vec{x}\rangle
+\end{equation}
+\begin{equation}
+    =\sum f\langle\nu | \Psi\rangle|\nu\rangle=\sum \psi_{\nu}|\nu\rangle
+    \end{equation}
+%公式 2.89
+%Page 70
+\textbf{Operators}: Similarly, handling operators becomes much easier. $|\upsilon\rangle$ is a discrete or continuous basis, then
+%公式 2.90
+\begin{equation}
+    A=\overbrace{\sum_{\nu}|\nu\rangle\langle\nu|}^{\mathbb{1}} \overbrace{\sum_{\mu}|\mu\rangle\langle\mu|}^{\mathbb{1}}=\sum_{\nu\mu}\underbrace{\langle\nu|A| \mu\rangle}^{A_{\nu\mu}} |\nu\rangle\langle\mu|.
+    \end{equation}
+Especially easy (because diagonal) is the representation in the eigenbasis with $A| a\rangle=a| a\rangle$,
+%公式 2.91
+\begin{equation}
+    A=\underbrace{f}_{a}|a\rangle\left\langle a\left|A \oint_{a^{\prime}}\right| a^{\prime}\right\rangle\left\langle a^{\prime}\left|=\sum_{a} a\right| a\right\rangle\langle a|
+    \end{equation}
+\textbf{Adjoint Operators}: Be $A^{\dagger}$
+adjunct to $A$, that is $\langle \upsilon| A^{\dagger}|\mu\rangle=\langle\mu| A|\upsilon\rangle^*$, Now let $|\alpha\rangle=A|\beta\rangle$, what is $\langle\alpha|$?
+%公式 2.92
+\begin{equation}
+\begin{aligned}\langle\alpha| &=\oint_{\mathcal{V}}\langle\alpha | \nu\rangle\left\langle\nu\left|=\mathcal{J}_{\mathcal{N}}\langle\nu | \alpha\rangle^{*}\left\langle\nu\left|=\mathcal{L}\langle\nu|A| \beta\rangle^{*}\langle\nu|\right.\right.\right.\right.\\ &=\underbrace{f}\left\langle\beta\left|A^{\dagger}\right| \nu\right\rangle\left\langle\nu\left|=\left\langle\beta\left|A^{\dagger} \cong\langle A \beta|\right.\right.\right.\right.\end{aligned}
+\end{equation}
+So we understand $\langle A\beta|$ as $\langle\beta| A^{\dagger}$.
+\section{Ten rules of quantum mechanics}
+\begin{enumerate}
+    \item Formal basis is a Hilbert space $\mathcal{H} $ with states $|\Psi\rangle\in\mathcal{H}$, scalar product $\langle\cdot|\cdot\rangle$ and operators $A$.
+    \item The state of a system is described by the state vector $|\Psi\rangle\in\mathcal{H}$ (except for one phase) (QM postulate).
+    \item The observables correspond to Hermitian operators $A$ (QM postulate).
+    \item The expectation values $\langle A\rangle=\langle\Psi| A|\Psi\rangle$ are equal to the physical mean values ​​evaluated over many measurements {$A,\Psi$} (QM postulate).
+    \item If an eigenvalue $a$ for the operator $A$ is measured on a system in the state $|\Psi\rangle$, the state reduces to $| a\rangle$ (von Neumann projection, QM postulate, collapse of the wave function as a practical guide to the transition to the classical world, but see Max Tegmark, Nature 448, 23 (2007)). The eigenvalue $a$ is measured with the probability $|\langle a|\Psi\rangle|^2$ (Born's rule).
+    \item The maximum information about the state of a system is given by the measurement of a complete set of observables.
+    \item The dynamics (time evolution) of the system is determined by the Schrodinger equation (QM postulate),
+    %公式 2.93
+    \begin{equation}
+        i \hbar \partial_{t}|\Psi, t\rangle= H|\Psi, t\rangle
+        \end{equation}
+    with $H$ the Hamilton operator; the latter follows from the correspondence principle. 'A theory is quantized' means that \textbf{i)} the Lagrangian is raised to the path integral (integral representation) or \textbf{ii)} the variables in Hamiltonian are replaced by operators by replacing the Poisson clauses for the conjugate variables with commutators (with $\hbar$) ( differential representation).
+    \item If $\partial_tH=0$ then the time evolution of the system is given by
+    %公式 2.94
+    \begin{equation}
+        |\Psi, t\rangle=\oint_{\mathcal{E}}\langle E | \Psi, 0\rangle e^{-i E t / \hbar}|E\rangle
+        \end{equation}
+    with the stationary states $| E\rangle$ as solutions of the time-independent Schr¨odinger equation, $H| E\rangle=E| E\rangle$.
+    \item A vONS {$|\upsilon\rangle$} $\subset\mathcal{H}$, characterized by
+    %公式 2.95
+    \begin{equation}
+    \begin{aligned}\langle\nu | \mu\rangle &=\delta_{\mu \nu} \text { oder } \delta(\mu-\nu) \\ \sum_{\nu}|\nu\rangle\langle\nu| &=1 | \end{aligned}
+    \end{equation}
+    defines a representation,
+    %公式 2.96
+    \begin{equation}
+    \begin{aligned}|\Psi\rangle &=\underbrace{\sum_{\nu}\langle\nu | \Psi\rangle|\nu\rangle}=\sum_{\nu} \Psi_{\nu}|\nu\rangle \\ A &=\sum_{\nu \mu}\langle\mu|A| \nu\rangle|\mu\rangle\langle\nu| \end{aligned}
+    \end{equation}
+    \item Different vONS are unitary equivalent: Let {$| a\rangle$}, {$|\upsilon\rangle$} be two vONS, then
+    %公式 2.97
+    \begin{equation}
+    \left.\begin{array}{ll}{\langle\alpha | \Psi\rangle} & {\alpha \text { -presentation }} \\ {\langle\nu | \Psi\rangle} & {\nu \text { -presentation }}\end{array}\right\} \text { unitary equivalent. }
+    \end{equation}
+    %Page 72
+    In particular, a transformation matrix $U_{\upsilon\alpha}=\langle\upsilon|\alpha\rangle$ exists such that
+    %公式
+    $$
+    \begin{aligned}\langle\alpha | \Psi\rangle=& \sum_{\nu}\langle\alpha | \nu\rangle\langle\nu | \Psi\rangle, \quad\langle\nu | \Psi\rangle=\sum_{\alpha}\langle\nu | \alpha\rangle\langle\alpha | \Psi\rangle \\|\alpha\rangle &=\sum_{\nu}\langle\nu | \alpha\rangle|\nu\rangle, \quad|\nu\rangle=\sum_{\nu}\langle\alpha | \nu\rangle|\alpha\rangle \end{aligned}
+    $$
+    The relationship between different representations of an operator is given by
+    %公式 2.98
+    \begin{equation}
+        \langle\mu|A| \nu\rangle=\sum_{\alpha \beta}\langle\mu | \alpha\rangle\langle\beta | \nu\rangle\langle\alpha|A| \beta\rangle
+        \end{equation}
+    The transformation matrix $U_{\upsilon\alpha}$ is unitary,
+    %公式 2.99
+    \begin{equation}
+        \oint_{\nu} U_{\nu \alpha} U_{\nu \beta}^{*}=\underset{\nu}{J_{\nu}\langle\nu | \alpha\rangle\langle\beta | \nu\rangle}=\delta_{\alpha \beta}
+        \end{equation}
+\end{enumerate}
+%Page 71
+
+\section{Normalization and $\delta$-function}
+Problem: Continuum states are generally not normalizable, e.g. applies to plane waves $\Psi_{\vec{k}=exp(i\vec{k}\cdot\vec{r})}$, that $\int|\Psi|^2d^3r\to\infty$. We discuss two methods of dealing with the problem of normalization, the transition to wave packets or the box standardization. There are three different types of box standardization in a broader sense:
+\begin{itemize}
+    \item[-] Fix walls with $\Psi_{\vec{k}}(\vec{r}\in\text{Wall})=0$. Thus the spectrum is discretized and the eigenfunctions (to $\vec{p}$ or $H$) are normable, see Page 40 for dim = 1,
+    %公式 2100
+    \begin{equation}
+    \Psi_{k}(x)=\sqrt{\frac{2}{L}}\left\{\begin{array}{ll}{\sin k x,} & {k=2 \pi n / L} \\ {\cos k x,} & {k=2 \pi(n+1 / 2) / L}\end{array}\right.
+    \end{equation}
+    \item[-] Periodic boundary conditions,
+    %公式 2101
+    \begin{equation}
+    \begin{aligned} \Psi_{\vec{k}}(\vec{r}+\vec{L}) &=\Psi_{\vec{k}}(\vec{r}), \quad \vec{L}=L \vec{n}_{i} \\ \rightarrow \Psi_{\vec{k}}(\vec{r}) &=\frac{1}{L^{d / 2}} e^{i \vec{k} \cdot \vec{r}}, \quad \vec{k}=\frac{2 \pi}{L} \vec{n}, \quad \vec{n}=\left(n_{1}, \cdots, n_{d}\right) \end{aligned}
+    \end{equation}
+    Ortho normalization:
+    %公式 2102
+    \begin{equation}
+        \int d^{d} r \Psi_{\vec{k}^{\prime}}^{*}(\vec{r}) \Psi_{\vec{k}}(\vec{r})=\frac{1}{L^{d}} \int_{V=L^{d}} d^{d} r e^{i\left(\vec{k}-\vec{k}^{\prime}\right) \cdot \vec{r}}=\delta_{\vec{k} \vec{k}^{\prime}}
+        \end{equation}
+        with $\delta_{\vec{k}\vec{k^{\prime}}}$ of the Kronecker $\delta$-function:
+        %公式 2103
+        \begin{equation}
+        \delta_{\vec{k} \vec{k}^{\prime}}=\left\{\begin{array}{ll}{1} & {, \quad \vec{k}=\vec{k}^{\prime}} \\ {0} & {, \quad \text { sonst. }}\end{array}\right.
+        \end{equation}
+        Completeness:
+        %公式 2104
+        \begin{equation}
+        \begin{aligned} \sum_{\vec{k}} \Psi_{\vec{k}}^{*}\left(\vec{r}^{\prime}\right) \Psi_{\vec{k}}(\vec{r}) &=\frac{1}{L^{d}} \sum_{\vec{n}} e^{2 \pi i \vec{n} \cdot\left(\vec{r}-\vec{r}^{\prime}\right) / L} \\ & \downarrow \quad \text { Poisson-Gleichung } \\ &=\sum_{\vec{m}} \delta^{d}\left(\vec{r}-\vec{r}^{\prime}+\vec{m} L\right) \\ & \downarrow d^{d} n \cong\left(\frac{L}{2 \pi}\right)^{d} d^{d} k \\ & \stackrel{L}{\approx} \frac{1}{(2 \pi)^{d}} \int d^{d} k e^{i \vec{k} \cdot\left(\vec{r}-\vec{r}^{\prime}\right)}=\delta^{d}\left(\vec{r}-\vec{r}^{\prime}\right) \end{aligned}
+        \end{equation}
+    \item[-] Instead of box normalization, we can also normalize to a $\delta$-function; with the wave functions $\Psi_{\vec{k}}$,
+    %公式 2105
+    \begin{equation}
+        \Psi_{\vec{k}}(\vec{r})=\frac{1}{(2 \pi)^{d / 2}} e^{i \vec{k} \cdot \vec{r}}, \quad \vec{k} \in \mathbb{R}^{d}
+        \end{equation}
+    we have the orthonormation
+    %公式 2106
+    \begin{equation}
+        \int d^{d} r \Psi_{\frac{*}{k^{\prime}}}^{*}(\vec{r}) \Psi_{\vec{k}}(\vec{r})=\frac{1}{(2 \pi)^{d}} \int d^{d} r e^{i\left(\vec{k}-\vec{k}^{\prime}\right) \cdot \vec{r}}=\delta^{d}\left(\vec{k}-\vec{k}^{\prime}\right)
+        \end{equation}
+    and the completeness
+    %公式 2107
+    \begin{equation}
+        \int d^{d} k \Psi_{\vec{k}}^{*}\left(\vec{r}^{\prime}\right) \Psi_{\vec{k}}(\vec{r})=\frac{1}{(2 \pi)^{d}} \int d^{d} k e^{i \vec{k} \cdot\left(\vec{r}-\vec{r}^{\prime}\right)}=\delta^{d}\left(\vec{r}-\vec{r}^{\prime}\right)
+        \end{equation}
+\end{itemize}
+%Page 73
+
+
+\section{Rules for delta functions}
+$\delta$-functions are treated in the sense of distributions, so they work on test functions $t(x)$,
+%公式 2108
+\begin{equation}
+    U_{\delta}(t)=\int_{-\infty}^{\infty} d x \delta(x) t(x) \equiv t(0)
+    \end{equation}
+%page 74
+for all test functions $t(x)$. One can represent the $\delta$-function by boundary processes,
+%公式 2109
+\begin{equation}
+\begin{aligned} \delta(x) &=\lim _{\gamma \rightarrow \infty} \frac{\sin \gamma x}{\pi x}=\lim _{\gamma \rightarrow \infty} \frac{\sin ^{2} \gamma x}{\pi \gamma x^{2}} \\ &=\lim _{\varepsilon \rightarrow 0} \frac{\varepsilon / \pi}{x^{2}+\varepsilon^{2}} \\ &=\lim _{\sigma \rightarrow \infty} \frac{e^{-x^{2} / 2 \sigma}}{\sqrt{2 \pi \sigma}} \\ &=\lim _{a \rightarrow 0} \chi_{a}(x), \quad \chi=\left\{\begin{array}{cc}{1 / a} & {, \quad|x| \leq a / 2} \\ {0} & {, \quad \text { sonst. }}\end{array}\right.\end{aligned}
+\end{equation}
+Properties of the $\delta$-function:
+%公式 2110
+\begin{equation}
+\begin{aligned} \delta(x) &=\delta(-x) \\ \delta^{\prime}(x) &=-\delta^{\prime}(-x) \\ x \delta(x) &=0 \\ x \delta^{\prime}(x) &=-\delta(x) \\ \delta(a x) &=\frac{1}{|a|} \delta(x) \\ \delta\left(x^{2}-a^{2}\right) &=\frac{1}{|2 a|}[\delta(x-a)+\delta(x+a)] \\ \int d x \delta(x-a) \delta(x-b) &=\delta(a-b) \\ f(x) \delta(x-a) &=f(a) \delta(x-a) \end{aligned}
+\end{equation}
+These relationships are to be proved by multiplication with a test function $t (x)$ and integration over $x$.\\\\
+Also useful is the Heaviside-function $\Theta(x)$,
+%公式 2111
+\begin{equation}
+\Theta(x)=\left\{\begin{array}{ll}{0,} & {x<0} \\ {\frac{1}{2},} & {x=0} \\ {1,} & {x>0}\end{array}\right.
+\end{equation}
+%公式 2112
+\begin{equation}
+    \delta(x)=\Theta^{\prime}(x)
+    \end{equation}
+Notice too
+%公式 2113
+\begin{equation}
+    \chi_{a}(x)=\frac{1}{a}[\Theta(x+a / 2)-\Theta(x-a / 2)]
+    \end{equation}
+%Page75
+with $\Theta$ given by (2.111), the characteristic function on $[-a / 2, a / 2]$.

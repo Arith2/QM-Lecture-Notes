@@ -1,0 +1,243 @@
+Kapitel 5
+Zentralpotential
+Im Folgenden untersuchen wir station¨are Zust¨ande im Zentralpotential V (~r ) = V (r), d.h., in Problemen mit rotationssymmetrischen Potentialen.
+Der Hamilton-Operator ist
+公式5.1
+und wir untersuchen das Eigenwertproblem
+公式5.2
+Es ist V = V (r) aber Ψ = Ψ(~r ), das heisst, die Wellenfunktion Ψ hat auch Struktur in den Winkelkoordinaten. Die Rotationssymmetrie [H, U~ω] = 0, U~ω ∈ SO(3), erlaubt uns H, L2 und Lz gleichzeitig zu diagonalisieren und vereinfacht dadurch die L¨osung des Problems. Die Situation ist ¨ahnlich der in der Mechanik: jeder Symmetrie entspricht eine erhaltene Gr¨osse, im vorliegenden Problem ist dies die Invarianz unter Translationen in der Zeit und unter Drehungen; die zugeh¨origen Erhaltungsgr¨ossen sind die Energie E und der Drehimpuls L~ . Diese Erhaltungss¨atze sind ¨ausserst hilfreich in der L¨osung des mechanischen Problems. Die gleichen Symmetrien in der Quantenmechanik geben uns eine scharfe (erhaltene) Energie und einen erhaltenen Drehimpuls da [H,L~ ] = 0 ist. Ein Unterschied tritt allerdings aufgrund der Nichtkommutierbarkeit der drei Drehimpulskomponenten auf; obwohl wir L~ in einer beliebigen Richtung (wir nennen sie die z-Richtung) festlegen k¨onnen folgt wegen [Li , Lj ] = i~εijkLk 6= 0 dass wir nicht alle drei Komponenten gleichzeitig festlegen k¨onnen. Den vier erhaltenen Gr¨ossen in der Mechanik entsprechen also nur drei Quantenzahlen E (zum Hamiltonian H, l (zum Drehimpuls L2),und m (zur Drehimpulskomponente Lz) in der Quantenmechanik. Technisch wird die L¨osung des Problems vereinfacht indem wir nur station¨are L¨osungen der Schr¨odingergleichung finden mussen und indem das Winkelproblem durch Ausreduktion der Drehgruppe im Hilbertraum bereits gel¨ost worden ist. Das verbleibende Radialproblem k¨onnen wir in jedem Sektor zu fixem l l¨osen.
+Wir gehen zu Kugelkoordinaten uber so dass wir die Rotationssymmetrie direkt ausnutzen konnen.
+
+5.1 Eigenwertproblem in Kugelkoordinaten
+Es ist
+公式5.3
+Klassisch ist L.。 zum Beweis rechne man direkt nach oder man benutze den lim ~ → 0 von (5.3). Es ist
+公式
+und
+公式5.4
+die Projektion von ~p auf ~r. Mit (5.3) erhalten wir die kinetische Energie (oder den Laplaceoperator ∆) in Kugelkoordinaten,
+公式5.5
+pr ist asymptotisch die Radialkomponente des Impulses und hat die Formen
+公式5.6
+Der Operator p lasst sich dann folgendermassen schreiben,
+公式5.7
+Es ist [r, pr] = i~, d.h., pr ist kanonisch konjugiert zu r. Das Eigenwertproblem nimmt in Kugelkoordinaten folgende Form an,
+公式5.8
+Die Winkelkoordinaten stecken in L2, siehe (4.40) und fur den Laplace Operator ∆ ergibt sich
+公式5.9
+Da wir aber das Winkelproblem L Yl,m bereits gel¨ost haben, ist es nicht sinnvoll zu (5.9) uberzugehen. Der Rotationssymmetrie ¨ V = V (r) wegen separieren die Winkel- und Radial- Koordinaten
+公式
+und wir konnen sofort zum Radialproblem ubergehen, 
+公式5.10
+Um die Form einer dim = 1 Schr¨odinger-Gleichung zu erhalten schreiben wir die Radialfunktion R(r) in der Form
+公式5.11
+und erhalten die Gleichung
+公式5.12
+Nur fur ¨ l = 0, Drehimpuls Null, ist Veff(r) = V (r). Ansonsten wirkt zus¨atzlich zu V (r) das abstossende Potential Vl(r) = 1)/2m r2 auf das Teilchen, die wohlbekannte Zentrifugalbarriere, vergleiche Abb. 5.1. Wir werden sehen, dass wegen dieses Terms Ψ(r) ∝ r l fur ¨ r → 0 und das Teilchen von der Umgebung r = 0 verdr¨angt wird. Die Gleichung (5.12)
+图5.1
+entspricht einem dim = 1 Schr¨odinger-Problem mit V (x < 0) = ∞, V (x > 0) = V (x = r); fur ein attraktives Potential ist die typische Situation in Abbildung 5.2 skizziert. Umgekehrt erhalten wir durch die symmetrische Erweiterung V (x < 0) = V (|x| = r) ein typisches dim = 1 Problem. In dim = 1 bindet jedes attraktive Potential (mit V (|x| → ∞) → 0, V (0) < 0) mindestens einen (in x geraden, V (x) = V (|x|) ist invariant unter x → −x) Zustand. Betrachte nun das dim = 3, l = 0 Problem. Dann muss u(0) = 0 sein, und somit u ungerade. Daraus folgt, dass das attraktive Potential in dim = 3 eine Mindestst¨arke aufweisen muss, damit es einen Zustand binden kann, vgl. die Diskussion im Abschnitt 3.3 (Teilchen im Topf). 
+
+Eine dimensionelle Absch¨atzung gibt die Bedingung V0 > ~ 2/2m r20 fur einen gebundenen Zustand im l = 0-Sektor. Fur ¨ l > 0 wirkt zus¨atzlich die Zentrifugalbarriere der Bildung von gebundenen Zust¨anden entgegen. Als nachstes untersuchen wir das Verhalten von u(r) und damit der Wellenfunktion Ψ(~r ) in den Grenzf¨allen r → 0 und r → ∞.
+图5.2
+Grenzfall r → 0 Fur ¨ V (r) ∝ 1/r2−ε , ε > 0, sind die fuhrenden Terme ( ¨ l > 0) der Differentialgleichung (5.12) gegeben durch
+公式5.13
+Damit ergeben sich folgende L¨osungen fur ¨ u(r),
+公式5.14
+Fur ¨ l = 0 muss u bei r = 0 verschwinden (Beweis ad absurdum): Sei u(0) = u0 6= 0, dann ist Ψ(~r ) ∝ u0/r bei 0 und ∇2 erzeugt eine δ-Funktion bei 0 (die Funktion 1/r ist gerade die Greensche Funktion zum Laplace Problem, ∇2 (1/r) = −4πδ(~r ), zu uberpr ¨ ufen mit Hilfe des Satzes von Gauss). Diese δ-Funktion bleibt in der Schr¨odinger-Gleichung unkompensiert und folglich muss u0 = 0 sein.
+Grenzfall r → ∞
+Wir nehmen an, dass V (r → ∞) → 0 mindestens wie 1/r; die uberlebenden Terme sind dann
+公式5.15
+und fur gebundene Zustande (mit E < 0) finden wir die Asymptotik
+公式5.16
+Fuchsscher Ansatz 
+Nach Separation der Asymptotik fur ¨ r → 0 und r → ∞ l¨osen wir das verbleibende Problem mit einem Fuchsschen Ansatz,
+
+公式5.17
+Fur ¨ V (r) ∝ −1/r2+ε, ε > 0, sturzt das Teilchen in die Singularit ¨ ¨at bei 0, siehe Landau Lifschitz; der Fall ε = 0 ist marginal (Vorfaktor V0 von V (r) ∼ V0/r2 ist relevant (check)). Im Folgenden untersuchen wir im Detail zwei Beispiele, den 3D-Topf und das attraktive Coulombpotential. Wir konzentrieren uns haupts¨achlich auf gebundene Zust¨ande, E < 0. Die Streuzust¨ande mit positiven Energien E > 0 werden wir sp¨ater behandeln.
+5.2 Das Teilchen im 3D-Topf
+Wir definieren wie ublich ¨ E < 0, k = L¨osungsans¨atze unterscheiden sich fur ¨ l = 0 und l > 0, deshalb werden wir die beiden F¨alle getrennt behandeln.
+图5.3
+5.2.1 Fur¨ l = 0
+erhalten wir die Differentialgleichung
+公式5.18
+mit der L¨osung
+公式5.19
+Die L¨osung (5.19) muss die Randbedingungen bei r = 0, u0(0) = 0 ⇒ A + B = 0, und bei r0 erfullen,
+公式5.20
+Wir erhalten eine zu (3.29) ¨aquivalente implizite Gleichung fur ¨ E,
+公式5.21
+Wir finden gebundene Zust¨ande sofern V0 > ~ ist, wobei man beachte, dass r0 ↔ w/2.
+
+5.2.2 Fur¨ l > 0
+definieren wir ρ = kr und erhalten fur ¨ r < r0 die Differentialgleichung
+公式5.22
+Diese Gleichung gilt auch fur ¨ r > r0 wenn wir die Variable ρ umdefinieren zu ρ ≡ iαr. Die L¨osungen von (5.22) sind die sph¨arischen Bessel- und Neumann- Funktionen,
+公式5.23
+
+公式5.24
+Dabei sind die Besselfunktionen Jn die L¨osungen der Differentialgleichung
+公式5.25
+Beachte, dass (5.22) unter l + symmetrisch ist, und damit die Neumann-L¨osungen in die Bessel-L¨osungen ubergehen. Beispiele f ¨ ur die sph¨arischen Bessel- und Neumann- Funktionen sind (siehe auch Abb. 5.4 und 5.5)
+
+公式5.26
+图5.4，5.5
+
+Die sph¨arischen Besselfunktionen zeigen folgendes Verhalten fur kleine (Reihenentwicklung fur ¨ ρ → 0) und grosse (Asymptotik fur ¨ ρ → ∞) Argumente:
+公式5.27
+Fur die sph ¨ ¨arischen Besselfunktionen zl = jl, nl gelten die Rekursionsformeln (l > 0)
+公式5.28
+Fur ¨ ρ → 0 ist nl immer singul¨ar und entf¨allt damit als L¨osung; Rl l¨asst sich dann darstellen als
+公式5.29
+Im Aussenraum r ≥ r0 w¨ahlen wir die Kombinationen
+公式5.30
+die Hankelfunktionen mit dem asymptotischen Verhalten
+公式5.31
+Mit ρ = i αr erhalten wir fur ¨ Rl(r ≥ r0) ausserhalb von r0 eine exponentiell zerfallende Funktion,
+公式5.32
+die Komponente h ∝ exp[−ikr] wurde eine einfallende Welle, (iαr) ∝ exp[αr] eine nicht normierbare L¨osung beschreiben. Die Energieniveaus erhalten wir wieder aus den Randbedingungen bei r = r0: mit ξ = kr0 und η = αr0, ~k = und ~α = finden wir die Relationen
+公式5.33
+Die Randbedingungen
+公式5.34
+ergeben die impliziten transzendenten Gleichungen fur ¨ ξ und η welche auf die Energien E fuhren, 
+公式5.35
+Fur jeden Drehimpulssektor ¨ l ergibt sich also eine neue transzendente Gleichung η(ξ). In jeder Gleichung erscheint eine cot ξ Funktion mit unendlich vielen Asten. Wir nummerieren diese mit ¨ n, wobei die neuen Aste jeweils bei ξ = (n+ 1/2)π in Erscheinung treten. Diese Aste definieren die Quantenzahl n im Drehimpulssektor l, somit h¨angen die Eigenwerte von 2 Quantenzahlen ab, Enl. Die Niveaus sind in m entartet, da die magnetische Quantenzahl m in der Differentialgleichung nicht in Erscheinumg tritt, zu jedem l aber (2l + 1) Funktionen Ylm auftreten, weshalb jeder Eigenwert Enl gerade (2l + 1)-fach entartet ist. Dies ist die normale Entartung in einem SO3 invarianten System. Das Wasserstoffatom wird sich als Spezialfall herausstellen, mit Niveaus die nur von n abh¨angen, En ∝ −1/n2 und einer h¨oheren Entartung ∝ n2. Der tiefere Grund fur diese h ¨ ¨ohere Entartung ist die gr¨ossere Symmetrie im Wasserstoffproblem, SO4 statt SO3.
+
+Neue gebundene Zust¨ande erscheinen im l = 0 Sektor wenn cot ξ → 0 geht, also ξ den Wert nπ + π/2 durchschreitet; der erste gebundene Zustand (bei E = 0−) erscheint bei η = 0 und ξ = π/2, also V0 = ~. Fur ¨ l = 1 erscheinen neue Zust¨ande wenn cot ξ von +∞ her endlich wird, also bei ξ = nπ, wobei n = 0 keine L¨osung erzeugt; der erste gebundene Zustand (bei E = 0 −) erscheint dann fur ¨ η → 0, ξ → π wenn V0 = ~ 2π ist, vergleiche mit l = 0 wo der erste Zustand bei V0 = ~2π erscheint; die repulsive Zentrifugalkraft wirkt der Bildung gebundender Zust¨ande entgegen.
+
+5.3 Wasserstoff Atom
+5.3.1 2-K¨orper Probleme
+Wir wiederholen zuerst das klassische Problem: Sei der Hamiltonian fur zwei wechselwirkende (Potential V (r = |~r |)) massive (Massen m1,2) Teilchen gegeben,
+公式5.36
+Wir gehen zu Schwerpunkts- und Relativ- Koordinaten R~ und ~r uber, (1 )
+公式5.37
+ebenso fur die (konjugierten) Impulse
+公式5.38
+Wir definieren die reduzierte und die totale Masse
+公式5.39
+Wir quantisieren mit Hilfe der Kommutationsbeziehungen: Aus [xνi, pµj ] = i~ δijδνµ fur ¨ ν, µ ∈ {1, 2}; i, j ∈ {1, 2, 3} folgen die Vertauschungsrelationen fur ¨ ~r und ~p und R~ und P~ ,
+公式5.40
+und wir erhalten folgende Darstellungen fur ¨ ~p und P~ ,
+公式5.41
+Der Hamiltonoperator in Relativ- und Schwerpunkts- Koordinaten hat die Form
+公式5.42
+und erlaubt die Separation von Schwerpunkts- und Relativbewegung durch den Ansatz
+公式5.43
+mit dem verbleibenden Relativproblem
+公式5.44
+Die totale Energie ist dann die Kombination E + ~2K2/2M
+
+5.3.2 Coulomb-Potential, H-Atom
+Wir l¨osen das Relativproblem
+公式5.45
+mit dem Coulombpotential V (r) = −Z e2/r. Nach der Abseparation der Winkelkoordinaten [ψ(~r ) = ψ(r, θ, ϕ) = Yl,m(θ, ϕ)Rαl(r)] und unter Nutzung des Ansatzes Rαl = uαl/r erhalten wir das Radialproblem
+公式5.46
+Dabei haben wir die L¨angenskala
+公式5.47
+eingefuhrt ( ¨ ρ = Zr/aB; wir approximieren m ≈ me da M  me fur das Wasserstoffproblem) und die Energie E umgeschrieben gem¨ass der Skalierung
+公式5.48
+aB heisst Bohrscher Radius, ER ist die Rydbergenergie; sie sind die relevanten L¨angen- und Energieskalen im Problem. Nach der ublichen Abspaltung der Asymptotik (fur ¨ ρ → 0, ∞) benutzen wir den Fuchsschen Ansatz (siehe(5.13) und (5.16))
+公式5.49
+und erhalten die Differentialgleichung
+公式5.50
+Der Koeffizientenvergleich in den Potenzen ρνergibt die Rekursion
+
+公式5.51
+表5.1
+Der Koeffizient a0 wird durch die Normierung festgelegt. Da aν+1/aν ∼ 2α/ν, ν → ∞, muss die Reihe abbrechen und wir erhalten das Spektrum
+公式5.52
+Die Eigenwerte
+公式5.53
+treten mit den Entartungsgraden Dn
+公式5.54
+auf. Die Quantenzahlen n, l, m heissen Haupt-Quantenzahl n, Neben- oder Bahndrehimpuls- Quantenzahl l, und magnetische Quantenzahl m. Die zus¨atzliche Entartung in l ist eine Konsequenz der dynamischen Symmetrie im Coulombpotential. Wird der Spin berucksichtigt, (siehe sp ¨ ¨ater) verdoppelt sich die Entartung, Dn = 2n2. Die Uberg ¨ ¨ange zwischen den Niveaus involvieren ∆l = 1 (siehe sp¨ater) und geh¨oren zu einer der Sequenzen in der Tabelle 5.1; siehe auch Abbildung 5.6 fur eine graphische Darstellung der involvierten Zust¨ande.
+
+5.3.3 Radiale Wellenfunktionen
+Die radialen Wellenfunktionen des Coulomb-Potentials ergeben sich aus der Differentialgleichung (5.50), die wir via den Manipulationen
+公式5.55
+表5.6
+公式5.56
+
+公式5.57
+in die folgende Form bringen (n = 1/α)
+公式5.58
+Der Vergleich mit der Differentialgleichung
+公式5.59
+mit den L¨osungen (konfluente hypergeometrische Funktionen)
+公式5.60
+liefert uns die Radialfunktionen in der Form
+公式5.61
+mit z = 2αρ = 2Z r/n aB = 2κr, κ = Z/aBn die effektive Wellenzahl. Die Randbedingung (bei r → ∞) verlangt, dass n−l−1 = ν ≥ 0 eine ganze Zahl ist, woraus sich das Spektrum E = −~ ergibt. Die konfluente hypergeometrische Funktion mit ganzzahligen Parametern ist (bis auf einen Faktor) identisch mit dem zugeordneten Laguerre Polynom(2)
+公式5.62
+
+公式5.63
+
+公式5.64
+
+公式5.65
+
+公式5.66
+
+公式5.67
+
+公式5.68
+und die Identifikation p = n+l, k = 2l+ 1 gibt uns folgende Schlussresultate fur das verallgemeinerte Wasserstoffatom,
+公式5.69
+
+公式5.70
+Dabei ist die Radialfunktion auf 1 normiert,
+公式5.71
+
+womit sich via dem Integral
+公式5.72
+die Normierungskonstante Nnl ergibt. Explizite Beispiele fur Radialfunktionen mit n ≤ 3 sind (vgl. auch Abb. 5.7)
+
+公式5.73
+Mit zunehmender Hauptquantenzahl n verschieben sich die Bahnradien hrinl nach aussen
+公式5.74
+
+und die Schwankungen ∆r = [hr wachsen gem¨as
+公式5.75
+wobei wir benutzt haben, das
+公式5.76
+
+Wir betrachten abschliessend die Charakteristika zweier besonders einfacher F¨alle, l = n − 1 und l = 0. Fur ¨ l = n − 1 hat die Radialfunktion Rn,n−1 keine Nullstellen und ihre Charakteristika sin
+公式5.77
+图5.7
+Fur ¨ l = 0 hat Rn0 die maximale Anzahl von n − 1 Nullstellen und ihre Charakteristika sind
+
+公式5.78
+5.3.4 Dynamische Symmetrie
+Der dynamischen Symmetrie liegt eine besondere Form des Kraftgesetzes (des Potentiales) zugrunde, hier V (r) ∝ 1/r. Ein Potential 1/r1+ε, ε 6= 0 hat zwar die geometrische Rotationssymmetrie, nicht aber eine zus¨atzliche dynamische Symmetrie. Im Fall des H-Atoms hat die dynamische Symmetrie ein klassisches Analogon, den (erhaltenen) Lenzvektor. Dies ist nicht immer der Fall: Eine quantenmechanisch dynamische Symmetrie muss nicht unbedingt ein klassisches Analogon haben. Wir untersuchen das Keplerproblem H = p 2/2µ − κ/r, wobei µ die reduzierte Masse bezeichnet und κ fur das verallgemeinerte Wasserstoffatom zu κ = Ze2 gew¨ahlt wird. Klassische Bahnen sind geschlossene Ellipsen (vgl. Abb. 5.8) mit Halbachsen a und b und Exzentrizit¨at e = (1 − b. Erhaltungsgr¨ossen sind die Energie E = −κ/2a und der Drehimpuls L~ ; die Richtung Lˆ legt die Bahnebene fest, der Betrag L bestimmt die Exzentrizit¨at via L2 = µκa(1 − e2). Die Bahn ist somit durch die Erhaltungsgr¨ossen E und L~ festgelegt. Zus¨atzlich zu H und L~ ist auch der Lenz-Runge Vektor M~ erhalten,
+
+公式5.79
+M~ = const. impliziert die Absenz der Periheldrehung, eine Besonderheit des 1/r-Potentials.
+图5.8
+Fur ¨ V ∝ 1/r1+ε resultiert eine Periheldrehung; ein beruhmtes Beispiel sind die Korrekturen zum Kepler Problem infolge der Allgemeinen Relativit¨ats Theorie (ART); die Periheldrehung des Merkurs war eine der ersten experimentellen Best¨atigungen der ART. Auch der isotrope harmonische Oszillator mit r 2 Potential besitzt eine dynamische Symmetrie: Im isotropen harmonischen Oszillator ist die erhaltene Gr¨osse nicht ein Vektor sondern ein Quadrupol, denn Zentrum der Anziehung ist nicht ein Brennpunkt sondern das Zentrum der Ellipsenbahn.
+In der Quantenmechanik definieren wir den Pauli-Lenz Vektor
+公式5.80
+Es gilt immer noch M~ · L~ = 0 = L~ · M~ sowie
+公式5.81
+mit dem zus¨atzlichen Term ∝ ~2. M~ ist ein Vektor, somit gelten die Vertauschungsbeziehungen
+公式5.82
+Die Vertauschung der Komponenten Mi untereinander ergibt
+公式5.83
+Wir definieren K~ = p−µ/2HM~ und schr¨anken M~ auf Eig E<0H ein,K~ = p µ/2|E| M~ ; fur ¨ E < 0 ist K~ ein hermitescher Operator. Die sechs Operatoren {K, ~ L~ } erfullen die Kommutationsbeziehungen
+公式5.84
+Erweitern wir die Variablen xi, pi, i ∈ {1, 2, 3}, um x4, p4, indem wir verlangen dass
+公式5.85
+so bilden die Lij , i ∈ {1, 2, 3, 4} gerade die Lie-Algebra von O(4). Wir finden, dass die Symmetriegruppe von H nicht SO(3) sondern die gr¨ossere Gruppe SO(4) ist. Fur ¨ E > 0 erhalten wir anstelle von SO(4) die Poincare- (oder Lorentz-) gruppe uber ¨ M4 = (t, ~r ), dem Minkowski-Raum. Schliesslich berechnen wir noch das Spektrum zu H: Unter Benutzung von (5.81) k¨onnen wir H schreiben als
+公式5.86
+Die beiden Vektoroperatoren
+公式5.87
+definieren gerade die zwei Casimiroperatoren(3 Der Casimir Operator ist eine bilineare Kombination der Erzeugenden einer LieAlgebra, welche mit diesen Erzeugenden kommutiert. Die Anzahl unabh¨angiger Casimir Operatoren ist gleich dem Rang der Gruppe, d.h., der maximalen Anzahl kommutierender Erzeugender. Als Beispiel betrachte man die Gruppe SO(3) mit [Li, Lj ] = i~εijkLk. Ihr Rang ist 1, der Casimiroperator ist L2. Ein anderes Beispiel ist SO(4), wobei {Si, Dj} fur ein i und ein j ein maximal kommutierendes Set bilden. Der Rang ist 2, die Casimiroperatoren sind D2 und S2.) S2 und D2 zu SO(4):
+公式5.88
+D~ und S~ definieren je eine SO(3) oder SU(2) Algebra. Erlaubte Eigenwerte sind
+公式5.89
+Da weder S~ noch D~ Bahndrehimpulse sind, sind halbzahlige Werte fur ¨ d und s erlaubt. Es ist
+公式5.90
+Da K~ · L~ = 0 ist, gilt (S~ − D~ )·(S~ + D~ ) = S2 − D2 = 0, somit muss d = s sein und wir erhalten die Energieeigenwerte
+
+公式5.91
+mit n = (2s + 1) ganz; die Dimension der Energieeigenr¨aume ist dim Eig EnH = (2s + 1)(2d + 1) = n2.
+
+
