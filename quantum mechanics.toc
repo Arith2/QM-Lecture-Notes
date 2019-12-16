@@ -1,2 +1,134 @@
-\contentsline {chapter}{\numberline {8}App. methods: variational approach}{3}
-\contentsline {section}{\numberline {8.1}Basic state of the He-atom}{5}
+\contentsline {chapter}{\numberline {0}Introduction}{19}
+\contentsline {section}{\numberline {0.1}1900 Planck's law of radiation}{20}
+\contentsline {section}{\numberline {0.2}1905 Photoelectric effect(Einstein)}{22}
+\contentsline {section}{\numberline {0.3}1907 Special Warmth of the Festival (Einstein)}{23}
+\contentsline {section}{\numberline {0.4}1913 Bohr quantization of the atom}{23}
+\contentsline {section}{\numberline {0.5}1914 Franck-Hertz experiment}{24}
+\contentsline {section}{\numberline {0.6}1922 Stern-Gerlach experiment}{24}
+\contentsline {section}{\numberline {0.7}1923/25 Compton Effect (Compton and Debye)}{25}
+\contentsline {section}{\numberline {0.8}1923 de Broglie hypothesis}{27}
+\contentsline {section}{\numberline {0.9}1923 Bohr's correspondence principle}{27}
+\contentsline {section}{\numberline {0.10}1925 Matrix Mechanics (Heisenberg)}{29}
+\contentsline {section}{\numberline {0.11}1926 Wave mechanics (Schrodinger)}{29}
+\contentsline {section}{\numberline {0.12}1927 Davisson and Germer experiment}{29}
+\contentsline {section}{\numberline {0.13}1913-1927 Bohr-Sommerfeld Quantization and `old' quantum mechanics}{30}
+\contentsline {section}{\numberline {0.14}1927 Heisenbergsche Unsch arferelation}{31}
+\contentsline {chapter}{\numberline {1}Wave mechanics}{33}
+\contentsline {section}{\numberline {1.1}Double-slit experiment}{33}
+\contentsline {section}{\numberline {1.2}Path Integrals}{39}
+\contentsline {subsection}{\numberline {1.2.1}Classical mechanics}{40}
+\contentsline {subsection}{\numberline {1.2.2}Quantum Mechanics}{41}
+\contentsline {subsection}{\numberline {1.2.3}Product rule}{48}
+\contentsline {subsection}{\numberline {1.2.4}Wave function}{48}
+\contentsline {section}{\numberline {1.3}Generalizations}{49}
+\contentsline {subsection}{\numberline {1.3.1}Particles in the potential $V (x)$}{49}
+\contentsline {section}{\numberline {1.4}Schrodinger equation}{52}
+\contentsline {section}{\numberline {1.5}Superposition principle}{55}
+\contentsline {section}{\numberline {1.6}Free and bound particle}{56}
+\contentsline {subsection}{\numberline {1.6.1}Free particles}{56}
+\contentsline {subsection}{\numberline {1.6.2}Particles in the 1D deep potential well}{57}
+\contentsline {section}{\numberline {1.7}Gaussian Wave Packages}{59}
+\contentsline {section}{\numberline {1.8}Location and momentum representation}{61}
+\contentsline {chapter}{\numberline {2}Formalism of quantum mechanics}{64}
+\contentsline {section}{\numberline {2.1}Hilbert space}{64}
+\contentsline {subsection}{\numberline {2.1.1}Scalar Product}{65}
+\contentsline {section}{\numberline {2.2}vectors/states}{65}
+\contentsline {subsection}{\numberline {2.2.1}Orthonormation and completeness}{66}
+\contentsline {subsection}{\numberline {2.2.2}Schmidt's orthogonalization method}{66}
+\contentsline {section}{\numberline {2.3}operators}{67}
+\contentsline {subsection}{\numberline {2.3.1}Example: Pulse operator}{67}
+\contentsline {subsection}{\numberline {2.3.2}General Definitions \& Properties}{67}
+\contentsline {subsection}{\numberline {2.3.3}commutator}{68}
+\contentsline {subsection}{\numberline {2.3.4}Useful identities}{68}
+\contentsline {subsection}{\numberline {2.3.5}Expected values}{69}
+\contentsline {subsection}{\numberline {2.3.6}Component decomposition of $A\psi $}{69}
+\contentsline {subsection}{\numberline {2.3.7}operators with discrete spectrum}{69}
+\contentsline {subsection}{\numberline {2.3.8}Operators with continuous spectra}{70}
+\contentsline {subsection}{\numberline {2.3.9}Matrix representation of an operator}{71}
+\contentsline {section}{\numberline {2.4}Observable and correspondence principle}{71}
+\contentsline {subsection}{\numberline {2.4.1}Honorary Theorem}{72}
+\contentsline {subsection}{\numberline {2.4.2}Probabilistic densities and continuity equation}{73}
+\contentsline {subsection}{\numberline {2.4.3}Stationary states and evolution}{74}
+\contentsline {section}{\numberline {2.5}measuring process}{75}
+\contentsline {subsection}{\numberline {2.5.1}Several sharp measurements}{78}
+\contentsline {section}{\numberline {2.6}Basic Transformations}{79}
+\contentsline {section}{\numberline {2.7}Dirac Notation}{81}
+\contentsline {section}{\numberline {2.8}Ten rules of quantum mechanics}{84}
+\contentsline {section}{\numberline {2.9}Normalization and $\delta $-function}{85}
+\contentsline {section}{\numberline {2.10}Rules for delta functions}{87}
+\contentsline {chapter}{\numberline {3}Quantum mechanics in one Dimension}{89}
+\contentsline {section}{\numberline {3.1}Transfermatrix formalism}{90}
+\contentsline {section}{\numberline {3.2}Scatter Matrix}{92}
+\contentsline {section}{\numberline {3.3}particles in the pot}{95}
+\contentsline {subsection}{\numberline {3.3.1}Parity}{97}
+\contentsline {section}{\numberline {3.4}Tunnel effect}{99}
+\contentsline {section}{\numberline {3.5}$\delta $-potential}{101}
+\contentsline {subsection}{\numberline {3.5.1}$V_0 <0$, bound state}{104}
+\contentsline {subsection}{\numberline {3.5.2}$V_0> 0$, scattering condition}{104}
+\contentsline {section}{\numberline {3.6}Resonances}{104}
+\contentsline {subsection}{\numberline {3.6.1}Poles of $t$, Zeros $t^{-1} = 0$}{107}
+\contentsline {subsection}{\numberline {3.6.2}Resonances in $t, t \approx 1$}{108}
+\contentsline {section}{\numberline {3.7}Periodic potentials}{110}
+\contentsline {section}{\numberline {3.8}Unordered $\text {potentials}^*$}{114}
+\contentsline {subsection}{\numberline {3.8.1}Comparison $V (x)$ periodic $\leftrightarrow V (x)$ disordered}{117}
+\contentsline {section}{\numberline {3.9}Harmonic oscillator}{118}
+\contentsline {subsection}{\numberline {3.9.1}Elegant solution}{120}
+\contentsline {subsection}{\numberline {3.9.2}Classic Limes}{123}
+\contentsline {subsection}{\numberline {3.9.3}Coherent States}{124}
+\contentsline {section}{\numberline {3.10}Morse potential}{125}
+\contentsline {section}{\numberline {3.11}H-$\text {Sekans}^2$-Potential}{127}
+\contentsline {section}{\numberline {3.12}Constant force field}{129}
+\contentsline {section}{\numberline {3.13}Charged particle in the electric field}{130}
+\contentsline {section}{\numberline {3.14}gauge transformation}{132}
+\contentsline {chapter}{\numberline {4}Rotation \& angular momentum}{134}
+\contentsline {section}{\numberline {4.1}Translation}{134}
+\contentsline {section}{\numberline {4.2}Rotation}{136}
+\contentsline {section}{\numberline {4.3}Angular momentum}{137}
+\contentsline {section}{\numberline {4.4}Eigenvalues ​​and eigenvectors}{139}
+\contentsline {section}{\numberline {4.5}Location}{141}
+\contentsline {section}{\numberline {4.6}Rotation and tensors}{148}
+\contentsline {chapter}{\numberline {5}Central potential}{152}
+\contentsline {section}{\numberline {5.1}Eigenvalue problem in spherical coordinates}{153}
+\contentsline {section}{\numberline {5.2}The particle in the 3D well}{157}
+\contentsline {subsection}{\numberline {5.2.1}For $l = 0$}{157}
+\contentsline {subsection}{\numberline {5.2.2}For $l=0$}{158}
+\contentsline {section}{\numberline {5.3}Hydrogen atom}{161}
+\contentsline {subsection}{\numberline {5.3.1}2-body problems}{161}
+\contentsline {subsection}{\numberline {5.3.2}Coulomb potential, H atom}{162}
+\contentsline {subsection}{\numberline {5.3.3}Radial wave functions}{164}
+\contentsline {subsection}{\numberline {5.3.4}Dynamic Symmetry}{168}
+\contentsline {chapter}{\numberline {6}Scattering theory}{172}
+\contentsline {section}{\numberline {6.1}Lippmann-Schwinger equation}{173}
+\contentsline {section}{\numberline {6.2}Wave Packages}{177}
+\contentsline {section}{\numberline {6.3}Born approximation}{179}
+\contentsline {section}{\numberline {6.4}Rotationally symmetric potentials $V (r)$}{180}
+\contentsline {subsection}{\numberline {6.4.1}Optical theorem}{185}
+\contentsline {subsection}{\numberline {6.4.2}Born approximation for $\delta _l (k)$}{186}
+\contentsline {subsection}{\numberline {6.4.3}Analyticity of $s_l (E)$}{186}
+\contentsline {subsection}{\numberline {6.4.4}Depth-Energy Scattering, $kr_0\ll 1$}{189}
+\contentsline {subsection}{\numberline {6.4.5}Great energies $kr_0\gg 1$}{192}
+\contentsline {section}{\numberline {6.5}Regge Poles \& Trajectors*}{193}
+\contentsline {section}{\numberline {6.6}Coulomb potential}{196}
+\contentsline {subsection}{\numberline {6.6.1}Coulomb Scattering Problem: Parabolic Coordinates}{197}
+\contentsline {subsection}{\numberline {6.6.2}Coulomb Scattering Problem: Sphere Coordinates}{201}
+\contentsline {chapter}{\numberline {7}Formalism of Quantum Mechanics Part 2}{203}
+\contentsline {section}{\numberline {7.1}Density matrix as a statistical operator}{204}
+\contentsline {section}{\numberline {7.2}Dynamic Pictures: Schr¨odinger - Heisenberg - Dirac}{206}
+\contentsline {subsection}{\numberline {7.2.1}Schr¨odinger image}{206}
+\contentsline {subsection}{\numberline {7.2.2}Heisenberg picture}{210}
+\contentsline {subsection}{\numberline {7.2.3}Dirac or interaction image}{211}
+\contentsline {section}{\numberline {7.3}Time reversal $T$}{212}
+\contentsline {subsection}{\numberline {7.3.1}Mathematical Addition: Schur's Lemma}{216}
+\contentsline {chapter}{\numberline {8}App. methods: variational approach}{217}
+\contentsline {section}{\numberline {8.1}Basic state of the He-atom}{219}
+\contentsline {chapter}{\numberline {9}App. methods: perturbation theory}{222}
+\contentsline {section}{\numberline {9.1}Stationary, non-degenerate case}{222}
+\contentsline {section}{\numberline {9.2}Stationary, degenerate case}{227}
+\contentsline {subsection}{\numberline {9.2.1}Abolition of the degeneracy in the order $s = 1$}{227}
+\contentsline {subsection}{\numberline {9.2.2}Elimination of the degeneration in the second order}{230}
+\contentsline {section}{\numberline {9.3}Stationary, almost degenerate case}{232}
+\contentsline {section}{\numberline {9.4}Rayleigh-Schrodinger vs. Brillouin Wigner}{236}
+\contentsline {section}{\numberline {9.5}Nonstationary perturbation theory}{238}
+\contentsline {subsection}{\numberline {9.5.1}1st order, Fermis Golden Rule}{239}
+\contentsline {subsection}{\numberline {9.5.2}2nd order}{244}
+\contentsline {subsection}{\numberline {9.5.3}decay of a state}{245}

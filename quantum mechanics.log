@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/W32TeX) (preloaded format=xelatex 2019.10.2)  16 DEC 2019 17:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2019.10.2)  16 DEC 2019 18:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -134,9 +134,15 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 ) (c:/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: xetex.def on input line 94.
- (c:/texlive/2015/texmf-dist/tex/xelatex/xetex-def/xetex.def
-File: xetex.def 2015/03/25 v4.04 LaTeX color/graphics driver for XeTeX (TeX Live/RRM/JK)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+ (c:/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+ (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+) (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count102
 ))
 \Gin@req@height=\dimen123
 \Gin@req@width=\dimen124
@@ -144,16 +150,16 @@ File: xetex.def 2015/03/25 v4.04 LaTeX color/graphics driver for XeTeX (TeX Live
 Package: geometry 2010/09/12 v5.6 Page Geometry
  (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 ) (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 ) (c:/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count102
-\Gm@cntv=\count103
-\c@Gm@tempcnt=\count104
+\Gm@cnth=\count103
+\Gm@cntv=\count104
+\c@Gm@tempcnt=\count105
 \Gm@bindingoffset=\dimen125
 \Gm@wd@mp=\dimen126
 \Gm@odd@mp=\dimen127
@@ -165,7 +171,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks20
 ) (c:/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count105
+\c@float@type=\count106
 \float@exts=\toks21
 \float@box=\box29
 \@float@everytoks=\toks22
@@ -196,10 +202,10 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigbottomskip=\skip50
 \subfigcapmargin=\dimen140
 \subfiglabelskip=\skip51
-\c@subfigure=\count106
-\c@lofdepth=\count107
-\c@subtable=\count108
-\c@lotdepth=\count109
+\c@subfigure=\count107
+\c@lofdepth=\count108
+\c@subtable=\count109
+\c@lotdepth=\count110
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -212,8 +218,8 @@ Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
  (c:/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: xetex.def on input line 142.
-) (./quantum mechanics.aux (./8-variational_approach.aux))
+Package color Info: Driver file: pdftex.def on input line 142.
+) (./quantum mechanics.aux (./0-introduction.aux) (./1-wave_mechanics.aux) (./2-formalism.aux) (./3-one_dimension.aux) (./4-rotation.aux) (./5-central_potential.aux) (./6-scattering_theory.aux) (./7-formalism.aux) (./8-variational_approach.aux) (./9-perturbation.aux))
 \openout1 = `"quantum mechanics.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -254,11 +260,56 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
-
+ (c:/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count111
+\scratchdimen=\dimen141
+\scratchbox=\box32
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen142
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks27
+) (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+ (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (c:/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+ (c:/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+ (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+)) (c:/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+ (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+ (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+ (c:/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
 *geometry* driver: auto-detecting
-*geometry* detected driver: xetex
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: xetex
+* driver: pdftex
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -298,53 +349,2968 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-] (./quantum mechanics.toc)
+{c:/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./quantum mechanics.toc [1
+
+] [2] [3]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+ [4] [5]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+)
 \tf@toc=\write3
 \openout3 = `"quantum mechanics.toc"'.
 
- [1
+ [6] (./quantum mechanics.lof [7
 
-] (./quantum mechanics.lof)
+] [8]
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ´ in font cmr12!
+
+Overfull \hbox (3.92433pt too wide) in paragraph at lines 34--34
+ [][] []\OT1/cmr/m/n/14.4 Exactly solv-able prob-lems: (a) har-monic po-ten-tial, (b) the Morse 
+ []
+
+
+Overfull \hbox (1.46432pt too wide) in paragraph at lines 34--34
+ \OT1/cmr/m/n/14.4 po-ten-tial that ap-prox-i-mates a sur-face po-ten-tial, (c) the Cosekans 
+ []
+
+[9]
+Overfull \hbox (3.2243pt too wide) in paragraph at lines 40--40
+ [][] []\OT1/cmr/m/n/14.4 Energy eigen-val-ues and eigen-func-tions for po-ten-tial pots of depth 
+ []
+
+
+Overfull \hbox (1.31683pt too wide) in paragraph at lines 42--42
+ [][] []\OT1/cmr/m/n/14.4 Trajectories of the re-flec-tion and trans-mis-sion am-pli-tudes $\OML/cmm/m/it/14.4 r$ \OT1/cmr/m/n/14.4 (dot- 
+ []
+
+[10]
+Overfull \hbox (6.33296pt too wide) in paragraph at lines 46--46
+ \OT1/cmr/m/n/14.4 o-nances. We de-fine $\OML/cmm/m/it/14.4 k \OT1/cmr/m/n/14.4 = []\OML/cmm/m/it/14.4 =\U/msb/m/n/14.4 ~\OML/cmm/m/it/14.4 ; l \OT1/cmr/m/n/14.4 = []\OML/cmm/m/it/14.4 =\U/msb/m/n/14.4 ~\OML/cmm/m/it/14.4 ; []^^T \OT1/cmr/m/n/14.4 = 
+ []
+
+[11]
+Overfull \hbox (2.27373pt too wide) in paragraph at lines 56--56
+ [][] []\OT1/cmr/m/n/14.4 Sketch of the en-ergy band for a pe-ri-odic po-ten-tial. The quadratic 
+ []
+
+[12] [13]
+Overfull \hbox (2.52045pt too wide) in paragraph at lines 71--71
+ [][] []\OT1/cmr/m/n/14.4 Active trans-la-tion of a (Gaus-sian) wave packet around $\OML/cmm/m/it/14.4 a; \OT1/cmr/m/n/14.4 	(\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 ) \OMS/cmsy/m/n/14.4 ! 
+ []
+
+[14] [15] [16]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Overfull \hbox (3.99345pt too wide) in paragraph at lines 110--110
+ [][] []\OT1/cmr/m/n/14.4 Spectrum of the mas-sive par-ti-cle in the pe-ri-odic po-ten-tial $\OML/cmm/m/it/14.4 V\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 ) = 
+ []
+
+[17]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no â in font cmr10!
+Missing character: There is no ˆ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ± in font cmr12!
+)
 \tf@lof=\write4
 \openout4 = `"quantum mechanics.lof"'.
 
- [2
+ [18]
+\openout2 = `0-introduction.aux'.
+
+ (./0-introduction.tex
+Chapter 0.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 5.
+(c:/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
+ [19
+
+
+] <figure/1.PNG, id=79, 162.00525pt x 128.8815pt>
+File: figure/1.PNG Graphic file (type png)
+ <use figure/1.PNG>
+Package pdftex.def Info: figure/1.PNG used on input line 44.
+(pdftex.def)             Requested size: 162.00484pt x 128.88118pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--51
+
+ []
+
+[20] [21 <./figure/1.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 84--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--96
+
+ []
+
+<figure/2.PNG, id=88, 182.48175pt x 139.11975pt>
+File: figure/2.PNG Graphic file (type png)
+ <use figure/2.PNG>
+Package pdftex.def Info: figure/2.PNG used on input line 107.
+(pdftex.def)             Requested size: 182.4813pt x 139.1194pt.
+ [22]
+Overfull \hbox (17.58719pt too wide) in paragraph at lines 116--119
+\OT1/cmr/m/n/14.4 Thomp-son, 1899). The for-mula $\OML/cmm/m/it/14.4 v \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 R\OT1/cmr/m/n/14.4 (1\OML/cmm/m/it/14.4 =n[] \OMS/cmsy/m/n/14.4 ^^@ \OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 =m[]\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 ; R \OT1/cmr/m/n/14.4 = []\OML/cmm/m/it/14.4 ; m; n$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--124
+
+ []
+
+[23 <./figure/2.PNG>] <figure/3.PNG, id=96, 347.49825pt x 117.13762pt>
+File: figure/3.PNG Graphic file (type png)
+ <use figure/3.PNG>
+Package pdftex.def Info: figure/3.PNG used on input line 135.
+(pdftex.def)             Requested size: 347.49738pt x 117.13733pt.
+ <figure/4.PNG, id=97, 339.669pt x 146.64787pt>
+File: figure/4.PNG Graphic file (type png)
+ <use figure/4.PNG>
+Package pdftex.def Info: figure/4.PNG used on input line 147.
+(pdftex.def)             Requested size: 339.66817pt x 146.6475pt.
+ [24 <./figure/3.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 157--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--166
+
+ []
+
+<figure/5.PNG, id=103, 209.583pt x 112.31963pt>
+File: figure/5.PNG Graphic file (type png)
+ <use figure/5.PNG>
+Package pdftex.def Info: figure/5.PNG used on input line 175.
+(pdftex.def)             Requested size: 209.58247pt x 112.31934pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--183
+
+ []
+
+[25 <./figure/4.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 193--197
+
+ []
+
+[26 <./figure/5.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 212--217
+
+ []
+
+[27] <figure/6.PNG, id=115, 129.78488pt x 183.98738pt>
+File: figure/6.PNG Graphic file (type png)
+ <use figure/6.PNG>
+Package pdftex.def Info: figure/6.PNG used on input line 231.
+(pdftex.def)             Requested size: 129.78455pt x 183.98692pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 229--238
+[]$[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--240
+
+ []
+
+[28 <./figure/6.PNG>] <figure/7.PNG, id=120, 188.20313pt x 142.131pt>
+File: figure/7.PNG Graphic file (type png)
+ <use figure/7.PNG>
+Package pdftex.def Info: figure/7.PNG used on input line 259.
+(pdftex.def)             Requested size: 188.20265pt x 142.13063pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--273
+
+ []
+
+
+Overfull \hbox (4.42146pt too wide) in paragraph at lines 273--273
+ |[]\OT1/cmr/bx/n/17.28 1913-1927 Bohr-Sommerfeld Quan-ti-za-tion and `old'
+ []
+
+[29 <./figure/7.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 282--288
+
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+[30]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--309
+
+ []
+
+<figure/8.PNG, id=129, 189.40762pt x 168.32887pt>
+File: figure/8.PNG Graphic file (type png)
+ <use figure/8.PNG>
+Package pdftex.def Info: figure/8.PNG used on input line 318.
+(pdftex.def)             Requested size: 151.52629pt x 134.66327pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 316--325
+[]$[]$ $[]$
+ []
+
+) [31] [32 <./figure/8.PNG>]
+\openout2 = `1-wave_mechanics.aux'.
+
+ (./1-wave_mechanics.tex
+Chapter 1.
+<figure/1_1.PNG, id=137, 193.32225pt x 112.31963pt>
+File: figure/1_1.PNG Graphic file (type png)
+ <use figure/1_1.PNG>
+Package pdftex.def Info: figure/1_1.PNG used on input line 7.
+(pdftex.def)             Requested size: 193.32178pt x 112.31934pt.
+ <figure/1_2.PNG, id=138, 285.76762pt x 121.6545pt>
+File: figure/1_2.PNG Graphic file (type png)
+ <use figure/1_2.PNG>
+Package pdftex.def Info: figure/1_2.PNG used on input line 19.
+(pdftex.def)             Requested size: 285.7669pt x 121.65419pt.
+ <figure/1_3.PNG, id=139, 239.6955pt x 105.39375pt>
+File: figure/1_3.PNG Graphic file (type png)
+ <use figure/1_3.PNG>
+Package pdftex.def Info: figure/1_3.PNG used on input line 30.
+(pdftex.def)             Requested size: 239.6949pt x 105.39348pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--42
+
+ []
+
+[33
+
+
+
+ <./figure/1_1.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 44--50
+
+ []
+
+[34 <./figure/1_2.PNG> <./figure/1_3.PNG>] <figure/1_4.PNG, id=149, 163.20975pt x 137.01187pt>
+File: figure/1_4.PNG Graphic file (type png)
+ <use figure/1_4.PNG>
+Package pdftex.def Info: figure/1_4.PNG used on input line 58.
+(pdftex.def)             Requested size: 163.20934pt x 137.01154pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--74
+
+ []
+
+[35 <./figure/1_4.PNG>]
+Missing character: There is no ¬ in font cmr10!
+ <figure/1_5.PNG, id=154, 313.47113pt x 152.67038pt>
+File: figure/1_5.PNG Graphic file (type png)
+ <use figure/1_5.PNG>
+Package pdftex.def Info: figure/1_5.PNG used on input line 84.
+(pdftex.def)             Requested size: 313.47035pt x 152.67pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--91
+
+ []
+
+[36] <figure/1_6.PNG, id=159, 157.18726pt x 124.66576pt>
+File: figure/1_6.PNG Graphic file (type png)
+ <use figure/1_6.PNG>
+Package pdftex.def Info: figure/1_6.PNG used on input line 106.
+(pdftex.def)             Requested size: 157.18686pt x 124.66544pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--116
+
+ []
+
+[37 <./figure/1_5.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 118--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--136
+
+ []
+
+[38 <./figure/1_6.PNG>] <figure/1_7.PNG, id=168, 183.084pt x 139.722pt>
+File: figure/1_7.PNG Graphic file (type png)
+ <use figure/1_7.PNG>
+Package pdftex.def Info: figure/1_7.PNG used on input line 148.
+(pdftex.def)             Requested size: 183.08354pt x 139.72165pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--164
+
+ []
+
+<figure/1_8.PNG, id=169, 138.21637pt x 101.78024pt>
+File: figure/1_8.PNG Graphic file (type png)
+ <use figure/1_8.PNG>
+Package pdftex.def Info: figure/1_8.PNG used on input line 184.
+(pdftex.def)             Requested size: 138.21602pt x 101.77997pt.
+ <figure/1_9.PNG, id=170, 134.00063pt x 92.44537pt>
+File: figure/1_9.PNG Graphic file (type png)
+ <use figure/1_9.PNG>
+Package pdftex.def Info: figure/1_9.PNG used on input line 192.
+(pdftex.def)             Requested size: 134.00027pt x 92.44513pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--201
+
+ []
+
+[39 <./figure/1_7.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 203--207
+
+ []
+
+[40 <./figure/1_8.PNG> <./figure/1_9.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 209--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--216
+
+ []
+
+<figure/1_10.PNG, id=180, 290.58563pt x 98.16675pt>
+File: figure/1_10.PNG Graphic file (type png)
+ <use figure/1_10.PNG>
+Package pdftex.def Info: figure/1_10.PNG used on input line 226.
+(pdftex.def)             Requested size: 290.58492pt x 98.1665pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--245
+
+ []
+
+[41 <./figure/1_10.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 249--255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--261
+
+ []
+
+<figure/1_11.PNG, id=186, 157.48837pt x 153.27263pt>
+File: figure/1_11.PNG Graphic file (type png)
+ <use figure/1_11.PNG>
+Package pdftex.def Info: figure/1_11.PNG used on input line 270.
+(pdftex.def)             Requested size: 157.48798pt x 153.27225pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--292
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--292
+
+ []
+
+[42 <./figure/1_11.PNG>] <figure/1_12.PNG, id=192, 153.57375pt x 107.2005pt>
+File: figure/1_12.PNG Graphic file (type png)
+ <use figure/1_12.PNG>
+Package pdftex.def Info: figure/1_12.PNG used on input line 305.
+(pdftex.def)             Requested size: 153.57336pt x 107.20023pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--314
+
+ []
+
+[43 <./figure/1_12.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 316--323
+
+ []
+
+<figure/1_13.PNG, id=197, 316.18124pt x 132.19388pt>
+File: figure/1_13.PNG Graphic file (type png)
+ <use figure/1_13.PNG>
+Package pdftex.def Info: figure/1_13.PNG used on input line 333.
+(pdftex.def)             Requested size: 316.18047pt x 132.19354pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--347
+
+ []
+
+[44 <./figure/1_13.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
+
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--379
+
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 386--390
+
+ []
+
+<figure/1_14.PNG, id=206, 196.93575pt x 128.27925pt>
+File: figure/1_14.PNG Graphic file (type png)
+ <use figure/1_14.PNG>
+Package pdftex.def Info: figure/1_14.PNG used on input line 402.
+(pdftex.def)             Requested size: 196.93524pt x 128.27893pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--421
+
+ []
+
+[46 <./figure/1_14.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 423--427
+
+ []
+
+<figure/1_15.PNG, id=211, 222.8325pt x 193.9245pt>
+File: figure/1_15.PNG Graphic file (type png)
+ <use figure/1_15.PNG>
+Package pdftex.def Info: figure/1_15.PNG used on input line 435.
+(pdftex.def)             Requested size: 222.83195pt x 193.92401pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--447
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--451
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--458
+
+ []
+
+[47 <./figure/1_15.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 465--467
+
+ []
+
+<figure/1_16.PNG, id=216, 146.04562pt x 137.313pt>
+File: figure/1_16.PNG Graphic file (type png)
+ <use figure/1_16.PNG>
+Package pdftex.def Info: figure/1_16.PNG used on input line 472.
+(pdftex.def)             Requested size: 146.04524pt x 137.31265pt.
+ [48 <./figure/1_16.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 501--506
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 508--512
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--519
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--536
+
+ []
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 538--543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--557
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 559--569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 571--576
+
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 578--582
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--590
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 592--597
+
+ []
+
+<figure/1_17.PNG, id=229, 142.73325pt x 92.7465pt>
+File: figure/1_17.PNG Graphic file (type png)
+ <use figure/1_17.PNG>
+Package pdftex.def Info: figure/1_17.PNG used on input line 613.
+(pdftex.def)             Requested size: 142.73288pt x 92.74628pt.
+ [51 <./figure/1_17.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 623--630
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--644
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 646--653
+
+ []
+
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 655--661
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 663--668
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--676
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 678--683
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 685--688
+
+ []
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 690--694
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--705
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--705
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--713
+
+ []
+
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr7!
+Missing character: There is no ¶ in font cmr7!
+
+Underfull \hbox (badness 10000) in paragraph at lines 715--720
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 722--728
+
+ []
+
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 730--738
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--742
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 743--746
+
+ []
+
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--755
+
+ []
+
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 757--764
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 767--775
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 777--782
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 784--789
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--795
+
+ []
+
+[56] <figure/1_18.PNG, id=250, 160.1985pt x 161.70413pt>
+File: figure/1_18.PNG Graphic file (type png)
+ <use figure/1_18.PNG>
+Package pdftex.def Info: figure/1_18.PNG used on input line 807.
+(pdftex.def)             Requested size: 160.1981pt x 161.70372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 802--815
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--821
+
+ []
+
+[57 <./figure/1_18.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 823--827
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--833
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 835--839
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 841--845
+
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 847--852
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 854--860
+
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 862--866
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 868--872
+
+ []
+
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 874--878
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--884
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 886--890
+
+ []
+
+<figure/1_19.PNG, id=258, 184.89075pt x 127.07475pt>
+File: figure/1_19.PNG Graphic file (type png)
+ <use figure/1_19.PNG>
+Package pdftex.def Info: figure/1_19.PNG used on input line 912.
+(pdftex.def)             Requested size: 184.89027pt x 127.07443pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 904--918
+
+ []
+
+[59]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 920--927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 929--934
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 941--946
+
+ []
+
+[60 <./figure/1_19.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 948--955
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--969
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 971--974
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 971--974
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 976--978
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 982--995
+
+ []
+
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 997--1002
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1009
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1016
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1018--1026
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1028--1030
+
+ []
+
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1037
+
+ []
+
+[63])
+\openout2 = `2-formalism.aux'.
+
+ (./2-formalism.tex
+Chapter 2.
+[64
+
+
+
+] [65]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [66]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [67]
+Overfull \hbox (73.84096pt too wide) detected at line 174
+\OT1/cmr/m/n/14.4 [\OML/cmm/m/it/14.4 x[]; p[]\OT1/cmr/m/n/14.4 ] = \OML/cmm/m/it/14.4 i\U/msb/m/n/14.4 ~\OML/cmm/m/it/14.4 ^^N[]\OT1/cmr/m/n/14.4 ; [] \OML/cmm/m/it/14.4 i \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 k[][]  [] []
+ []
+
+[68]
+Overfull \hbox (131.2641pt too wide) detected at line 196
+[] []
+ []
+
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 231--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--247
+
+ []
+
+[70] [71]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+ [72] [73]
+Underfull \hbox (badness 10000) in paragraph at lines 334--337
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--350
+
+ []
+
+[74]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+ [75] [76]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+ [77]
+Overfull \hbox (2.50499pt too wide) in paragraph at lines 424--425
+[]$\OML/cmm/m/it/14.4 A\OT1/cmr/m/n/14.4 	 = \OML/cmm/m/it/14.4 a\OT1/cmr/m/n/14.4 	$ not de-gen-er-ate $\OMS/cmsy/m/n/14.4 ! \OML/cmm/m/it/14.4 AB\OT1/cmr/m/n/14.4 	 = \OML/cmm/m/it/14.4 BA\OT1/cmr/m/n/14.4 	 = \OML/cmm/m/it/14.4 aB\OT1/cmr/m/n/14.4 	$ and since the eigenspace
+ []
+
+Missing character: There is no Â in font cmr12!
+Missing character: There is no · in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no · in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no · in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--444
+
+ []
+
+[78] [79]
+Underfull \hbox (badness 10000) in paragraph at lines 503--508
+
+ []
+
+[80] [81]
+Underfull \hbox (badness 10000) in paragraph at lines 552--556
+
+ []
+
+[82] [83]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+
+Overfull \hbox (16.90771pt too wide) in paragraph at lines 644--646
+[]\OT1/cmr/m/n/14.4 The dy-nam-ics (time evo-lu-tion) of the sys-tem is de-ter-mined by the Schrodinger
+ []
+
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Overfull \hbox (21.88776pt too wide) in paragraph at lines 654--656
+\OT1/cmr/m/n/14.4 with the sta-tion-ary states $\OMS/cmsy/m/n/14.4 j\OML/cmm/m/it/14.4 E\OMS/cmsy/m/n/14.4 i$ \OT1/cmr/m/n/14.4 as so-lu-tions of the time-independent Schrodinger
+ []
+
+[84] [85] [86]
+Underfull \hbox (badness 10000) in paragraph at lines 749--753
+
+ []
+
+[87]) [88]
+\openout2 = `3-one_dimension.aux'.
+
+ (./3-one_dimension.tex
+Chapter 3.
+<figure/3_1.PNG, id=355, 183.38513pt x 93.64987pt>
+File: figure/3_1.PNG Graphic file (type png)
+ <use figure/3_1.PNG>
+Package pdftex.def Info: figure/3_1.PNG used on input line 7.
+(pdftex.def)             Requested size: 183.38467pt x 93.64963pt.
+ <figure/3_2.PNG, id=356, 317.08463pt x 193.9245pt>
+File: figure/3_2.PNG Graphic file (type png)
+ <use figure/3_2.PNG>
+Package pdftex.def Info: figure/3_2.PNG used on input line 15.
+(pdftex.def)             Requested size: 317.08385pt x 193.92401pt.
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ´ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ´ in font cmr12!
+File: figure/3_2.PNG Graphic file (type png)
+ <use figure/3_2.PNG>
+Package pdftex.def Info: figure/3_2.PNG used on input line 24.
+(pdftex.def)             Requested size: 317.08385pt x 193.92401pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--29
+
+ []
+
+[89
+
+
+
+ <./figure/3_1.PNG>]
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ± in font cmr12!
+File: figure/3_2.PNG Graphic file (type png)
+ <use figure/3_2.PNG>
+Package pdftex.def Info: figure/3_2.PNG used on input line 36.
+(pdftex.def)             Requested size: 317.08385pt x 193.92401pt.
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+ <figure/3_5.PNG, id=361, 138.81862pt x 82.80937pt>
+File: figure/3_5.PNG Graphic file (type png)
+ <use figure/3_5.PNG>
+Package pdftex.def Info: figure/3_5.PNG used on input line 56.
+(pdftex.def)             Requested size: 138.81827pt x 82.80916pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 54--84
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr10!
+Missing character: There is no ± in font cmr10!
+Missing character: There is no Î in font cmr10!
+Missing character: There is no ± in font cmr10!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no å in font cmr12!
+Missing character: There is no › in font cmr12!
+Missing character: There is no ¾ in font cmr12!
+<figure/3_5_1.PNG, id=362, 156.88612pt x 69.861pt>
+File: figure/3_5_1.PNG Graphic file (type png)
+ <use figure/3_5_1.PNG>
+Package pdftex.def Info: figure/3_5_1.PNG used on input line 95.
+(pdftex.def)             Requested size: 156.88573pt x 69.86081pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 93--106
+[]$[]$ $[]$ 
+ []
+
+<figure/3_5_2.PNG, id=363, 162.00525pt x 66.2475pt>
+File: figure/3_5_2.PNG Graphic file (type png)
+ <use figure/3_5_2.PNG>
+Package pdftex.def Info: figure/3_5_2.PNG used on input line 112.
+(pdftex.def)             Requested size: 162.00484pt x 66.24733pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 110--123
+[]$[]$ $[]$ 
+ []
+
+<figure/3_5_3.PNG, id=364, 157.7895pt x 91.542pt>
+File: figure/3_5_3.PNG Graphic file (type png)
+ <use figure/3_5_3.PNG>
+Package pdftex.def Info: figure/3_5_3.PNG used on input line 129.
+(pdftex.def)             Requested size: 157.78911pt x 91.54178pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 127--140
+[]$[]$ $[]$ 
+ []
+
+<figure/3_5_4.PNG, id=365, 165.61874pt x 67.75313pt>
+File: figure/3_5_4.PNG Graphic file (type png)
+ <use figure/3_5_4.PNG>
+Package pdftex.def Info: figure/3_5_4.PNG used on input line 146.
+(pdftex.def)             Requested size: 165.61833pt x 67.75294pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 144--157
+[]$[]$ $[]$ 
+ []
+
+<figure/3_5_5.PNG, id=366, 158.69287pt x 80.7015pt>
+File: figure/3_5_5.PNG Graphic file (type png)
+ <use figure/3_5_5.PNG>
+Package pdftex.def Info: figure/3_5_5.PNG used on input line 162.
+(pdftex.def)             Requested size: 158.69247pt x 80.70131pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 160--173
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no Î in font cmr10!
+Missing character: There is no ± in font cmr10!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr10!
+Missing character: There is no ± in font cmr10!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+<figure/3_5_6.PNG, id=367, 149.358pt x 84.61612pt>
+File: figure/3_5_6.PNG Graphic file (type png)
+ <use figure/3_5_6.PNG>
+Package pdftex.def Info: figure/3_5_6.PNG used on input line 180.
+(pdftex.def)             Requested size: 149.35762pt x 84.6159pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 178--191
+[]$[]$ $[]$ 
+ []
+
+[90 <./figure/3_2.PNG>] <figure/3_5_7.PNG, id=373, 153.87488pt x 78.59363pt>
+File: figure/3_5_7.PNG Graphic file (type png)
+ <use figure/3_5_7.PNG>
+Package pdftex.def Info: figure/3_5_7.PNG used on input line 197.
+(pdftex.def)             Requested size: 153.87448pt x 78.59341pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 195--208
+[]$[]$ $[]$ 
+ []
+
+<figure/3_6.PNG, id=374, 303.534pt x 96.36pt>
+File: figure/3_6.PNG Graphic file (type png)
+ <use figure/3_6.PNG>
+Package pdftex.def Info: figure/3_6.PNG used on input line 213.
+(pdftex.def)             Requested size: 303.53325pt x 96.35974pt.
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [91] [92 <./figure/3_5.PNG>] [93 <./figure/3_5_1.PNG> <./figure/3_5_2.PNG>] <figure/3_7.PNG, id=387, 153.87488pt x 95.1555pt>
+File: figure/3_7.PNG Graphic file (type png)
+ <use figure/3_7.PNG>
+Package pdftex.def Info: figure/3_7.PNG used on input line 297.
+(pdftex.def)             Requested size: 153.87448pt x 95.15524pt.
+
+Underfull \hbox (badness 1859) in paragraph at lines 301--301
+[]\OT1/cmr/m/n/14.4 Figure 3.7: |The scat-ter-ing ma-trix
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 295--303
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no Ï in font cmr12!
+Missing character: There is no † in font cmr12!
+Missing character: There is no Ï in font cmr12!
+Missing character: There is no † in font cmr12!
+Missing character: There is no Ï in font cmr12!
+Missing character: There is no † in font cmr12!
+Missing character: There is no Ï in font cmr12!
+Missing character: There is no † in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+[94 <./figure/3_5_3.PNG> <./figure/3_5_4.PNG>]
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ” in font cmr12!
+ <figure/3_8.PNG, id=393, 153.27263pt x 94.85437pt>
+File: figure/3_8.PNG Graphic file (type png)
+ <use figure/3_8.PNG>
+Package pdftex.def Info: figure/3_8.PNG used on input line 318.
+(pdftex.def)             Requested size: 153.27225pt x 94.85413pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 316--324
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no ¡ in font cmr12!
+[95 <./figure/3_5_5.PNG> <./figure/3_5_6.PNG>]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+ [96 <./figure/3_5_7.PNG> <./figure/3_6.PNG>]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+ <figure/3_9.PNG, id=405, 330.033pt x 193.9245pt>
+File: figure/3_9.PNG Graphic file (type png)
+ <use figure/3_9.PNG>
+Package pdftex.def Info: figure/3_9.PNG used on input line 381.
+(pdftex.def)             Requested size: 330.03218pt x 193.92401pt.
+ [97 <./figure/3_7.PNG> <./figure/3_8.PNG>]
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no Š in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+ [98 <./figure/3_9.PNG>] <figure/3_10.PNG, id=415, 151.767pt x 94.25212pt>
+File: figure/3_10.PNG Graphic file (type png)
+ <use figure/3_10.PNG>
+Package pdftex.def Info: figure/3_10.PNG used on input line 408.
+(pdftex.def)             Requested size: 151.76662pt x 94.25188pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 406--414
+[]$[]$ $[]$ 
+ []
+
+[99 <./figure/3_10.PNG>] [100]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no · in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ” in font cmr12!
+ <figure/3_11.PNG, id=424, 339.36787pt x 173.74913pt>
+File: figure/3_11.PNG Graphic file (type png)
+ <use figure/3_11.PNG>
+Package pdftex.def Info: figure/3_11.PNG used on input line 483.
+(pdftex.def)             Requested size: 339.36703pt x 173.74869pt.
+
+Overfull \hbox (34.6889pt too wide) in paragraph at lines 477--489
+\OT1/cmr/m/n/14.4 for-bid-den mo-men-tum $\OMS/cmsy/m/n/14.4 / [] \OT1/cmr/m/n/14.4 : [] = \OML/cmm/m/it/14.4 w \OT1/cmr/m/n/14.4 = ([]\OML/cmm/m/it/14.4 =\U/msb/m/n/14.4 ~\OT1/cmr/m/n/14.4 )[] =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--489
+
+ []
+
+<figure/3_12.PNG, id=425, 329.12962pt x 184.58963pt>
+File: figure/3_12.PNG Graphic file (type png)
+ <use figure/3_12.PNG>
+Package pdftex.def Info: figure/3_12.PNG used on input line 494.
+(pdftex.def)             Requested size: 329.12881pt x 184.58917pt.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no · in font cmr12!
+ <figure/3_13.PNG, id=426, 166.221pt x 104.7915pt>
+File: figure/3_13.PNG Graphic file (type png)
+ <use figure/3_13.PNG>
+Package pdftex.def Info: figure/3_13.PNG used on input line 512.
+(pdftex.def)             Requested size: 166.22057pt x 104.79124pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 510--519
+[]$[]$ $[]$ 
+ []
+
+[101] [102 <./figure/3_11.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no · in font cmr12!
+ [103 <./figure/3_12.PNG> <./figure/3_13.PNG>]
+Overfull \hbox (4.28693pt too wide) in paragraph at lines 545--549
+\OT1/cmr/m/n/14.4 it pro-duces the con-di-tion $1 + \OML/cmm/m/it/14.4 iv=k \OT1/cmr/m/n/14.4 = 0$ which re-quires that $\OML/cmm/m/it/14.4 k \OMS/cmsy/m/n/14.4 ! \OML/cmm/m/it/14.4 i \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 i[]=\U/msb/m/n/14.4 ~$
+ []
+
+<figure/3_14.PNG, id=440, 168.32887pt x 114.72862pt>
+File: figure/3_14.PNG Graphic file (type png)
+ <use figure/3_14.PNG>
+Package pdftex.def Info: figure/3_14.PNG used on input line 557.
+(pdftex.def)             Requested size: 168.32845pt x 114.72833pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 555--563
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ± in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ± in font cmr12!
+[104 <./figure/3_14.PNG>] <figure/3_15.PNG, id=445, 165.0165pt x 140.02313pt>
+File: figure/3_15.PNG Graphic file (type png)
+ <use figure/3_15.PNG>
+Package pdftex.def Info: figure/3_15.PNG used on input line 583.
+(pdftex.def)             Requested size: 165.01607pt x 140.02278pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 581--590
+[]$[]$ $[]$ 
+ []
+
+[105 <./figure/3_15.PNG>] <figure/3_16.PNG, id=450, 173.14688pt x 109.91063pt>
+File: figure/3_16.PNG Graphic file (type png)
+ <use figure/3_16.PNG>
+Package pdftex.def Info: figure/3_16.PNG used on input line 632.
+(pdftex.def)             Requested size: 173.14645pt x 109.91034pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 630--638
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+<figure/3_17.PNG, id=451, 336.65775pt x 127.97812pt>
+File: figure/3_17.PNG Graphic file (type png)
+ <use figure/3_17.PNG>
+Package pdftex.def Info: figure/3_17.PNG used on input line 658.
+(pdftex.def)             Requested size: 336.6569pt x 127.9778pt.
+ <figure/3_18.PNG, id=452, 269.50688pt x 102.68362pt>
+File: figure/3_18.PNG Graphic file (type png)
+ <use figure/3_18.PNG>
+Package pdftex.def Info: figure/3_18.PNG used on input line 666.
+(pdftex.def)             Requested size: 269.50621pt x 102.68336pt.
+ [106 <./figure/3_16.PNG>] [107 <./figure/3_17.PNG> <./figure/3_18.PNG>]
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+ [108]
+File: figure/3_18.PNG Graphic file (type png)
+ <use figure/3_18.PNG>
+Package pdftex.def Info: figure/3_18.PNG used on input line 734.
+(pdftex.def)             Requested size: 269.50621pt x 102.68336pt.
+ <figure/3_20.PNG, id=466, 151.46588pt x 198.14024pt>
+File: figure/3_20.PNG Graphic file (type png)
+ <use figure/3_20.PNG>
+Package pdftex.def Info: figure/3_20.PNG used on input line 742.
+(pdftex.def)             Requested size: 151.4655pt x 198.13974pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 740--748
+[]$[]$ $[]$ 
+ []
+
+<figure/3_21.PNG, id=467, 173.74913pt x 189.1065pt>
+File: figure/3_21.PNG Graphic file (type png)
+ <use figure/3_21.PNG>
+Package pdftex.def Info: figure/3_21.PNG used on input line 754.
+(pdftex.def)             Requested size: 173.74869pt x 189.10603pt.
+
+Underfull \hbox (badness 1418) in paragraph at lines 760--760
+\OML/cmm/m/it/14.4 exp\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 i[]\OT1/cmr/m/n/14.4 )$) and re-flec-tion ($\OML/cmm/m/it/14.4 r \OT1/cmr/m/n/14.4 =\OMS/cmsy/m/n/14.4 j \OML/cmm/m/it/14.4 r \OMS/cmsy/m/n/14.4 j
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 752--762
+[]$[]$ $[]$ 
+ []
+
+[109 <./figure/3_20.PNG>] <figure/3_22.PNG, id=472, 172.2435pt x 80.40038pt>
+File: figure/3_22.PNG Graphic file (type png)
+ <use figure/3_22.PNG>
+Package pdftex.def Info: figure/3_22.PNG used on input line 775.
+(pdftex.def)             Requested size: 172.24307pt x 80.40016pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 773--781
+[]$[]$ $[]$ 
+ []
+
+[110 <./figure/3_21.PNG> <./figure/3_22.PNG>]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 811--816
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 811--816
+
+ []
+
+[111] <figure/3_23.PNG, id=481, 193.02112pt x 105.39375pt>
+File: figure/3_23.PNG Graphic file (type png)
+ <use figure/3_23.PNG>
+Package pdftex.def Info: figure/3_23.PNG used on input line 824.
+(pdftex.def)             Requested size: 193.02063pt x 105.39348pt.
+
+Underfull \hbox (badness 1028) in paragraph at lines 828--828
+[]\OT1/cmr/m/n/14.4 Figure 3.23: |Kronig-Penney Model:
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 822--830
+[]$[]$ $[]$ 
+ []
+
+
+Overfull \hbox (621.85695pt too wide) detected at line 837
+[] [] \OT1/cmr/m/n/14.4 = [] [] = \OML/cmm/m/it/14.4 D [] []  [] [] \OT1/cmr/m/n/14.4 = [] [] = \OML/cmm/m/it/14.4 M [] []  [] [] \OT1/cmr/m/n/14.4 = [] [] = \OML/cmm/m/it/14.4 U[] []
+ []
+
+<figure/3_24.PNG, id=482, 175.857pt x 173.14688pt>
+File: figure/3_24.PNG Graphic file (type png)
+ <use figure/3_24.PNG>
+Package pdftex.def Info: figure/3_24.PNG used on input line 852.
+(pdftex.def)             Requested size: 175.85657pt x 173.14645pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 850--858
+[]$[]$ $[]$ 
+ []
+
+[112 <./figure/3_23.PNG>] <figure/3_25.PNG, id=487, 176.45924pt x 183.98738pt>
+File: figure/3_25.PNG Graphic file (type png)
+ <use figure/3_25.PNG>
+Package pdftex.def Info: figure/3_25.PNG used on input line 874.
+(pdftex.def)             Requested size: 176.4588pt x 183.98692pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 872--880
+[]$[]$ $[]$ 
+ []
+
+<figure/3_26.PNG, id=488, 178.266pt x 98.16675pt>
+File: figure/3_26.PNG Graphic file (type png)
+ <use figure/3_26.PNG>
+Package pdftex.def Info: figure/3_26.PNG used on input line 888.
+(pdftex.def)             Requested size: 178.26555pt x 98.1665pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 886--894
+[]$[]$ $[]$ 
+ []
+
+<figure/3_27.PNG, id=489, 182.78287pt x 112.0185pt>
+File: figure/3_27.PNG Graphic file (type png)
+ <use figure/3_27.PNG>
+Package pdftex.def Info: figure/3_27.PNG used on input line 900.
+(pdftex.def)             Requested size: 182.78241pt x 112.0182pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 898--906
+[]$[]$ $[]$ 
+ []
+
+<figure/3_28.PNG, id=490, 146.04562pt x 122.859pt>
+File: figure/3_28.PNG Graphic file (type png)
+ <use figure/3_28.PNG>
+Package pdftex.def Info: figure/3_28.PNG used on input line 912.
+(pdftex.def)             Requested size: 146.04524pt x 122.85867pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 910--918
+[]$[]$ $[]$ 
+ []
+
+[113 <./figure/3_24.PNG> <./figure/3_25.PNG>] [114 <./figure/3_26.PNG> <./figure/3_27.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no · in font cmr12!
+ <figure/3_29.PNG, id=502, 186.39638pt x 93.951pt>
+File: figure/3_29.PNG Graphic file (type png)
+ <use figure/3_29.PNG>
+Package pdftex.def Info: figure/3_29.PNG used on input line 955.
+(pdftex.def)             Requested size: 186.3959pt x 93.95078pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 953--961
+[]$[]$ $[]$ 
+ []
+
+[115 <./figure/3_28.PNG>] [116 <./figure/3_29.PNG>] <figure/3_30.PNG, id=511, 327.32288pt x 153.87488pt>
+File: figure/3_30.PNG Graphic file (type png)
+ <use figure/3_30.PNG>
+Package pdftex.def Info: figure/3_30.PNG used on input line 995.
+(pdftex.def)             Requested size: 327.32207pt x 153.87448pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 990--1002
+
+ []
+
+[117 <./figure/3_30.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no · in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no · in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no · in font cmr12!
+ <figure/3_31.PNG, id=516, 153.87488pt x 123.16013pt>
+File: figure/3_31.PNG Graphic file (type png)
+ <use figure/3_31.PNG>
+Package pdftex.def Info: figure/3_31.PNG used on input line 1022.
+(pdftex.def)             Requested size: 153.87448pt x 123.1598pt.
+
+Underfull \hbox (badness 7613) in paragraph at lines 1026--1026
+[]\OT1/cmr/m/n/14.4 Figure 3.31: |Har-monic po-ten-tial
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1020--1028
+[]$[]$ $[]$ 
+ []
+
+[118 <./figure/3_31.PNG>]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no » in font cmr12!
+ [119] [120]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+ [121]
+Missing character: There is no Ï in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no Ï in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no Ï in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no Ï in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+ [122]
+Missing character: There is no Ï in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+ <figure/3_32.PNG, id=534, 326.72063pt x 142.131pt>
+File: figure/3_32.PNG Graphic file (type png)
+ <use figure/3_32.PNG>
+Package pdftex.def Info: figure/3_32.PNG used on input line 1205.
+(pdftex.def)             Requested size: 326.71982pt x 142.13063pt.
+ [123] <figure/3_33.PNG, id=538, 186.99863pt x 193.9245pt>
+File: figure/3_33.PNG Graphic file (type png)
+ <use figure/3_33.PNG>
+Package pdftex.def Info: figure/3_33.PNG used on input line 1220.
+(pdftex.def)             Requested size: 186.99815pt x 193.92401pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1218--1226
+[]$[]$ $[]$ 
+ []
+
+[124 <./figure/3_32.PNG> <./figure/3_33.PNG>] <figure/3_34.PNG, id=544, 159.89737pt x 124.0635pt>
+File: figure/3_34.PNG Graphic file (type png)
+ <use figure/3_34.PNG>
+Package pdftex.def Info: figure/3_34.PNG used on input line 1260.
+(pdftex.def)             Requested size: 159.89697pt x 124.06319pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1258--1266
+[]$[]$ $[]$ 
+ []
+
+[125 <./figure/3_34.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [126] <figure/3_35.PNG, id=553, 188.80537pt x 152.36925pt>
+File: figure/3_35.PNG Graphic file (type png)
+ <use figure/3_35.PNG>
+Package pdftex.def Info: figure/3_35.PNG used on input line 1329.
+(pdftex.def)             Requested size: 188.8049pt x 152.36887pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1327--1335
+[]$[]$ $[]$ 
+ []
+
+[127 <./figure/3_35.PNG>] [128] <figure/3_36.PNG, id=561, 147.85237pt x 118.64325pt>
+File: figure/3_36.PNG Graphic file (type png)
+ <use figure/3_36.PNG>
+Package pdftex.def Info: figure/3_36.PNG used on input line 1393.
+(pdftex.def)             Requested size: 147.852pt x 118.64294pt.
+
+Underfull \hbox (badness 2951) in paragraph at lines 1397--1397
+[]\OT1/cmr/m/n/14.4 Figure 3.36: |The lin-ear po-ten-tial
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1391--1399
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no · in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no · in font cmr12!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no · in font cmr10!
+Missing character: There is no Â in font cmr7!
+Missing character: There is no · in font cmr7!
+[129 <./figure/3_36.PNG>] <figure/3_37.PNG, id=566, 174.6525pt x 133.09724pt>
+File: figure/3_37.PNG Graphic file (type png)
+ <use figure/3_37.PNG>
+Package pdftex.def Info: figure/3_37.PNG used on input line 1442.
+(pdftex.def)             Requested size: 174.65207pt x 133.09691pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1440--1448
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+<figure/3_38.PNG, id=567, 178.56712pt x 119.2455pt>
+File: figure/3_38.PNG Graphic file (type png)
+ <use figure/3_38.PNG>
+Package pdftex.def Info: figure/3_38.PNG used on input line 1461.
+(pdftex.def)             Requested size: 178.56668pt x 119.2452pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1459--1467
+[]$[]$ $[]$ 
+ []
+
+[130 <./figure/3_37.PNG>]
+Overfull \hbox (1125.08104pt too wide) detected at line 1506
+\OT1/cmr/m/n/14.4 	[](\OML/cmm/m/it/14.4 x; t\OT1/cmr/m/n/14.4 )[][]\OML/cmm/m/it/14.4 @[]H \OMS/cmsy/m/n/14.4 6\OT1/cmr/m/n/14.4 = 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 	[] \OMS/cmsy/m/n/14.4 ^^X \OML/cmm/m/it/14.4 exp\OT1/cmr/m/n/14.4 [\OML/cmm/m/it/14.4 i\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 px \OMS/cmsy/m/n/14.4 ^^@ \OML/cmm/m/it/14.4 E\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 e\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 t\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 =\U/msb/m/n/14.4 ~\OT1/cmr/m/n/14.4 ][][] 	[](\OML/cmm/m/it/14.4 x; t\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 ; [][]@[]H \OT1/cmr/m/n/14.4 = 0\OML/cmm/m/it/14.4 :\OT1/cmr/m/n/14.4 	[] \OMS/cmsy/m/n/14.4 ^^X \OML/cmm/m/it/14.4 exp\OT1/cmr/m/n/14.4 [\OML/cmm/m/it/14.4 i\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 p\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 x \OMS/cmsy/m/n/14.4 ^^@ \OML/cmm/m/it/14.4 Et\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 =\U/msb/m/n/14.4 ~\OML/cmm/m/it/14.4 t\OT1/cmr/m/n/14.4 ] + \OML/cmm/m/it/14.4 c:c:p\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 x \OMS/cmsy/m/n/14.4 ^^X []\OML/cmm/m/it/14.4 x \OMS/cmsy/m/n/14.4 ^^X \OML/cmm/m/it/14.4 x[][]x \OMS/cmsy/m/n/14.4 ! 1[]
+ []
+
+[131 <./figure/3_38.PNG>]) [132] [133]
+\openout2 = `4-rotation.aux'.
+
+ (./4-rotation.tex
+Chapter 4.
+[134
+
+
+
+] <figure/4_1.PNG, id=589, 221.628pt x 228.855pt>
+File: figure/4_1.PNG Graphic file (type png)
+ <use figure/4_1.PNG>
+Package pdftex.def Info: figure/4_1.PNG used on input line 45.
+(pdftex.def)             Requested size: 221.62746pt x 228.85443pt.
+
+Underfull \hbox (badness 3758) in paragraph at lines 50--50
+[]\OT1/cmr/m/n/14.4 Figure 4.1: |Ac-tive trans-la-tion of
+ []
+
+
+Underfull \hbox (badness 4686) in paragraph at lines 50--50
+\OT1/cmr/m/n/14.4 a (Gaus-sian) wave packet around
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 43--52
+[]$[]$ $[]$ 
+ []
+
+<figure/4_2.PNG, id=590, 364.36125pt x 118.34213pt>
+File: figure/4_2.PNG Graphic file (type png)
+ <use figure/4_2.PNG>
+Package pdftex.def Info: figure/4_2.PNG used on input line 60.
+(pdftex.def)             Requested size: 364.36035pt x 118.34184pt.
+ [135 <./figure/4_1.PNG>] [136 <./figure/4_2.PNG>] [137]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+
+Overfull \hbox (8.01321pt too wide) in paragraph at lines 139--143
+\OT1/cmr/m/n/14.4 rec-tions $\OMS/cmsy/m/n/14.4 !\OT1/cmr/m/n/14.4 = 0; [] = [] = \OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 z [] \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 i\U/msb/m/n/14.4 ~\OML/cmm/m/it/14.4 z\OT1/cmr/m/n/14.4 ; [] = [] [] 
+ []
+
+[138]
+Missing character: There is no â in font cmbx12!
+Missing character: There is no € in font cmbx12!
+Missing character: There is no ‹ in font cmbx12!
+Missing character: There is no â in font cmbx12!
+Missing character: There is no € in font cmbx12!
+Missing character: There is no ‹ in font cmbx12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+ [139] <figure/4_3.PNG, id=609, 195.129pt x 219.52013pt>
+File: figure/4_3.PNG Graphic file (type png)
+ <use figure/4_3.PNG>
+Package pdftex.def Info: figure/4_3.PNG used on input line 194.
+(pdftex.def)             Requested size: 195.12851pt x 219.51958pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 192--200
+[]$[]$ $[]$ 
+ []
+
+[140 <./figure/4_3.PNG>]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--236
+
+ []
+
+<figure/4_4.PNG, id=614, 223.73587pt x 259.87088pt>
+File: figure/4_4.PNG Graphic file (type png)
+ <use figure/4_4.PNG>
+Package pdftex.def Info: figure/4_4.PNG used on input line 243.
+(pdftex.def)             Requested size: 223.7353pt x 259.87024pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 241--249
+[]$[]$ $[]$ 
+ []
+
+[141] [142 <./figure/4_4.PNG>] [143] [144]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no — in font cmr12!
+ <figure/4_5.PNG, id=629, 406.81987pt x 200.54926pt>
+File: figure/4_5.PNG Graphic file (type png)
+ <use figure/4_5.PNG>
+Package pdftex.def Info: figure/4_5.PNG used on input line 395.
+(pdftex.def)             Requested size: 406.81888pt x 200.54875pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--403
+
+ []
+
+[145] [146 <./figure/4_5.PNG>] [147]
+Underfull \hbox (badness 10000) in paragraph at lines 443--445
+
+ []
+
+<figure/4_6.PNG, id=640, 207.77625pt x 177.36263pt>
+File: figure/4_6.PNG Graphic file (type png)
+ <use figure/4_6.PNG>
+Package pdftex.def Info: figure/4_6.PNG used on input line 460.
+(pdftex.def)             Requested size: 207.77573pt x 177.36218pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 458--466
+[]$[]$ $[]$ 
+ []
+
+[148]
+Missing character: There is no Ï in font cmr10!
+Missing character: There is no † in font cmr10!
+ [149 <./figure/4_6.PNG>] [150] [151])
+\openout2 = `5-central_potential.aux'.
+
+ (./5-central_potential.tex
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--19
+
+ []
+
+[152
+
+
+
+] [153] [154] <figure/5_1.PNG, id=665, 227.04825pt x 227.04825pt>
+File: figure/5_1.PNG Graphic file (type png)
+ <use figure/5_1.PNG>
+Package pdftex.def Info: figure/5_1.PNG used on input line 86.
+(pdftex.def)             Requested size: 227.04768pt x 227.04768pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 84--93
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+<figure/5_2.PNG, id=666, 261.97874pt x 165.31763pt>
+File: figure/5_2.PNG Graphic file (type png)
+ <use figure/5_2.PNG>
+Package pdftex.def Info: figure/5_2.PNG used on input line 100.
+(pdftex.def)             Requested size: 261.9781pt x 165.31721pt.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--109
+
+ []
+
+[155 <./figure/5_1.PNG>]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr7!
+Missing character: There is no ¤ in font cmr7!
+Missing character: There is no Ã in font cmr7!
+Missing character: There is no ¶ in font cmr7!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ´ in font cmr12!
+Missing character: There is no Ï in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--130
+
+ []
+
+[156 <./figure/5_2.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ <figure/5_3.PNG, id=676, 196.3335pt x 137.91525pt>
+File: figure/5_3.PNG Graphic file (type png)
+ <use figure/5_3.PNG>
+Package pdftex.def Info: figure/5_3.PNG used on input line 143.
+(pdftex.def)             Requested size: 196.33301pt x 137.9149pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 141--149
+[]$[]$ $[]$ 
+ []
+
+[157 <./figure/5_3.PNG>] <figure/5_4.PNG, id=681, 237.2865pt x 178.86826pt>
+File: figure/5_4.PNG Graphic file (type png)
+ <use figure/5_4.PNG>
+Package pdftex.def Info: figure/5_4.PNG used on input line 212.
+(pdftex.def)             Requested size: 237.2859pt x 178.86781pt.
+
+Overfull \hbox (38.11662pt too wide) in paragraph at lines 212--212
+ [][] 
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 212--212
+[]\OT1/cmr/m/n/14.4 Figure 5.5: |Bessel func-tions
+ []
+
+<figure/5_5.PNG, id=682, 247.22362pt x 193.9245pt>
+File: figure/5_5.PNG Graphic file (type png)
+ <use figure/5_5.PNG>
+Package pdftex.def Info: figure/5_5.PNG used on input line 220.
+(pdftex.def)             Requested size: 229.91557pt x 180.3479pt.
+
+Overfull \hbox (30.74629pt too wide) in paragraph at lines 220--220
+ [][] 
+ []
+
+[158]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [159 <./figure/5_4.PNG> <./figure/5_5.PNG>]
+Overfull \hbox (10.53758pt too wide) in paragraph at lines 255--257
+\OT1/cmr/m/n/14.4 the com-po-nent $\OML/cmm/m/it/14.4 h[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 kr\OT1/cmr/m/n/14.4 ) \OMS/cmsy/m/n/14.4 / \OML/cmm/m/it/14.4 exp\OT1/cmr/m/n/14.4 [\OMS/cmsy/m/n/14.4 ^^@\OML/cmm/m/it/14.4 ikr\OT1/cmr/m/n/14.4 ]$ was de-scrib-ing an in-ci-dent wave, $\OML/cmm/m/it/14.4 h[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 ir\OT1/cmr/m/n/14.4 ) \OMS/cmsy/m/n/14.4 /
+ []
+
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no Ï in font cmr12!
+Missing character: There is no € in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--275
+
+ []
+
+[160]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [161] [162] [163] <figure/5_6.PNG, id=704, 358.33875pt x 220.72462pt>
+File: figure/5_6.PNG Graphic file (type png)
+ <use figure/5_6.PNG>
+Package pdftex.def Info: figure/5_6.PNG used on input line 409.
+(pdftex.def)             Requested size: 358.33788pt x 220.72408pt.
+ [164 <./figure/5_6.PNG>]
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ½ in font cmr12!
+ [165] [166]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¼ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¼ in font cmr12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr7!
+Missing character: There is no ¼ in font cmr7!
+ <figure/5_7.PNG, id=715, 249.03038pt x 331.83975pt>
+File: figure/5_7.PNG Graphic file (type png)
+ <use figure/5_7.PNG>
+Package pdftex.def Info: figure/5_7.PNG used on input line 535.
+(pdftex.def)             Requested size: 249.02975pt x 331.83894pt.
+
+Overfull \hbox (10.0257pt too wide) in paragraph at lines 535--536
+ [][] 
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 533--546
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+[167] [168 <./figure/5_7.PNG>] <figure/5_8.PNG, id=724, 248.42813pt x 211.38976pt>
+File: figure/5_8.PNG Graphic file (type png)
+ <use figure/5_8.PNG>
+Package pdftex.def Info: figure/5_8.PNG used on input line 566.
+(pdftex.def)             Requested size: 198.74277pt x 169.11201pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 564--572
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+[169 <./figure/5_8.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 603--608
+
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+[170]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no · in font cmr12!
+) [171]
+\openout2 = `6-scattering_theory.aux'.
+
+ (./6-scattering_theory.tex
+Chapter 6.
+
+Overfull \hbox (8.68411pt too wide) in paragraph at lines 3--4
+\OT1/cmr/m/n/14.4 In this chap-ter we in-ves-ti-gate the fol-low-ing prob-lem: Given a (time-independent)
+ []
+
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+<figure/6_1.PNG, id=735, 398.6895pt x 218.31563pt>
+File: figure/6_1.PNG Graphic file (type png)
+ <use figure/6_1.PNG>
+Package pdftex.def Info: figure/6_1.PNG used on input line 18.
+(pdftex.def)             Requested size: 398.68852pt x 218.31508pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--23
+
+ []
+
+[172
+
+
 
 ]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¼ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¼ in font cmr12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+Missing character: There is no Ã in font cmr7!
+Missing character: There is no ¼ in font cmr7!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr7!
+Missing character: There is no ¶ in font cmr7!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no Ã in font cmr7!
+Missing character: There is no ¶ in font cmr7!
+ [173 <./figure/6_1.PNG>] <figure/6_2.PNG, id=743, 198.7425pt x 170.13562pt>
+File: figure/6_2.PNG Graphic file (type png)
+ <use figure/6_2.PNG>
+Package pdftex.def Info: figure/6_2.PNG used on input line 65.
+(pdftex.def)             Requested size: 198.742pt x 170.1352pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 63--71
+[]$[]$ $[]$ 
+ []
+
+[174]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ <figure/6_3.PNG, id=748, 196.63463pt x 157.7895pt>
+File: figure/6_3.PNG Graphic file (type png)
+ <use figure/6_3.PNG>
+Package pdftex.def Info: figure/6_3.PNG used on input line 82.
+(pdftex.def)             Requested size: 196.63414pt x 157.78911pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 80--88
+[]$[]$ $[]$ 
+ []
+
+[175 <./figure/6_2.PNG> <./figure/6_3.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [176] <figure/6_4.PNG, id=757, 420.3705pt x 212.29312pt>
+File: figure/6_4.PNG Graphic file (type png)
+ <use figure/6_4.PNG>
+Package pdftex.def Info: figure/6_4.PNG used on input line 154.
+(pdftex.def)             Requested size: 420.36948pt x 212.2926pt.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [177] [178 <./figure/6_4.PNG>]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr7!
+Missing character: There is no ¤ in font cmr7!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [179]
+Underfull \hbox (badness 10000) in paragraph at lines 211--216
+
+ []
+
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+[180]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [181]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ± in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [182] [183]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+ [184] <figure/6_5.PNG, id=787, 409.22888pt x 111.41624pt>
+File: figure/6_5.PNG Graphic file (type png)
+ <use figure/6_5.PNG>
+Package pdftex.def Info: figure/6_5.PNG used on input line 388.
+(pdftex.def)             Requested size: 409.22787pt x 111.41597pt.
+ [185 <./figure/6_5.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ´ in font cmr12!
+ [186] [187] <figure/6_6.PNG, id=799, 370.986pt x 159.89737pt>
+File: figure/6_6.PNG Graphic file (type png)
+ <use figure/6_6.PNG>
+Package pdftex.def Info: figure/6_6.PNG used on input line 473.
+(pdftex.def)             Requested size: 370.98508pt x 159.89697pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--480
+
+ []
+
+[188 <./figure/6_6.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+ [189]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [190]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no   in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--592
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--592
+
+ []
+
+[191] <figure/6_7.PNG, id=813, 349.90726pt x 261.67763pt>
+File: figure/6_7.PNG Graphic file (type png)
+ <use figure/6_7.PNG>
+Package pdftex.def Info: figure/6_7.PNG used on input line 598.
+(pdftex.def)             Requested size: 349.90639pt x 261.67697pt.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [192] [193 <./figure/6_7.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ <figure/6_8.PNG, id=822, 419.46713pt x 83.41162pt>
+File: figure/6_8.PNG Graphic file (type png)
+ <use figure/6_8.PNG>
+Package pdftex.def Info: figure/6_8.PNG used on input line 643.
+(pdftex.def)             Requested size: 419.4661pt x 83.4114pt.
+ <figure/6_9.PNG, id=823, 236.38312pt x 134.60287pt>
+File: figure/6_9.PNG Graphic file (type png)
+ <use figure/6_9.PNG>
+Package pdftex.def Info: figure/6_9.PNG used on input line 653.
+(pdftex.def)             Requested size: 236.38254pt x 134.60254pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 651--660
+[]$[]$ $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--664
+
+ []
+
+[194] [195 <./figure/6_8.PNG> <./figure/6_9.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [196] <figure/6_10.PNG, id=835, 199.34476pt x 182.78287pt>
+File: figure/6_10.PNG Graphic file (type png)
+ <use figure/6_10.PNG>
+Package pdftex.def Info: figure/6_10.PNG used on input line 705.
+(pdftex.def)             Requested size: 199.34425pt x 182.78241pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 703--711
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+[197 <./figure/6_10.PNG>]
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ½ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ½ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ½ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ½ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ½ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--753
+
+ []
+
+<figure/6_11.PNG, id=840, 235.47975pt x 185.19188pt>
+File: figure/6_11.PNG Graphic file (type png)
+ <use figure/6_11.PNG>
+Package pdftex.def Info: figure/6_11.PNG used on input line 765.
+(pdftex.def)             Requested size: 235.47917pt x 185.1914pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 763--771
+[]$[]$ $[]$ 
+ []
+
+[198] <figure/6_12.PNG, id=845, 237.58763pt x 141.52875pt>
+File: figure/6_12.PNG Graphic file (type png)
+ <use figure/6_12.PNG>
+Package pdftex.def Info: figure/6_12.PNG used on input line 798.
+(pdftex.def)             Requested size: 237.58705pt x 141.5284pt.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 796--804
+[]$[]$ $[]$ 
+ []
+
+[199 <./figure/6_11.PNG>] [200 <./figure/6_12.PNG>]
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ´ in font cmr12!
+ [201] <figure/6_13.PNG, id=858, 367.07138pt x 186.39638pt>
+File: figure/6_13.PNG Graphic file (type png)
+ <use figure/6_13.PNG>
+Package pdftex.def Info: figure/6_13.PNG used on input line 880.
+(pdftex.def)             Requested size: 367.07048pt x 186.3959pt.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+)
+Underfull \hbox (badness 10000) in paragraph at lines 876--49
+
+ []
+
+[202 <./figure/6_13.PNG>]
+\openout2 = `7-formalism.aux'.
+
+ (./7-formalism.tex
+Chapter 7.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+<figure/7_1.PNG, id=863, 249.93375pt x 119.2455pt>
+File: figure/7_1.PNG Graphic file (type png)
+ <use figure/7_1.PNG>
+Package pdftex.def Info: figure/7_1.PNG used on input line 8.
+(pdftex.def)             Requested size: 249.93314pt x 119.2452pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 6--14
+[]$[]$ $[]$ 
+ []
+
+
+Overfull \hbox (1.28424pt too wide) in paragraph at lines 3--15
+\OT1/cmr/m/n/14.4 Hilbert space H and its time evo-lu-tion by the Schrodinger equa-tion $\OML/cmm/m/it/14.4 i\U/msb/m/n/14.4 ~\OML/cmm/m/it/14.4 @[]\OMS/cmsy/m/n/14.4 j\OT1/cmr/m/n/14.4 	(\OML/cmm/m/it/14.4 t\OT1/cmr/m/n/14.4 )\OMS/cmsy/m/n/14.4 i \OT1/cmr/m/n/14.4 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--15
+
+ []
+
+
+Overfull \hbox (2.89525pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/n/14.4 (in-co-her-ent) in-for-ma-tion un-der-ly-ing the prepa-ra-tion. Trans-ferred to the Hilbert
+ []
+
+[203
+
+
+
+ <./figure/7_1.PNG>] [204]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--54
+
+ []
+
+[205]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmbx12!
+Missing character: There is no ¨ in font cmbx12!
+
+Overfull \hbox (1.4977pt too wide) in paragraph at lines 83--83
+ |[]\OT1/cmr/bx/n/17.28 Dynamic Pic-tures: Schrodinger - Heisen-berg - Dirac| 
+ []
+
+Missing character: There is no Â in font cmbx12!
+Missing character: There is no ¨ in font cmbx12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+[206]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--133
+
+ []
+
+[207]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ <figure/7_2.PNG, id=881, 222.23026pt x 225.2415pt>
+File: figure/7_2.PNG Graphic file (type png)
+ <use figure/7_2.PNG>
+Package pdftex.def Info: figure/7_2.PNG used on input line 154.
+(pdftex.def)             Requested size: 222.2297pt x 225.24094pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 152--160
+[]$[]$ $[]$ 
+ []
+
+[208 <./figure/7_2.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--196
+
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+[209]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
+
+ []
+
+[210] [211]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Overfull \hbox (15.05238pt too wide) in paragraph at lines 279--282
+\OT1/cmr/m/n/14.4 By it-er-a-tion, we ob-tain the fol-low-ing se-ries as al-ready known from the Schrodinger
+ []
+
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--297
+
+ []
+
+[212] <figure/7_3.PNG, id=899, 287.27325pt x 164.11313pt>
+File: figure/7_3.PNG Graphic file (type png)
+ <use figure/7_3.PNG>
+Package pdftex.def Info: figure/7_3.PNG used on input line 305.
+(pdftex.def)             Requested size: 287.27255pt x 164.11272pt.
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 303--311
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+[213 <./figure/7_3.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [214]
+Underfull \hbox (badness 10000) in paragraph at lines 369--372
+
+ []
+
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--385
+
+ []
+
+[215]) [216]
 \openout2 = `8-variational_approach.aux'.
 
  (./8-variational_approach.tex
 Chapter 8.
-Missing character: There is no â€” in font cmr12!
-[3
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ” in font cmr12!
+[217
+
 
 
 ]
-Missing character: There is no Â¨ in font cmr12!
-Missing character: There is no â€˜ in font cmr12!
-Missing character: There is no â€™ in font cmr12!
-Missing character: There is no Â¨ in font cmr12!
-Missing character: There is no Î¨ in font cmr12!
- [4]
-Missing character: There is no â€˜ in font cmr12!
-Missing character: There is no â€™ in font cmr12!
- [5]
-Missing character: There is no Î± in font cmr12!
-Missing character: There is no Â¨ in font cmr12!
-File: figure/8_1.PNG Graphic file (type QTm)
- <use  "figure/8_1.PNG" >
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [218]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [219]
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ± in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ <figure/8_1.PNG, id=924, 169.23225pt x 138.81862pt>
+File: figure/8_1.PNG Graphic file (type png)
+ <use figure/8_1.PNG>
+Package pdftex.def Info: figure/8_1.PNG used on input line 114.
+(pdftex.def)             Requested size: 169.23184pt x 138.81827pt.
+
 Overfull \hbox (2.22221pt too wide) in paragraph at lines 112--120
 []$[]$ $[]$ 
  []
 
-) [6] [7] (./quantum mechanics.aux (./8-variational_approach.aux)) ) 
-Here is how much of TeX's memory you used:
- 3844 strings out of 493706
- 55389 string characters out of 6148913
- 121942 words of memory out of 5000000
- 7115 multiletter control sequences out of 15000+600000
- 14691 words of font info for 56 fonts, out of 8000000 for 9000
- 1328 hyphenation exceptions out of 8191
- 36i,16n,39p,934b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
+) [220] [221 <./figure/8_1.PNG>]
+\openout2 = `9-perturbation.aux'.
 
-Output written on quantum mechanics.pdf (8 pages).
+ (./9-perturbation.tex
+Chapter 9.
+[222
+
+
+
+]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [223]
+Missing character: There is no â in font cmr10!
+Missing character: There is no ˆ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [224] [225]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [226]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+ [227]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ± in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [228]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [229]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no â in font cmr10!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+ [230]
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+ [231] <figure/9_1.PNG, id=964, 197.538pt x 88.53075pt>
+File: figure/9_1.PNG Graphic file (type png)
+ <use figure/9_1.PNG>
+Package pdftex.def Info: figure/9_1.PNG used on input line 358.
+(pdftex.def)             Requested size: 197.5375pt x 88.5305pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 356--364
+[]$[]$ $[]$ 
+ []
+
+
+Overfull \hbox (0.89621pt too wide) in paragraph at lines 352--367
+\OT1/cmr/m/n/14.4 The elim-i-na-tion of the 4-fold de-gen-er-ate state in $\OML/cmm/m/it/14.4 e[]=\OT1/cmr/m/n/14.4 8\OML/cmm/m/it/14.4 a[]$\OT1/cmr/m/n/14.4 into two non-degenerate
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+<figure/9_2.PNG, id=965, 167.12437pt x 121.6545pt>
+File: figure/9_2.PNG Graphic file (type png)
+ <use figure/9_2.PNG>
+Package pdftex.def Info: figure/9_2.PNG used on input line 378.
+(pdftex.def)             Requested size: 167.12395pt x 121.65419pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 376--384
+[]$[]$ $[]$ 
+ []
+
+[232 <./figure/9_1.PNG> <./figure/9_2.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [233]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+ <figure/9_3.PNG, id=974, 254.1495pt x 169.53337pt>
+File: figure/9_3.PNG Graphic file (type png)
+ <use figure/9_3.PNG>
+Package pdftex.def Info: figure/9_3.PNG used on input line 436.
+(pdftex.def)             Requested size: 254.14888pt x 169.53294pt.
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‹ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+ [234]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ <figure/9_4.PNG, id=979, 270.71138pt x 196.63463pt>
+File: figure/9_4.PNG Graphic file (type png)
+ <use figure/9_4.PNG>
+Package pdftex.def Info: figure/9_4.PNG used on input line 467.
+(pdftex.def)             Requested size: 270.71071pt x 196.63414pt.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [235 <./figure/9_3.PNG>] [236 <./figure/9_4.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [237]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ <figure/9_5.PNG, id=991, 196.93575pt x 120.14888pt>
+File: figure/9_5.PNG Graphic file (type png)
+ <use figure/9_5.PNG>
+Package pdftex.def Info: figure/9_5.PNG used on input line 544.
+(pdftex.def)             Requested size: 196.93524pt x 120.14857pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 542--550
+[]$[]$ $[]$ 
+ []
+
+[238 <./figure/9_5.PNG>]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [239] <figure/9_6.PNG, id=999, 189.40762pt x 184.58963pt>
+File: figure/9_6.PNG Graphic file (type png)
+ <use figure/9_6.PNG>
+Package pdftex.def Info: figure/9_6.PNG used on input line 601.
+(pdftex.def)             Requested size: 189.40715pt x 184.58917pt.
+
+Underfull \hbox (badness 5908) in paragraph at lines 605--605
+[]\OT1/cmr/m/n/14.4 Figure 9.6: |Tran-si-tion am-pli-tude
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 599--607
+[]$[]$ $[]$ 
+ []
+
+[240 <./figure/9_6.PNG>]
+Overfull \hbox (5.03604pt too wide) in paragraph at lines 644--646
+\OT1/cmr/m/n/14.4 Note that $\OMS/cmsy/m/n/14.4 jh[]j\OML/cmm/m/it/14.4 V\OMS/cmsy/m/n/14.4 j[]ij[]$ \OT1/cmr/m/n/14.4 may only de-pend on $[]\OML/cmm/m/it/14.4 ; []$ \OT1/cmr/m/n/14.4 via $\OML/cmm/m/it/14.4 E[]; E[]$\OT1/cmr/m/n/14.4 , oth-er-wise $\OMS/cmsy/m/n/14.4 jh[]j\OML/cmm/m/it/14.4 V\OMS/cmsy/m/n/14.4 j[]ij[]$
+ []
+
+[241]
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+ [242] <figure/9_7.PNG, id=1011, 224.037pt x 146.64787pt>
+File: figure/9_7.PNG Graphic file (type png)
+ <use figure/9_7.PNG>
+Package pdftex.def Info: figure/9_7.PNG used on input line 684.
+(pdftex.def)             Requested size: 224.03644pt x 146.6475pt.
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ˜ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no â in font cmr10!
+Missing character: There is no ˆ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+ [243 <./figure/9_7.PNG>] [244] <figure/9_8.PNG, id=1019, 243.00787pt x 135.80737pt>
+File: figure/9_8.PNG Graphic file (type png)
+ <use figure/9_8.PNG>
+Package pdftex.def Info: figure/9_8.PNG used on input line 772.
+(pdftex.def)             Requested size: 340.2087pt x 190.12901pt.
+
+Overfull \hbox (53.40091pt too wide) in paragraph at lines 772--773
+ [][] 
+ []
+
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 770--778
+[]$[]$ $[]$ 
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+[245] <figure/9_9.PNG, id=1023, 217.71338pt x 43.362pt>
+File: figure/9_9.PNG Graphic file (type png)
+ <use figure/9_9.PNG>
+Package pdftex.def Info: figure/9_9.PNG used on input line 794.
+(pdftex.def)             Requested size: 217.71284pt x 43.36188pt.
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no â in font cmr10!
+Missing character: There is no ˆ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+Missing character: There is no â in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no â in font cmr10!
+Missing character: There is no ˆ in font cmr10!
+Missing character: There is no ’ in font cmr10!
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 792--800
+[]$[]$ $[]$ 
+ []
+
+<figure/9_10.PNG, id=1024, 189.1065pt x 127.07475pt>
+File: figure/9_10.PNG Graphic file (type png)
+ <use figure/9_10.PNG>
+Package pdftex.def Info: figure/9_10.PNG used on input line 810.
+(pdftex.def)             Requested size: 189.10603pt x 127.07443pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 808--816
+[]$[]$ $[]$ 
+ []
+
+<figure/9_11.PNG, id=1025, 310.761pt x 91.542pt>
+File: figure/9_11.PNG Graphic file (type png)
+ <use figure/9_11.PNG>
+Package pdftex.def Info: figure/9_11.PNG used on input line 821.
+(pdftex.def)             Requested size: 466.14035pt x 137.31267pt.
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ± in font cmr12!
+Missing character: There is no Â in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Î in font cmr12!
+Missing character: There is no ± in font cmr12!
+) [246 <./figure/9_8.PNG> <./figure/9_9.PNG>] [247 <./figure/9_10.PNG> <./figure/9_11.PNG>] (./quantum mechanics.aux (./0-introduction.aux) (./1-wave_mechanics.aux) (./2-formalism.aux) (./3-one_dimension.aux) (./4-rotation.aux) (./5-central_potential.aux) (./6-scattering_theory.aux) (./7-formalism.aux) (./8-variational_approach.aux) (./9-perturbation.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5408 strings out of 493089
+ 80495 string characters out of 6138425
+ 157346 words of memory out of 5000000
+ 8606 multiletter control sequences out of 15000+600000
+ 17223 words of font info for 65 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,26n,43p,1794b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on "quantum mechanics.pdf" (248 pages, 6115001 bytes).
+PDF statistics:
+ 1117 PDF objects out of 1200 (max. 8388607)
+ 616 compressed objects within 7 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 556 words of extra memory for PDF output out of 10000 (max. 10000000)
+

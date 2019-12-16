@@ -22,10 +22,10 @@ A Hilbert space $\mathcal{H}$ is defined as a set of abstract elements (vectors)
 \end{enumerate}
 
 Two examples are mentioned:
-\begin{itemize}
+\begin{enumerate}
     \item[-] Complex vector space, a finite-dimensional Hilbert space with finitely many basis vectors.
     \item[-] Space of square integrable functions L2 (Rn), a 1-dimensional vector space. This is the typical Hilbert space we consider in quantum mechanics.
-\end{itemize}
+\end{enumerate}
 
 \subsection{Scalar Product}
 With the aid of the scalar product, we define the norm of $\phi\in\mathcal{H}$ as
@@ -132,19 +132,19 @@ The momentum operator in the location representation is (see page 38)
 \end{equation}
 \subsection{General Definitions \& Properties}
 We define the following terms:
-\begin{itemize}
+\begin{enumerate}
     \item[-] $A$ is linear if          $A\sum_ia_i\psi_i=\sum_ia_iA\psi_i$ for ¨ $a_i \in \mathbb{C}$.
     \item[-] $A^{\dagger}$ is the adjoint to $A$ if $\langle A^{\dagger}\phi,\psi=\langle\phi,A\psi\rangle,\forall\phi,\psi\in\mathbb{L}_2$.
     \item[-] $A$ is Hermitian (physical observables correspond to Hermitian operators (QM postulate).) (self-adjoint) if $A=A^{\dagger}$. It holds: $(AB)^{\dagger}=B^{\dagger}A^{\dagger}$.
-\end{itemize}
+\end{enumerate}
 Examples of linear Hermitian operators are:
-\begin{itemize}
+\begin{enumerate}
     \item[-] $\vec{r}$, multiplication with $\vec{r}$, the location operator.
     \item[-] $\vec{p}$, derivative $-i\hbar\nabla$, the momentum operator.
     \item[-] $\mathcal{H}$, the Hamiltonian.
     \item[-] $f(\vec{r})$, multiplication by $f(\vec{r}),f:\mathbb{R}^n\to\mathbb{R}^n$, e.g. $V(\vec{r})$.
     \item[-] $g(\vec{p})$, like $f(\vec{r})$ but in momentum space, or $g(\vec{r}),=\sum_n\frac{g^{(n)}}{n!}(-i\hbar\nabla)^n$ in space if a Taylor series exists.
-\end{itemize}
+\end{enumerate}
 
 While products from operators $x_n$ or $p_n$ are easy to handle, we need to be careful with mixed products, such as $xp$; although $x$ and $p$ are hermich this is no longer true for the product $xp$: it is $(xp)^{\dagger}=p^{\dagger}x^{\dagger}=px$ and applying to a function $\psi(x)$ yields
 %公式2.18
@@ -162,7 +162,7 @@ $\Rightarrow xp-px=i\hbar$ (as an operator identity). Thus, with $\vec{r}$ also 
 Let $A$ and $B$ be linear operators. Then means
 %公式 2.20
 \begin{equation}
-    [A,B]=AB-BA \text{Commutator from A \text{ with } B
+    [A,B]=AB-BA \text{Commutator from} A \text{ with } B
 \end{equation}
 Examples of commutators:
 %公式
@@ -191,9 +191,9 @@ If $[A, B]$ commutes with $A$ and $B$, then $[[A, B], A] = [[A, B], B] = 0$, esp
 Given a state $\psi\in\mathcal{H}$ and a (hermitian) operator $A$. We define
 %公式 2.24
 \begin{equation}
-\begin{aligned}\langle A\rangle &=\langle\psi, A \psi\rangle=\int d^{n} r \psi^{*}(r) A \psi(r) \text { the expected value of } A \\\langle\Delta A\rangle &=\left\langle(A-\langle A\rangle)^{2}\right\rangle^{1 / 2} \\ \&=\left(\left\langle A^{2}\right\rangle-\langle A\rangle^{2}\right)^{1 / 2} \text { the fluctuation of } A \end{aligned}
+\begin{aligned}
+\langle A\rangle &=\langle\psi, A \psi\rangle=\int d^{n} r \psi^{*}(r) A \psi(r) \text { the expected value of } A \\\langle\Delta A\rangle &=\left\langle(A-\langle A\rangle)^{2}\right\rangle^{1 / 2} \\ \&=\left(\left\langle A^{2}\right\rangle-\langle A\rangle^{2}\right)^{1 / 2} \text { the fluctuation of } A \end{aligned}
 \end{equation}
-
 %Page 55
 \subsection{Component decomposition of $A\psi$}
 $\phi$ means orthogonal to $\psi$ if $\langle\phi,\psi\rangle=0$. We denote by $\psi_{\bot}$ an orthogonal function to $\psi$. Let $A$ be Hermitesh, $\psi_{\bot}$ normalized, $\parallel\psi_{\bot}\parallel=1$, then let $A\psi$ be dismantled
@@ -268,13 +268,10 @@ Let {$\phi_n$}, $\phi_n\in\mathcal{H}$ be a basis in $\mathcal{H}$, $A$ be a (He
     \end{equation}
 \section{Observable and correspondence principle}
 We combine the mathematical structures developed above with physical contents; the complex functions $\phi$ now become wave functions $\psi$, the operators become observables: a measure of classical physics, e.g. the place, the momentum, the energy or the angular momentum corresponds in quantum mechanics to a hermitian operator $\to$ observables in quantum mechanics are Hermitian operators. The assignment of the classical measuring quantities to the quantum mechanical observables regulates the correspondence principle:
-\begin{itemize}
+\begin{enumerate}
     \item[-] Quantum mechanics assign (hermitian) operators to physical variables (QM postulate).
     \item[-] The classical relations correspond to quantum mechanical relations.
-\end{itemize}
-
-
-
+\end{enumerate}
 %Page 58
 The following mappings and relations are consistent:
 $$
@@ -337,11 +334,10 @@ Thus the continuity equation holds
 \end{equation}
 if we define the current density $\vec{j}$ via (2.42).\\\\
 Remarks: 
-\begin{itemize}
+\begin{enumerate}
     \item[-] $\vec{j}$ is defined such that with $i\hbar\partial_t\Psi=H\Psi$ the continuity equation holds and the dynamics does not generate any particle loss. Thus we have a method with known probability density $\rho(\Psi)$ and Hamiltonian $H$ to find the probability current density $\vec{j}(\Psi)$.
     \item[-] Let $\Psi=\sqrt{\rho(\vec{r},t)}exp[i\varphi(\vec{r},t)]$ represented by amplitude and phase. Then $\vec{j}=(\hbar/m)\rho(\vec{r},t)\nabla\varphi(\vec{r},t)$, the particle flow, only when $\neq 0$, if $\Psi$ has a location-dependent phase $\varphi(\vec{r},t)$. It is the phase gradient which drives the currents (compare with Ohm's law in the electrodynamics, where a particle stream in the material usually is driven by a electric field).
-\end{itemize}
- 
+\end{enumerate}
 \subsection{Stationary states and evolution}
 If $\partial_t H=0, H$ is time-independent, then we can separate the dynamics,
 %公式 2:44
@@ -387,7 +383,7 @@ Thus $w (a)$ can be determined from the moments $m_n$
 \begin{aligned} \sum_{n} \frac{x^{n}}{n !} m_{n} &=\exp \left[\sum_{k} \frac{x^{k}}{k !} c_{k}\right] \\ c_{1} &=m_{1} \\ c_{2} &=m_{2}-m_{1}^{2} \\ c_{3} &=m_{3}-3 m_{2} m_{1}+2 m_{1}^{3} \\ c_{4} &=m_{4}-4 m_{3} m_{1}-3 m_{2}^{2}+12 m_{2} m_{1}^{2}-6 m_{1}^{4} \\ \ldots &=\cdots \end{aligned}
 \end{equation}
 Application to the quantum mechanical measuring process {$A,\Psi$}:
-\begin{itemize}
+\begin{enumerate}
     \item[-] Let $\Psi=\Psi_n$ be an eigenstate of $A$, $A\Psi_n=a_n\Psi_n$. The expected value $\langle A\rangle$ is equal to the physical mean of the measurement results over many equivalent measurements {$A,\Psi$}; same for the moments    (QM postulate). Then $\langle A^k\rangle=a_n^k$ the $k_{th}$ moment,%公式 2:52
     \begin{equation}
     \begin{aligned} \chi(\tau) &=\sum_{k} \frac{(-i)^{k}}{k !}\left(a_{n} \tau\right)^{k}=\exp \left(-i a_{n} \tau\right) \\ w(a) &=\int_{-\infty}^{\infty} \frac{d \tau}{2 \pi} e^{i a \tau} e^{-i a_{n} \tau}=\delta\left(a-a_{n}\right) \end{aligned}
@@ -398,7 +394,7 @@ Application to the quantum mechanical measuring process {$A,\Psi$}:
     \begin{aligned}\left\langle A^{k}\right\rangle &=\sum_{n}\left|c_{n}\right|^{2} a_{n}^{k} \\ \chi(\tau) &=\sum_{n}\left|c_{n}\right|^{2} e^{-i a_{n} \tau} \\ w(a) &=\sum_{n}\left|c_{n}\right|^{2} \delta\left(a-a_{n}\right) \end{aligned}
     \end{equation}
     that is, it is measured with the probability $| c_n|^2$ of the eigenvalue $a_n$.
-\end{itemize}
+\end{enumerate}
 %公式 2:53
 %Page 63
 \textbf{In summary}, let {$\Psi_n$} be a vONS to $A$ with (discrete) spectrum {$a_n$} (continuous parts in the spectrum are treated according to (2.32)). Every state of a system can be written as
@@ -407,7 +403,7 @@ Application to the quantum mechanical measuring process {$A,\Psi$}:
     \Psi=\sum_{n} c_{n} \Psi_{n}, \quad\|\Psi\|^{2}=\sum_{n}\left|c_{n}\right|^{2}=1
     \end{equation}
 The measurement of observable $A$ on the system in state $\Psi$ shows that
-\begin{itemize}
+\begin{enumerate}
     \item[-] with probability $| c_n|^2$ the eigenvalue $a_n$ is measured (Born), in particular only eigenvalues ​​are measured,
     \item[-] after the measurement of the eigenvalue $a_n$, the system is in the state $\Psi_n$ (von Neumann projection (von Neumann projection postulate (QM postulate))),
     %公式2.55
@@ -415,8 +411,7 @@ The measurement of observable $A$ on the system in state $\Psi$ shows that
         \Psi \stackrel{\text { Measurement of } a_{n}}{\longrightarrow} \Psi_{n}
     \end{equation}
     The reduction of the wave function to the component $\Psi_n$ is known under the term "collapse of the wave function"; in a modern context, this collapse is a fiction-it is the decoherence via interaction with the environment that reduces the wave function (better the density matrix, see later). Even further is Everett's theory of the multiverse: this is described by a global evolving wave function [see Max Tegmark, Many Lives in many worlds, Nature 448, 23 (2007); Tegmark and Wheeler, 100 Years of the Quantum, Scientific American, February 2001]. The concept of Von Neumann projection comes into play especially in repeated measurements: a repeated measurement of A yields the probability $w (a) =\delta(a-a_n)$, as long as the time evolution of the system $\Psi_n$ is maintained, i.g. $[A, H] = 0$. In general, a second measurement at a later time yields a more complex measure, the (temporal) correlator of a measure of what information about the evolution of the system is. In addition, a system can be prepared by measuring in one state; However, this preparation has a statistical character, since the prepared state is determined only after the measurement.
-\end{itemize}
-
+\end{enumerate}
 %Page 64
 \subsection{Several sharp measurements}
 Let $A$ and $B$ be two observables. We are interested in the conditions that allow us to determine $A$ and $B$ simultaneously (sharply). We show,
@@ -425,7 +420,7 @@ Let $A$ and $B$ be two observables. We are interested in the conditions that all
 [A, B]=0 \quad \Longleftrightarrow \quad | \begin{array}{l}{E_s\text { common eigenfunctions exist }} \\ {\Psi_{m, n}, \text { so that a measurement of } A \text { and } B \text { the }} \\ {\text { eigenvalues } a_{n} \text { and } b_{n} \text { spicy supplies. }}\end{array} |
 \end{equation}
 and distinguish two cases:
-\begin{itemize}
+\begin{enumerate}
     \item[-] $A\Psi=a\Psi$ not degenerate $\to AB\Psi=BA\Psi=aB\Psi$ and since the eigenspace $Eig_a$ of a is not degenerate, $B\Psi=b\Psi$.
     \item[-] $A\Psi=a\Psi_n$ for =$n = 1 · · · k$, a k-fold degenerate eigenspace of $A$.
     Again $AB\Psi_n=aB\Psi_n$ and thus $B\Psi_n=\sum^k_{m=1}B_{nm}\Psi_{m}$. The coefficient matrix $B_{nm}=\langle \Psi_m,B\Psi_n\rangle$ is Hermitian and thus $U$ unitary exists with
@@ -440,19 +435,18 @@ and distinguish two cases:
     \begin{aligned}\left\langle\Phi_{s}, B \Phi_{r}\right\rangle &=\sum_{m, m^{\prime}}\left\langle\Psi_{m^{\prime}}, U_{m^{\prime} s} B U_{m r}^{*} \Psi_{m}\right\rangle \\ &=\sum_{m, m^{\prime}} U_{m^{\prime} s} B_{m m^{\prime}} U_{m r}^{*}=\sum_{m} U_{m s} B_{\mathcal{D}_{s}} U_{m r}^{*} \\ &=B_{\mathcal{D}_{s}} \delta_{s r} \end{aligned}
     \end{equation}
     where $B^*_{mn}=B_{mn}$(obviously) Hermitian, $B^{\dagger}=B, U^{\dagger}U=\sum U^*_{mr}U_{ms}=\delta_{rs}$ and $BU=\sum_{m'}B_{mm'}U_{m's}=B_{ms}B_{Ds}=UB_D$.
-\end{itemize}
+\end{enumerate}
 Conversely, let {$\Psi_n$} be a vONS to $A$ and $B$ with eigenvalues ​​$a_n$ and $b_n$, then $A$ and $B$ commute, $[A, B] = 0$.\\\\
 \textbf{Complete set of observables}. We call a set $A_1, \cdots, A_n$ a complete set of observables if $[A_i, A_j] = 0$ and the common system of eigenfunctions is no longer degenerate. Number the eigenvalues ​​$a_1, \cdots,a_n$ on a complete set of observables and characterize the eigenfunctions $Ψ_n = Ψ_{a1, \cdots,a_n}$. The measurements
 from $A_1, \cdots,A_n$ to provide the maximum available information about the system.\\\\
 %Page 65
 \textbf{Remarks}: 
-\begin{itemize}
+\begin{enumerate}
     \item[-] Let $A_1, \cdots, A_n$ a set of observables with $\Psi_n$ yet degenerate, then there is a symmetry group (finite or compact) whose
     generating with the $A_1, \cdots,A_n$ commutated to.
     \item[-]  If $H \in \{A_n\}$ destroys the dynamics not the sharply measured eigenvalues. 
     \item[-] For the potential problem in the $\mathbb{R}^1$ are the operators $x$ or $p$ complete (Fourier theorem), generally in the $\mathbb{R}^n$ complete the vector operators $\vec{r}$ or $\vec{p}$. (The Fourier transform, defined on a black space, can be extended to the $\mathbb{L}^2$ space.)
-\end{itemize}
-
+\end{enumerate}
 \section{Basic Transformations}
 From the linear algebra is known: $\vec{e}_i,\vec{e}^{\prime}_i$ have two bases with
 %公式 2:59
@@ -692,10 +686,9 @@ So we understand $\langle A\beta|$ as $\langle\beta| A^{\dagger}$.
         \end{equation}
 \end{enumerate}
 %Page 71
-
 \section{Normalization and $\delta$-function}
 Problem: Continuum states are generally not normalizable, e.g. applies to plane waves $\Psi_{\vec{k}=exp(i\vec{k}\cdot\vec{r})}$, that $\int|\Psi|^2d^3r\to\infty$. We discuss two methods of dealing with the problem of normalization, the transition to wave packets or the box standardization. There are three different types of box standardization in a broader sense:
-\begin{itemize}
+\begin{enumerate}
     \item[-] Fix walls with $\Psi_{\vec{k}}(\vec{r}\in\text{Wall})=0$. Thus the spectrum is discretized and the eigenfunctions (to $\vec{p}$ or $H$) are normable, see Page 40 for dim = 1,
     %公式 2100
     \begin{equation}
@@ -736,10 +729,7 @@ Problem: Continuum states are generally not normalizable, e.g. applies to plane 
     \begin{equation}
         \int d^{d} k \Psi_{\vec{k}}^{*}\left(\vec{r}^{\prime}\right) \Psi_{\vec{k}}(\vec{r})=\frac{1}{(2 \pi)^{d}} \int d^{d} k e^{i \vec{k} \cdot\left(\vec{r}-\vec{r}^{\prime}\right)}=\delta^{d}\left(\vec{r}-\vec{r}^{\prime}\right)
         \end{equation}
-\end{itemize}
-%Page 73
-
-
+\end{enumerate}
 \section{Rules for delta functions}
 $\delta$-functions are treated in the sense of distributions, so they work on test functions $t(x)$,
 %公式 2108

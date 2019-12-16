@@ -1,4 +1,4 @@
-%!TEX program = xelatex
+%!TEX program = pdflatex
 \documentclass{report}
 \usepackage{amsmath}
 \numberwithin{equation}{chapter}
@@ -31,26 +31,27 @@
 \tableofcontents
 \listoffigures
 %\listoftables
-\setcounter{chapter}{7}
+\setcounter{chapter}{-1}
 
-%\include{0-introduction}
+\include{0-introduction}
 
 
-%\include{1-wave_mechanics}
+\include{1-wave_mechanics}
 
-%\include{2-formalism}
+\include{2-formalism}
 
-%\include{3-one_dimension}
+\include{3-one_dimension}
 
-%\include{4-rotation}
+\include{4-rotation}
 
-%\include{5-central_potential}
+\include{5-central_potential}
 
-%\include{6-scattering_theory}
+\include{6-scattering_theory}
 
-%\include{7-formalism}
+\include{7-formalism}
 
 \include{8-variational_approach}
 
-%\include{9-perturbation}
+\include{9-perturbation}
+
 \end{document}
