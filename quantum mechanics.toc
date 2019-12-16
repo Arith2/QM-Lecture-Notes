@@ -1,0 +1,2 @@
+\contentsline {chapter}{\numberline {8}App. methods: variational approach}{3}
+\contentsline {section}{\numberline {8.1}Basic state of the He-atom}{5}

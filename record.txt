@@ -1,243 +1,328 @@
-Kapitel 5
-Zentralpotential
-Im Folgenden untersuchen wir station¨are Zust¨ande im Zentralpotential V (~r ) = V (r), d.h., in Problemen mit rotationssymmetrischen Potentialen.
-Der Hamilton-Operator ist
-公式5.1
-und wir untersuchen das Eigenwertproblem
-公式5.2
-Es ist V = V (r) aber Ψ = Ψ(~r ), das heisst, die Wellenfunktion Ψ hat auch Struktur in den Winkelkoordinaten. Die Rotationssymmetrie [H, U~ω] = 0, U~ω ∈ SO(3), erlaubt uns H, L2 und Lz gleichzeitig zu diagonalisieren und vereinfacht dadurch die L¨osung des Problems. Die Situation ist ¨ahnlich der in der Mechanik: jeder Symmetrie entspricht eine erhaltene Gr¨osse, im vorliegenden Problem ist dies die Invarianz unter Translationen in der Zeit und unter Drehungen; die zugeh¨origen Erhaltungsgr¨ossen sind die Energie E und der Drehimpuls L~ . Diese Erhaltungss¨atze sind ¨ausserst hilfreich in der L¨osung des mechanischen Problems. Die gleichen Symmetrien in der Quantenmechanik geben uns eine scharfe (erhaltene) Energie und einen erhaltenen Drehimpuls da [H,L~ ] = 0 ist. Ein Unterschied tritt allerdings aufgrund der Nichtkommutierbarkeit der drei Drehimpulskomponenten auf; obwohl wir L~ in einer beliebigen Richtung (wir nennen sie die z-Richtung) festlegen k¨onnen folgt wegen [Li , Lj ] = i~εijkLk 6= 0 dass wir nicht alle drei Komponenten gleichzeitig festlegen k¨onnen. Den vier erhaltenen Gr¨ossen in der Mechanik entsprechen also nur drei Quantenzahlen E (zum Hamiltonian H, l (zum Drehimpuls L2),und m (zur Drehimpulskomponente Lz) in der Quantenmechanik. Technisch wird die L¨osung des Problems vereinfacht indem wir nur station¨are L¨osungen der Schr¨odingergleichung finden mussen und indem das Winkelproblem durch Ausreduktion der Drehgruppe im Hilbertraum bereits gel¨ost worden ist. Das verbleibende Radialproblem k¨onnen wir in jedem Sektor zu fixem l l¨osen.
-Wir gehen zu Kugelkoordinaten uber so dass wir die Rotationssymmetrie direkt ausnutzen konnen.
+Kapitel 9
+App. Methoden:
+St¨orungstheorie
+Die St¨orungsanalyse h¨angt stark vom Problem ab: wir unterscheiden station¨are (∂tH = 0) von nicht-station¨aren (∂tH 6= 0) Problemen und konzentrieren uns auf diskrete Spektren. Im einfachsten Fall liegt ein nichtentartetes Spektrum vor — wir behandeln deshalb den station¨aren, nichtentarteten Fall zuerst und analysieren dann entartete und fast entartete Eigenwerte. Nichtstation¨are Probleme und Fermis Goldene Regel schliessen die Diskussion ab.
 
-5.1 Eigenwertproblem in Kugelkoordinaten
-Es ist
-公式5.3
-Klassisch ist L.。 zum Beweis rechne man direkt nach oder man benutze den lim ~ → 0 von (5.3). Es ist
+9.1 Station¨arer, nichtentarteter Fall
+Gegeben sei das station¨are (∂tH = 0) Eigenwertproblem
+公式1
+Der Hamiltonoperator zerfalle in H = H0 + H0 , mit H0 einfach genug, so dass eine L¨osung
+公式2
+bekannt sei. H0 sei eine kleine St¨orung; wir suchen eine St¨orungsreihe in H0. Um die Buchfuhrung zu erleichtern schreiben wir
+公式3
+und setzen einen St¨orungsansatz in λ an,
+公式4
+Einsetzen von (9.4) in (9.1) mit (9.3) ergibt in Ordnung
+公式5
+Die Ordnung λ0 ergibt sofort dass
+公式6
+Weiter k¨onnen wir die Ψk iterativ finden da rechts der Gleichheitszeichen nur Ψj mit j < k auftreten. Die Addition von µkΨ0 zu Ψk, Ψk → Ψk+µkΨ0, ver¨andert die Bestimmungsgleichung fur Ψ ¨ k nicht, da
+公式7
+Ohne Beschr¨ankung der Allgemeinheit k¨onnen wir deshalb von jedem Ψk seine Komponente entlang Ψ0 abz¨ahlen und verlangen
+公式8
+was einer Normierungsbedingung
+公式9
+gleichkommt. Wir wollen (9.5) systematisch l¨osen. Das Skalarprodukt mit Ψ0 der Ordnung λs-Gleichung gibt
+公式10
+
+公式11
+die Berechnung von E in Ordnung s setzt die Berechnung von Ψ in der Ordnung s − 1 voraus.
+
+Ein interessantes Zwischenresultat finden wir durch Multiplikation von (9.11) mit λs und anschliessende Summation uber alle Ordnungen ¨ λs; diese Manipulation ergibt eine Beziehung zwischen E und Ψ in der Form
+
+公式12
+Fur eine systematische Berechnung von ¨ E und Ψ brauchen wir einen Ausdruck fur ¨ |Ψsi und wir entwickeln in der Basis |ϕli,
+公式13
+Die Summe P0 enth¨alt keinen Term l = n da hϕn|Ψsi = hΨ0|Ψsi = δ0s ist, vgl. Gl. (9.8). Das Skalarprodukt von (9.5) in der Ordnung s mit hϕ| ergibt
+公式14
+wobei der Term mit j = 0 in der Summe, E0hϕl |Ψsi, wiederum |Ψsi enth¨alt. Damit finden wir
+公式15
+Dieses Gleichungssystem l¨asst sich iterativ l¨osen: Sei E und Ψ bis einschliesslich der Ordnung s − 1 bekannt, das heisst, E0, · · · , Es−1 und Ψ0, · · · , Ψs−1 seien bereits gefunden. Dann ist fur ¨ s ≥ 1:
+公式16
+Fur ¨ s = 0 bilden E0 = En und |Ψ0i = |ϕni den Startpunkt fur die Iteration. Die Nichtentartung war wichtig in (9.15): Es darf keinen Vektor |ϕli 6= |ϕni geben mit El = En. Wir werden auf den Spezialfall, wo diese Bedingung nicht erfullt ist, zur ¨ uckkommen. Schliesslich geben wir die Resultate f ¨ ur ¨ s ≤ 2 explizit an, wobei wir die Notation |ϕli = |li verwenden:
+公式17
+
+公式18
+
+公式19
+Die Normierung (in Ordnung s = 2) hat die Form
+公式20
+Beachte: Die 2te Ordnung der St¨orungstheorie fuhrt immer zu einer Erniedrigung der Grundzustandsenergie. 
+Beispiel: Harmonischer Oszillator im Kraftfeld Das Problem wird durch den Hamiltonian
+公式21 
+definiert. Das ungest¨orte Problem hat die L¨osung
+公式22
+Wir gehen zu dimensionslosen Variablen uber und f ¨ uhren Auf- und Absteigeoperatoren ein (vergleiche Seite 110 ff)
+公式23
+Die Matrixelemente ergeben sich zu
+公式24
+Damit erhalten wir folgende Resultate bis zur 2-ten Ordnung,1
+公式25
+
+公式26
+
+公式27
+Andererseits beschreibt der Hamiltonia
 公式
+
+gerade einen um q0 = F/mω2 verschobenen harmonischen Oszillator; dessen Energien sind um −F2/2mω2 verschoben
+公式28
+und die Zustandsfunktionen sin
+公式29
+Die St¨orungsreihe sollte gerade den verschobenen harmonischen Oszillator als Potenzreihe in F ergeben, was der Vergleich von (9.25) – (9.27) mit (9.28) und (9.29) best¨atigt.
+
+9.2 Station¨arer, entarteter Fall
+Das Problem der Entartung ¨aussert sich in (9.15)—der Energienenner En−El verschwindet wenn |ni und |li aus demselben Energieeigenraum stammen und daher die gleiche Energie haben. Abhilfe ist einfach: wir mussen die St¨orungstheorie fur entartete Eigenwerte neu aufbauen. Beachte, dass eine Entartung nur relevant ist, wenn wir die St¨orungsanalyse im entarteten Eigenraum ausfuhren, nicht aber wenn wir zwar dim Eig ¨ Em = Dm > 1 haben aber Eig En|En6=Em mit dim Eig En = 1 untersuchen. Im letzteren Fall sind zwar alle Nenner En − Em uber Eig ¨ Em konstant aber En − En 6= 0.
+
+Wir erarbeiten ein konkretes Beispiel mit dim Eig Em = 2, der allgemeine Fall mit dim Eig Em = k > 1 folgt trivial; statt einer 2 × 2 Matrix ist eine k×k Matrix zu diagonalisieren, siehe sp¨ater. Es sei {ϕm, ϕn} der Eigenraum zu E0 = Em = En = E und ϕn ⊥ ϕm.
+
+9.2.1 Aufhebung der Entartung in der Ordnung s = 1
+Die Energie alleine genugt nicht, um den zu untersuchenden Zustand festzulegen da alle Superpositionen
+公式30
+die gleiche Energie E0 = E in Ordnung s = 0 besitzen (wir verwenden die Diracnotation ϕl → |li). Einen guten Startpunkt fur die St ¨ ¨orungsreihe k¨onnen wir finden wenn wir (9.5) in Ordnung s = 1 nehmen und Matrixelemente mit hm| und hn| bilden,
+
+公式31 
+und ebenso mit hn|. Die beiden Gleichungen lassen sich in die folgende Matrix-Form bringen,
+公式32 
+Mit hm|H0 und sowie erhalten wir das Eigenwertproblem
+公式33 
+Eine L¨osung Ψ0 6= 0 existiert falls die Determinante gleich Null ist, also
+公式34 
+womit wir E1 berechnen k¨onnen zu
+公式35
+Die Bedingungen
+公式36
+charakterisieren die zugeh¨origen Eigenvektoren.
+
+Sei nun En oder δ0 6= 0. In niedrigster Ordnung erhalten wir das Resultat E0 = E und |Ψn durch (9.36) bestimmt. Die n¨achste Ordnung ergibt die Korrektor E1 = E±1 gem¨ass (9.35) und die Entartung wird aufgehoben. Um die Korrekturen |Ψ±1i fur die Wellenfunktionen zu finden betrachten wir zuerst die Ordnung s = 1 von (9.5) und berechnen das Matrixelement mit hl|, l 6= m, n,
+公式37
+(9.37) legt die Komponenten von |Ψ±1i im Sektor H \ {|mi, |ni} fest,
+公式38
+wobei der Projektor P = 1l − |mihm| − |nihn| auf H \ {|mi, |ni} projeziert. Daruber hinaus m ¨ ussen wir auch die Komponenten von ¨ |Ψ±1i im Raum {|mi, |ni} bestimmen, wozu wir die n¨achste Ordnung, den λ2-term in (9.5) benutzen. Fur ¨ |Ψ+1i finden wir
+公式39
+Andererseits ist
+公式40
+da (1l − P)H0i wie man durch direktes Nachrechnen zeigt. Die Kombination von (9.39) und (9.40) ergibt
+公式41 
+und damit, unter Verwendung von (9.38), die gesuchte Komponente i. Beachte, dass die Korrektur (9.41) von der Ordnung hm(n)|H0 ist. Eine analoge Rechnung gibt das korrespondierende Resultat fur ¨ |Ψ−1i. Fassen wir die obigen Resultate zusammen so finden wir eine St¨orungsreihe startend mit
+公式42 
+Allgemein Sei dim Eig En = k, {ϕ1n, · · · , ϕkn} ein vONS in Eig En. Wir l¨osen das Eigenwertproblem
+公式43 
+und erhalten die Eigenwerte Eα · · , k, und Eigenvektoren |n. Dann k¨onnen wir die Resultate (9.17) bis (9.20) und weitere Ordnungen (9.16) ubernehmen indem wir ersetzen
+公式44 
+zum Beispiel in 2ter Ordnung fur ¨ E
+公式45 
+und in 1ter Ordnung fur Ψ,
+公式46
+wobei wir wiederum die Komponente in Eig En speziell berechnen mussen. ¨
+9.2.2 Aufhebung der Entartung in zweiter Ordnung Betrachte (9.35) sowie (9.36): Wenn E0m = E0n und δ0 = 0 ist, dann resultiert daraus E+1 = E−1 und die Entartung wird in erster Ordnung nicht aufgehoben. Wir gehen dann zur s = 2 Ordnung von (9.5) uber und nehmen das Matrixelement mit hm| und mit hn|,
+公式47
+Wir benutzen die 1-te Ordnung Resultate
+公式48
+
+公式49 
+Die 2-te Ordnung Gleichung (9.47) l¨asst sich schreiben als
+
+公式50
+Der mittlere Term verschwindet da im Raum (1l − P)H = {|mi, |ni} die Entartung in 1-ter Ordnung nicht aufgehoben wird, d.h., (1l−P)H0(1l−P) = E1(1l − P). Wir finden die Gleichung
+公式15
+und Einsetzen von (9.49) ergibt
+公式52 
+Ebenso finden wir durch Projektion auf hn|,
+公式53 
+mit
+公式54 
+Damit haben wir das Problem auf (9.33) zuruckgef ¨ uhrt. Die Gr ¨ ¨ossen Eund δ0 heissen 2-te Ordnung Matrixelemente. Damit die Entartung in 2-ter Ordnung aufgehoben wird muss wiederum entweder Em oder δ0 6= 0 sein. ⇒ Die Entartung wird sich in
+表
+
+Beispiel: Stark Effekt im Wasserstoffatom. 
+Betrachte ein Wasserstoffatom im elektrischen Feld E~ = (0, 0, E). Dann ist H0 = eEz die St¨orung. Wir untersuchen die Aufhebung der Entartung im n = 2 Niveau mit Zust¨anden |n, l, mi = |2s0i, |2p1i, |2p0i, |2p−1i, also 4-fach entartet. Zur Behandlung w¨are eine 4 × 4-Matrix n¨otig, aber da [Lz, z] = 0 ist mischen die verschiedenen m nicht,
+公式55
+Somit bleiben nur die Matrixelemente h2s0|H0|2p0i = δ0 und δ
+0∗ sowie die Diagonalen. Da aber auch [H0, P] = 0 (mit der Parit¨at P) gilt, haben die Eigenvektoren eine wohldefinierte Parit¨at, n¨amlich die von Ylm, P Ylm =(−1)lYlm. Da aber z Ylm die Parit¨at (−1)l+1 hat, muss hl|H0|li = 0 sein. Daraus folgt, dass auch die Diagonalen verschwinden, und
+公式56
+Es bleibt δ = h2s0|H0|2p0i = −3aBeE zu berechnen und die verbleibende 2 × 2 Matrix zu diagonalisieren,
+公式57
+Die Aufhebung des 4-fach entarteten Zustandes bei e2/8aB in zwei nichtentartete und einen 2-fach entarteten Zustand ist in Abb. 9.1 skizziert.
+图9.1
+Wir sch¨atzen die relative Korrektur ab,
+公式58
+Das Feld e/a20(typische Feldst¨arke beim e−) ist e/a20 ≈ 5 · 109 V/cm. Dazu der Vergleich mit typischen Feldern in MOSFET’s ∼ 105 − 106 V/cm, oder die Durchbruchfeldst¨arke von einem der besten Isolatoren SiO2 ∼ 106 − 108 V/cm. Diese Gr¨ossenverh¨altnisse rechtfertigen den Ansatz, dass die Labor-Felder wesentlich kleiner sind als die Felder im Atom.
+
+9.3 Station¨arer, fast entarteter Fall
+Offensichtlich ist die St¨orungsreihe eine Entwicklung in hn|V |li/(En − El). Wenn En → El geht, ist die Reihe nur langsam konvergent. Wir diskutieren hier den Fall in dem zwei Eigenvektoren |ni und |mi beinahe (oder vollst¨andig) entarten, zum Beispiel ein ‘Level Crossing’ in 0ter Ordnung, vgl. Abb. 9.2.
+图9.2
+Wir schreiben H = H0 + H0 = H0 + H01 + H02 mit
+公式59
+
+公式60
+Wenn H01 die Entartung in 1. Ordnung aufhebt k¨onnen wir H02 in konventioneller Manier l¨osen. Die Idee ist dann zuerst das H1 = H0 + H01-Problem exakt zu l¨osen und anschliessend H02 perturbativ zu behandeln. Betrachte |li mit l 6= m, n. Mit H0|li = El |li ist auch H1|li = El|li da hl|mi = hl|ni = 0 ist ⇒ nichts zu tun in H\{ϕn, ϕm}. Es bleibt der {ϕn, ϕm}-Raum. Dies ist aber gerade das Problem (9.33) mit
+
+公式16
+Beachte, dass hier E0m den Anteil Em in 0ter Ordnung auch beinhaltet. In (9.33) war Em = En und wir haben nur die St¨orung betrachtet, also den Nullpunkt anders gew¨ahlt. Hier ist zwar Em ≈ En, aber dennoch Em 6= En. Die neuen Startvektoren und Energien fur das ¨ H02-Problem sind dann:
+公式26
+Beispiel: 1D periodisches Potential. Wir betrachten das Problem gegeben durch den Hamiltonian H mit periodischem Potential V (x) und periodischen (Born-von Karmann) Randbedingungen,
+公式63 
+Das ungest¨orte Problem mit H0 = −~2∂2x/2m hat die L¨osungen
+公式64 
+Durch die Benutzung periodischer Randbedingungen haben wird das kontinuierliche Spektrum quasi-kontinuierlich (→ diskret) gemacht, eine geeignete Technik ein kontinuierliches Spektrum zu behandeln. Wir wollen V st¨orungstheoretisch behandeln. Mit
+公式65 
+(beachte V (x + w) = V (x) periodisch ⇒ V (x) l¨asst sich als Fourierreihe darstellen) erhalten wir fur die Matrixelemente
+公式66
+und finden damit die Wellenfunktionen in erster Ordnung St¨orungstheorie
+公式67
+Die Energie berechnen wir in 2ter Ordnung,
+
+公式68
+Dieser Ausdruck divergiert in der Umgebung von Ek ∼ Ek+Kl , vgl. Abb. 9.3: Die k-Werte um −πl/w koppeln via Kl = 2πl/w zu +πl/w und die Nenner Ek − Ek+Kl in (9.68) gehen gegen 0 mit k → −lπ/w. Wir l¨osen deshalb das Problem in der Umgebung von −lπ/w im Rahmen fast entarteter St¨orungstheorie. Mit |mi = ϕk und |ni = ϕk+Kl , k ∼ −lπ/w, haben wir die
+图9.3
+Matrix
+公式69
+zu diagonalisieren. Die Energieeigenwerte sind
+
+公式70
+Fur ¨ |Ek − Ek+Kl|  |Vl| erhalten wir in 1-ter Ordnung St¨orungstheorie
+公式17
+Bei k = −lπ/w erhalten wir substanzielle Korrekturen,
+公式27
+das heisst, das Mischen von k und k + Kl erzeugt Bandlucken im Spektrum. Qualitativ erhalten wir damit das Spektrum des Kronig-Penney Modells zuruck, vgl. Abb. ¨ 9.4. Die Bandlucken (Gaps) sind durch die Fourierkoeffizienten 2|Vl| = 2|V (Kl)| gegeben, fur ¨ V = V0 Pδ(x−lw) ist Vl = V0 = const.
+
+Normalerweise ist |Vl| > |Vl0| fur ¨ l < l0 , d.h. die Gaps nehmen mit zunehmender Energie ab; fur das ¨ δ-Potential (Kronig-Penney Modell) sind die Gaps
+图9.4
+2|Vl| = 2V0 maximal. Die Aufspaltung der Blochwellen Ψlk = exp(ikx)ul(x), vgl. (3.81), in eine Modulation (exp(ikx)) und einen periodischen (ul(x)) Anteil und die einhergehende Reduktion auf die erste Brillouin Zone l¨asst sich leicht fur den extremen Fall freier Elektronen (d.h., ¨ V → 0) nachvollziehen:
+公式
+Die Behandlung des periodischen Gitters in dieser (st¨orungstheoretischen) Art und Weise ist als ‘Fast-freie Elektron-Approximation’ (Nearly Free Electron Approximation – NFEA) bekannt. Dagegen startet das ‘Fastgebundene-Elektron-Modell’ (Tight Binding Approximation – TBA) von gebundenen Zust¨anden, also von lokalisierten Elektronen, welche mit kleiner Amplitude von Gitterpunkt zu Gitterpunkt hupfen. Mit zunehmender Modulation im Potential V (x) geht das Spektrum stetig von der steilen NFEA Form ∼ ~
+2k2/2m mit kleinen Lucken zur TBA Form mit flachen B ¨ ¨andern der Form 2t cos(πx/w) oder 2tsin(πx/w) und grossen Lucken ¨ uber. Dabei ist t das Matrixelement fur das h ¨ upfende Elektron, also eine Energie.
+
+9.4 Rayleigh-Schr¨odinger vs. Brillouin-Wigner
+In der Rayleigh-Schr¨odinger Theorie, dem obig behandelten Schema, werden Ψ und E konsistent in λs entwickelt. Die Brillouin-Wigner Theorie entwickelt demgegenuber nur Ψ, nicht aber ¨ E, in Potenzen von H0 . Startpunkt der Brillouin-Wigner St¨orungsreihe ist (9.1),
+公式73 
+Energien: W¨ahlen wir m = n und die Normierung hn|Ψi = 1 so erhalten wir mit λ = 1
+公式74 
+identisch mit (9.12).
+Zust¨ande: Mit |Ψi =Plhl|Ψi|li erhalten wir sofort (λ = 1)
+公式75 
+Zum Vergleich ergibt die Rayleigh-Schr¨odinger Theorie das Resultat (siehe(9.17) - (9.19))
+公式76 
+
+公式77
+Andererseits ergibt die Iteration von (9.75)
+公式78
+Offensichtlich ist die Reihe fur ¨ |Ψi im Brillouin-Wigner–Schema viel einfacher aufzuschreiben. Beachte jedoch, dass (9.78) auf der rechten Seite die unbekannte Energie E enth¨alt. Einsetzen der St¨orungsreihe von E in (9.78) reproduziert naturlich das Rayleigh-Schr ¨ ¨odinger-Resultat (9.76). Eine bemerkenswerte Anwendung von (9.78) involviert die Kombination mit (9.12), E = En+λhn|H0|Ψi, mit (9.78) in der s-ten Approximation, |Ψi ∼= |Ψ(s)(E)i. Die L¨osung der nichtlinearen Gleichung
+公式79
+per Computer erlaubt eine im allgemeinen sehr genaue Bestimmung von E und damit von Ψ in der Ordnung s.
+
+9.5 Nichtstation¨are St¨orungstheorie
+Die nichtstation¨are St¨orungstheorie gibt sich mit folgender typischen Problemstellung ab: Gegeben sei ein zeitabh¨angiger Hamiltonoperator mit den Eigenschaften
+公式80
+Die Dynamik sei wie folgt definiert:
+公式18
+mit |Ψi = |Ψ0i der fur ¨ t < t0 pr¨aparierte Ausgangszustand. Gesucht ist |Ψi zu Zeiten t > t0.
+
+Beispiel einer konkreten Fragestellung: Das System sei zu Zeiten t < t0 in einem Eigenzustand von H0 pr¨apariert, |Ψ0i = |ni. Mit H0 = 0 fur ¨ t < t0 und |Ψ0i = |ni entwickelt sich das System zeitlich gem¨ass |Ψ0(t)i = e−iEnt/~|ni. Schalten wir nun H0 ein, so sind die |ni nicht mehr Eigenzust¨ande von H und werden durch die Dynamik entsprechend deformiert, d.h., H0 mischt nun andere Zust¨ande l 6= n in die Zeitevolution von |Ψi hinein ⇒ es resultieren Uberg ¨ ¨ange in andere Zust¨ande. Die Amplituden fur diese ¨ Uberg ¨ ¨ange finden wir durch Entwicklung des durch H0 gest¨orten Zustandes als Superposition |Ψi = Pl al(t)|li ({|li} ist ein vONS); die gesuchten Ubergangsamplituden sind dann durch die ¨ al(t) gegeben. Im Hilbertraum entwickelt sich der Zustand gem¨ass der Skizze 9.5.
+图9.5
+L¨osung: Wir haben den adequaten Formalismus bereits in Kapitel 7 hergeleitet, das Wechselwirkungsbild, siehe Seite 209 ff. Mit
+公式82 
 und
-公式5.4
-die Projektion von ~p auf ~r. Mit (5.3) erhalten wir die kinetische Energie (oder den Laplaceoperator ∆) in Kugelkoordinaten,
-公式5.5
-pr ist asymptotisch die Radialkomponente des Impulses und hat die Formen
-公式5.6
-Der Operator p lasst sich dann folgendermassen schreiben,
-公式5.7
-Es ist [r, pr] = i~, d.h., pr ist kanonisch konjugiert zu r. Das Eigenwertproblem nimmt in Kugelkoordinaten folgende Form an,
-公式5.8
-Die Winkelkoordinaten stecken in L2, siehe (4.40) und fur den Laplace Operator ∆ ergibt sich
-公式5.9
-Da wir aber das Winkelproblem L Yl,m bereits gel¨ost haben, ist es nicht sinnvoll zu (5.9) uberzugehen. Der Rotationssymmetrie ¨ V = V (r) wegen separieren die Winkel- und Radial- Koordinaten
+公式83 
+erhalten wir
+公式84 
+9.5.1 1ste Ordnung, Fermis Goldene Regel
+Betrachte ein System, welches fur Zeiten ¨ t < t0 im Eigenzustand |ii =|initiali zu H0 mit Energie Ei pr¨apariert sei. Welches ist die Wahrscheinlichkeit das System zu einem sp¨ateren Zeitpunkt t > t0 im Zustand |fi = |finali zu finden, wobei H0|fi = Ef |fi sei ? Als Beispiel nennen wir das Wasserstoff Atom in Wechselwirkung mit Licht (H-Atom im elektromagnetischen Strahlungsfeld), wobei das Lichtfeld als St¨orung wirkt. In diesem Fall fragen wir nach den Ubergangsraten zwischen den Niveaus. Mit ( ¨ 9.84) erhalten wir sofort in erster Ordnung
+公式85 
+
+公式86 
+Fur die ¨ Ubergangswahrscheinlichkeit ¨ Pi→f (t) = |hf|Ψ(t)i|2 erhalten wir
+
+公式78
+Um weiter zu kommen mussen wir Annahmen ¨ uber die Zeitabh ¨ ¨angigkeit der St¨orung H0(t) machen. Ubliche und h ¨ ¨aufige F¨alle sind
+表
+– Abruptes Einschalten: H0(t) = V Θ(t − t0),
+– Adiabatisches Einschalten von t < 0 her: H0(t) = V eηt, η → 0+,
+– Harmonische St¨orung: H0(t) = V cos ωt.
+
+In der Folge analysieren wir diese drei F¨alle.
+1. H0(t) = V Θ(t − t0)
+Einsetzen in (9.87) ergibt mit t0 = 0 (oBdA) und der Definition ωif = (Ef − Ei)/~
+
+公式88 
+Der Faktor ∝ sin2
+(ωif t/2) hat Nullstellen bei ωif t = 2nπ und verh¨alt sich fur ¨ ωif → 0 wie (ωif t/2)2/(~ωif /2)2 ≈ (t/~)2, vgl. Abb. 9.6. Fur lange Zeiten t → ∞ erhalten wir einen scharfen Peak bei ωif = 0 mit Gewicht ∝ t.
+图9.6
+Interpretation: Nach Einschalten der St¨orung k¨onnen im Prinzip Uberg¨ange zu allen Energien erfolgen. Die relevanten Uberg ¨ ¨ange (diese treten mit grosser Wahrscheinlichkeit auf und oszillieren nicht in der Zeit) sind diejenigen welche die Energie erhalten, ωif = 0 → Ei = Ef . Die Bandbreite der Energieerhaltung ist durch das Heisenbergsche Unsch¨arfe Prinzip gegeben,
+
+公式89
+Das Gewicht dieser energieerhaltenden Prozesse nimmt linear mit der Zeit zu,
+公式90
+Fur grosse Zeiten m ¨ ussen h ¨ ¨ohere Ordnungen berucksichtigt werden. Ist das Spektrum diskret, so ist
+
+gs91
+In der Folge betrachten wir ein Kontinuum von Zust¨anden oder eine Gruppe von Finalzust¨anden welche dicht liegen. Die Dichte dieser Zust¨ande im Energieraum sei beschrieben durch ρ(Ef ), das heisst, wir k¨onnen Summen uber Zust ¨ ¨ande |fi ersetzen durch Integrale uber ¨ Ef ,
+公式29 
+Im Weiteren nehmen wir an, dass das Quadrat des Matrixelementes |hf|V |ii|2 von |fi nur via Ef abh¨angt.
+
+Beispiel: Freies Teilchen in 3D mit E = ~2k2/2m und ~k = 2π~n/L(Boxnormierung auf L3). Um die Summe in ein Integral zu transformieren verwenden wir den Zusammenhang d3n = (L/2π)3d3k
+公式39
+Beachte, dass |h~k|2 nur via Ek, Ek0 von ~k,~k0 abh¨angen darf, ansonsten muss |h~k0|V |~k i|2 uber Ω ¨ ~k~k0 gemittelt werden. Die obige Zustandsdichte ρ(E) mit dem Volumen L3 hat die Einheit 1/E. Die Wahrscheinlichkeit fur einen ¨ Ubergang in einen Zustand um ¨ |fi herum ist dann gegeben durch
+
+gs94
+Dabei haben wir benutzt, dass sin2 (ωt)/πtω2 → δ(ω) fur ¨ t → ∞, vgl.(2.109); ferner ist dEf = ~dωif und wir haben angenommen, dass die Zustandsdichte ρ(Ef ) und das Matrixelement |hf|V |ii|2 in der Umgebung von Ef stetig/flach sind. Damit erhalten wir fur die ¨ Ubergangsrate ¨ dPi→f /dt = Γ,
+gs 95
+mit 2π~/∆Ef < t  2π~/δε, vgl. Abb. 9.7. 2 Die Zeitrestriktionen haben folgenden Ursprung:
+– Der Peak in Pi→f muss innerhalb der Gruppe von Zust¨anden um f liegen. Wir bezeichnen die Breite dieser Gruppe mit ∆Ef , insbesondere sei das Matrixelement |hi|V |fi| innerhalb von ∆Ef in etwa konstant. Dann muss ∆Ef > 2π~/t sein, vgl. Abb. 9.7.
+– Die Dichte unter dem Peak muss genugend gross sein, d.h., die Energieseparation δε zwischen Zust¨anden klein, so dass viele Zust¨ande innerhalb des zentralen Peaks zu liegen kommen, δε  2π~/t, vgl. Abb. 9.7.
+
+Normierung: Fur die Streuung eines freien Teilchens am Potential ¨ V mit Amplitude V0 und Ausdehnung w  λ = 2π/k gibt das Matrixelement |h~k/L6 und die Rate ergibt sich zu Γ =. Der Volumenfaktor 1/L3 tr¨agt der ‘Verdunnung’ der Wellenfunktion auf das Volumen L3 Rechnung. Wenn wir den Streuer durch Nd unabh¨angige zuf¨allig verteilte Defekte ersetzen ergibt sich das volumenunabh¨angige Resultat Γ = mV 20 w6ndp2mεf /π~ 4 mit nd = Nd/L3 die Defektdichte.
 公式
-und wir konnen sofort zum Radialproblem ubergehen, 
-公式5.10
-Um die Form einer dim = 1 Schr¨odinger-Gleichung zu erhalten schreiben wir die Radialfunktion R(r) in der Form
-公式5.11
-und erhalten die Gleichung
-公式5.12
-Nur fur ¨ l = 0, Drehimpuls Null, ist Veff(r) = V (r). Ansonsten wirkt zus¨atzlich zu V (r) das abstossende Potential Vl(r) = 1)/2m r2 auf das Teilchen, die wohlbekannte Zentrifugalbarriere, vergleiche Abb. 5.1. Wir werden sehen, dass wegen dieses Terms Ψ(r) ∝ r l fur ¨ r → 0 und das Teilchen von der Umgebung r = 0 verdr¨angt wird. Die Gleichung (5.12)
-图5.1
-entspricht einem dim = 1 Schr¨odinger-Problem mit V (x < 0) = ∞, V (x > 0) = V (x = r); fur ein attraktives Potential ist die typische Situation in Abbildung 5.2 skizziert. Umgekehrt erhalten wir durch die symmetrische Erweiterung V (x < 0) = V (|x| = r) ein typisches dim = 1 Problem. In dim = 1 bindet jedes attraktive Potential (mit V (|x| → ∞) → 0, V (0) < 0) mindestens einen (in x geraden, V (x) = V (|x|) ist invariant unter x → −x) Zustand. Betrachte nun das dim = 3, l = 0 Problem. Dann muss u(0) = 0 sein, und somit u ungerade. Daraus folgt, dass das attraktive Potential in dim = 3 eine Mindestst¨arke aufweisen muss, damit es einen Zustand binden kann, vgl. die Diskussion im Abschnitt 3.3 (Teilchen im Topf). 
+Eingesetzt in (9.87) ergibt diese Zeitabh¨angigkeit im Grenzfall t0 → −∞
+gs 96
 
-Eine dimensionelle Absch¨atzung gibt die Bedingung V0 > ~ 2/2m r20 fur einen gebundenen Zustand im l = 0-Sektor. Fur ¨ l > 0 wirkt zus¨atzlich die Zentrifugalbarriere der Bildung von gebundenen Zust¨anden entgegen. Als nachstes untersuchen wir das Verhalten von u(r) und damit der Wellenfunktion Ψ(~r ) in den Grenzf¨allen r → 0 und r → ∞.
-图5.2
-Grenzfall r → 0 Fur ¨ V (r) ∝ 1/r2−ε , ε > 0, sind die fuhrenden Terme ( ¨ l > 0) der Differentialgleichung (5.12) gegeben durch
-公式5.13
-Damit ergeben sich folgende L¨osungen fur ¨ u(r),
-公式5.14
-Fur ¨ l = 0 muss u bei r = 0 verschwinden (Beweis ad absurdum): Sei u(0) = u0 6= 0, dann ist Ψ(~r ) ∝ u0/r bei 0 und ∇2 erzeugt eine δ-Funktion bei 0 (die Funktion 1/r ist gerade die Greensche Funktion zum Laplace Problem, ∇2 (1/r) = −4πδ(~r ), zu uberpr ¨ ufen mit Hilfe des Satzes von Gauss). Diese δ-Funktion bleibt in der Schr¨odinger-Gleichung unkompensiert und folglich muss u0 = 0 sein.
-Grenzfall r → ∞
-Wir nehmen an, dass V (r → ∞) → 0 mindestens wie 1/r; die uberlebenden Terme sind dann
-公式5.15
-und fur gebundene Zustande (mit E < 0) finden wir die Asymptotik
-公式5.16
-Fuchsscher Ansatz 
-Nach Separation der Asymptotik fur ¨ r → 0 und r → ∞ l¨osen wir das verbleibende Problem mit einem Fuchsschen Ansatz,
+gs97
+图9.7
 
-公式5.17
-Fur ¨ V (r) ∝ −1/r2+ε, ε > 0, sturzt das Teilchen in die Singularit ¨ ¨at bei 0, siehe Landau Lifschitz; der Fall ε = 0 ist marginal (Vorfaktor V0 von V (r) ∼ V0/r2 ist relevant (check)). Im Folgenden untersuchen wir im Detail zwei Beispiele, den 3D-Topf und das attraktive Coulombpotential. Wir konzentrieren uns haupts¨achlich auf gebundene Zust¨ande, E < 0. Die Streuzust¨ande mit positiven Energien E > 0 werden wir sp¨ater behandeln.
-5.2 Das Teilchen im 3D-Topf
-Wir definieren wie ublich ¨ E < 0, k = L¨osungsans¨atze unterscheiden sich fur ¨ l = 0 und l > 0, deshalb werden wir die beiden F¨alle getrennt behandeln.
-图5.3
-5.2.1 Fur¨ l = 0
-erhalten wir die Differentialgleichung
-公式5.18
-mit der L¨osung
-公式5.19
-Die L¨osung (5.19) muss die Randbedingungen bei r = 0, u0(0) = 0 ⇒ A + B = 0, und bei r0 erfullen,
-公式5.20
-Wir erhalten eine zu (3.29) ¨aquivalente implizite Gleichung fur ¨ E,
-公式5.21
-Wir finden gebundene Zust¨ande sofern V0 > ~ ist, wobei man beachte, dass r0 ↔ w/2.
+und wir finden die Ubergangsrate (vgl. wiederum mit ( ¨ 2.109))
 
-5.2.2 Fur¨ l > 0
-definieren wir ρ = kr und erhalten fur ¨ r < r0 die Differentialgleichung
-公式5.22
-Diese Gleichung gilt auch fur ¨ r > r0 wenn wir die Variable ρ umdefinieren zu ρ ≡ iαr. Die L¨osungen von (5.22) sind die sph¨arischen Bessel- und Neumann- Funktionen,
-公式5.23
+gs98
+wiederum in der Form von Fermis Goldener Regel.
+3. H0(t) = V cos ωt. Wir schreiben H0(t) = Ve−iωt + eiωteηt/2 und w¨ahlen t0 → −∞. Einsetzen in (9.87) ergibt (wiederum ist ~ωif = Ef − Ei
+gs99
+Um die Ubergangsrate Γ zu bestimmen berechnen wir die Ableitung ¨ ∂tPi→f ,
+gs100
+Die cos- und sin- Anteile mitteln sich nach kurzer Zeit weg. Mit δ(ω)/~ = δ(~ω) finden wir das Resultat
+公式101
+Der erste Term bei Ef = Ei + ~ω beschreibt einen Absorptionsprozess, der zweite Term bei Ef = Ei − ~ω beschreibt eine Emission.
+9.5.2 2
+te Ordnung Wir w¨ahlen den Fall 2 mit H0(t) = V eηt und nehmen an, es sei hf|V |ii = 0. Dann ist mit (9.84)
+公式102
+Einschieben von Pl|lihl|, anschliessende Integration, Quadrierung und Ableiten nach der Zeit t gibt
+公式103
+das Resultat versteht sich als Grenzwert η → 0+. Die Rate involviert das zweite Ordnung Matrixelement |P ······|2 mit Uberg ¨ ¨angen |ii → |fi via |li,
+公式104
+9.5.3 Zerfall eines Zustandes
+Zur Bestimmung der Zerfallsrate des Zustandes |ii berechnen wir hf|Ψi mit hf| = hi|. Es ist
+公式105
+Wir nehmen das Matrixelement mit hi| und dividieren durch hi|ΨDi,
+公式106
+In Ordnung H0 2 k¨onnen wir schreiben (vgl. (9.85); die Entwicklung bis zur 1.ten Ordnung genugt) 
+公式107
+und mit hi|ΨDi ≈ hi|ii = 1 finden wir
 
-公式5.24
-Dabei sind die Besselfunktionen Jn die L¨osungen der Differentialgleichung
-公式5.25
-Beachte, dass (5.22) unter l + symmetrisch ist, und damit die Neumann-L¨osungen in die Bessel-L¨osungen ubergehen. Beispiele f ¨ ur die sph¨arischen Bessel- und Neumann- Funktionen sind (siehe auch Abb. 5.4 und 5.5)
+公式108
+Diskretes Spektrum: Mit η → 0+ finden wir
+公式109
+das heisst, wir finden gerade die Zeitevolution welche durch die – in 2ter Ordnung – korrigierte Energie E(2)i des Zustandes gegeben wird. Interpretation: Der diskrete Zustand |ii wird durch H0 adiabatisch deformiert, wie in Abbildung 9.8 dargestellt.
+Kontinuum: Es liege |ii in einem Kontinuum von Zust¨anden. Die Divergenz bei 0 erzeugt durch den Energienenner Ei − El + iη~ behandeln wir im distributiven Sinn wie von der Funktionentheorie vorgegeben, vgl. Abb. 9.9, und gebrauchen dabei Sokhotskis Formel
+图9.8
 
-公式5.26
-图5.4，5.5
+公式110
+wobei im Integral das Intervall [−ε, ε] ausgeklammert wird (Hauptwert).
+Damit erhalten wir
 
-Die sph¨arischen Besselfunktionen zeigen folgendes Verhalten fur kleine (Reihenentwicklung fur ¨ ρ → 0) und grosse (Asymptotik fur ¨ ρ → ∞) Argumente:
-公式5.27
-Fur die sph ¨ ¨arischen Besselfunktionen zl = jl, nl gelten die Rekursionsformeln (l > 0)
-公式5.28
-Fur ¨ ρ → 0 ist nl immer singul¨ar und entf¨allt damit als L¨osung; Rl l¨asst sich dann darstellen als
-公式5.29
-Im Aussenraum r ≥ r0 w¨ahlen wir die Kombinationen
-公式5.30
-die Hankelfunktionen mit dem asymptotischen Verhalten
-公式5.31
-Mit ρ = i αr erhalten wir fur ¨ Rl(r ≥ r0) ausserhalb von r0 eine exponentiell zerfallende Funktion,
-公式5.32
-die Komponente h ∝ exp[−ikr] wurde eine einfallende Welle, (iαr) ∝ exp[αr] eine nicht normierbare L¨osung beschreiben. Die Energieniveaus erhalten wir wieder aus den Randbedingungen bei r = r0: mit ξ = kr0 und η = αr0, ~k = und ~α = finden wir die Relationen
-公式5.33
-Die Randbedingungen
-公式5.34
-ergeben die impliziten transzendenten Gleichungen fur ¨ ξ und η welche auf die Energien E fuhren, 
-公式5.35
-Fur jeden Drehimpulssektor ¨ l ergibt sich also eine neue transzendente Gleichung η(ξ). In jeder Gleichung erscheint eine cot ξ Funktion mit unendlich vielen Asten. Wir nummerieren diese mit ¨ n, wobei die neuen Aste jeweils bei ξ = (n+ 1/2)π in Erscheinung treten. Diese Aste definieren die Quantenzahl n im Drehimpulssektor l, somit h¨angen die Eigenwerte von 2 Quantenzahlen ab, Enl. Die Niveaus sind in m entartet, da die magnetische Quantenzahl m in der Differentialgleichung nicht in Erscheinumg tritt, zu jedem l aber (2l + 1) Funktionen Ylm auftreten, weshalb jeder Eigenwert Enl gerade (2l + 1)-fach entartet ist. Dies ist die normale Entartung in einem SO3 invarianten System. Das Wasserstoffatom wird sich als Spezialfall herausstellen, mit Niveaus die nur von n abh¨angen, En ∝ −1/n2 und einer h¨oheren Entartung ∝ n2. Der tiefere Grund fur diese h ¨ ¨ohere Entartung ist die gr¨ossere Symmetrie im Wasserstoffproblem, SO4 statt SO3.
-
-Neue gebundene Zust¨ande erscheinen im l = 0 Sektor wenn cot ξ → 0 geht, also ξ den Wert nπ + π/2 durchschreitet; der erste gebundene Zustand (bei E = 0−) erscheint bei η = 0 und ξ = π/2, also V0 = ~. Fur ¨ l = 1 erscheinen neue Zust¨ande wenn cot ξ von +∞ her endlich wird, also bei ξ = nπ, wobei n = 0 keine L¨osung erzeugt; der erste gebundene Zustand (bei E = 0 −) erscheint dann fur ¨ η → 0, ξ → π wenn V0 = ~ 2π ist, vergleiche mit l = 0 wo der erste Zustand bei V0 = ~2π erscheint; die repulsive Zentrifugalkraft wirkt der Bildung gebundender Zust¨ande entgegen.
-
-5.3 Wasserstoff Atom
-5.3.1 2-K¨orper Probleme
-Wir wiederholen zuerst das klassische Problem: Sei der Hamiltonian fur zwei wechselwirkende (Potential V (r = |~r |)) massive (Massen m1,2) Teilchen gegeben,
-公式5.36
-Wir gehen zu Schwerpunkts- und Relativ- Koordinaten R~ und ~r uber, (1 )
-公式5.37
-ebenso fur die (konjugierten) Impulse
-公式5.38
-Wir definieren die reduzierte und die totale Masse
-公式5.39
-Wir quantisieren mit Hilfe der Kommutationsbeziehungen: Aus [xνi, pµj ] = i~ δijδνµ fur ¨ ν, µ ∈ {1, 2}; i, j ∈ {1, 2, 3} folgen die Vertauschungsrelationen fur ¨ ~r und ~p und R~ und P~ ,
-公式5.40
-und wir erhalten folgende Darstellungen fur ¨ ~p und P~ ,
-公式5.41
-Der Hamiltonoperator in Relativ- und Schwerpunkts- Koordinaten hat die Form
-公式5.42
-und erlaubt die Separation von Schwerpunkts- und Relativbewegung durch den Ansatz
-公式5.43
-mit dem verbleibenden Relativproblem
-公式5.44
-Die totale Energie ist dann die Kombination E + ~2K2/2M
-
-5.3.2 Coulomb-Potential, H-Atom
-Wir l¨osen das Relativproblem
-公式5.45
-mit dem Coulombpotential V (r) = −Z e2/r. Nach der Abseparation der Winkelkoordinaten [ψ(~r ) = ψ(r, θ, ϕ) = Yl,m(θ, ϕ)Rαl(r)] und unter Nutzung des Ansatzes Rαl = uαl/r erhalten wir das Radialproblem
-公式5.46
-Dabei haben wir die L¨angenskala
-公式5.47
-eingefuhrt ( ¨ ρ = Zr/aB; wir approximieren m ≈ me da M  me fur das Wasserstoffproblem) und die Energie E umgeschrieben gem¨ass der Skalierung
-公式5.48
-aB heisst Bohrscher Radius, ER ist die Rydbergenergie; sie sind die relevanten L¨angen- und Energieskalen im Problem. Nach der ublichen Abspaltung der Asymptotik (fur ¨ ρ → 0, ∞) benutzen wir den Fuchsschen Ansatz (siehe(5.13) und (5.16))
-公式5.49
-und erhalten die Differentialgleichung
-公式5.50
-Der Koeffizientenvergleich in den Potenzen ρνergibt die Rekursion
-
-公式5.51
-表5.1
-Der Koeffizient a0 wird durch die Normierung festgelegt. Da aν+1/aν ∼ 2α/ν, ν → ∞, muss die Reihe abbrechen und wir erhalten das Spektrum
-公式5.52
-Die Eigenwerte
-公式5.53
-treten mit den Entartungsgraden Dn
-公式5.54
-auf. Die Quantenzahlen n, l, m heissen Haupt-Quantenzahl n, Neben- oder Bahndrehimpuls- Quantenzahl l, und magnetische Quantenzahl m. Die zus¨atzliche Entartung in l ist eine Konsequenz der dynamischen Symmetrie im Coulombpotential. Wird der Spin berucksichtigt, (siehe sp ¨ ¨ater) verdoppelt sich die Entartung, Dn = 2n2. Die Uberg ¨ ¨ange zwischen den Niveaus involvieren ∆l = 1 (siehe sp¨ater) und geh¨oren zu einer der Sequenzen in der Tabelle 5.1; siehe auch Abbildung 5.6 fur eine graphische Darstellung der involvierten Zust¨ande.
-
-5.3.3 Radiale Wellenfunktionen
-Die radialen Wellenfunktionen des Coulomb-Potentials ergeben sich aus der Differentialgleichung (5.50), die wir via den Manipulationen
-公式5.55
-表5.6
-公式5.56
-
-公式5.57
-in die folgende Form bringen (n = 1/α)
-公式5.58
-Der Vergleich mit der Differentialgleichung
-公式5.59
-mit den L¨osungen (konfluente hypergeometrische Funktionen)
-公式5.60
-liefert uns die Radialfunktionen in der Form
-公式5.61
-mit z = 2αρ = 2Z r/n aB = 2κr, κ = Z/aBn die effektive Wellenzahl. Die Randbedingung (bei r → ∞) verlangt, dass n−l−1 = ν ≥ 0 eine ganze Zahl ist, woraus sich das Spektrum E = −~ ergibt. Die konfluente hypergeometrische Funktion mit ganzzahligen Parametern ist (bis auf einen Faktor) identisch mit dem zugeordneten Laguerre Polynom(2)
-公式5.62
-
-公式5.63
-
-公式5.64
-
-公式5.65
-
-公式5.66
-
-公式5.67
-
-公式5.68
-und die Identifikation p = n+l, k = 2l+ 1 gibt uns folgende Schlussresultate fur das verallgemeinerte Wasserstoffatom,
-公式5.69
-
-公式5.70
-Dabei ist die Radialfunktion auf 1 normiert,
-公式5.71
-
-womit sich via dem Integral
-公式5.72
-die Normierungskonstante Nnl ergibt. Explizite Beispiele fur Radialfunktionen mit n ≤ 3 sind (vgl. auch Abb. 5.7)
-
-公式5.73
-Mit zunehmender Hauptquantenzahl n verschieben sich die Bahnradien hrinl nach aussen
-公式5.74
-
-und die Schwankungen ∆r = [hr wachsen gem¨as
-公式5.75
-wobei wir benutzt haben, das
-公式5.76
-
-Wir betrachten abschliessend die Charakteristika zweier besonders einfacher F¨alle, l = n − 1 und l = 0. Fur ¨ l = n − 1 hat die Radialfunktion Rn,n−1 keine Nullstellen und ihre Charakteristika sin
-公式5.77
-图5.7
-Fur ¨ l = 0 hat Rn0 die maximale Anzahl von n − 1 Nullstellen und ihre Charakteristika sind
-
-公式5.78
-5.3.4 Dynamische Symmetrie
-Der dynamischen Symmetrie liegt eine besondere Form des Kraftgesetzes (des Potentiales) zugrunde, hier V (r) ∝ 1/r. Ein Potential 1/r1+ε, ε 6= 0 hat zwar die geometrische Rotationssymmetrie, nicht aber eine zus¨atzliche dynamische Symmetrie. Im Fall des H-Atoms hat die dynamische Symmetrie ein klassisches Analogon, den (erhaltenen) Lenzvektor. Dies ist nicht immer der Fall: Eine quantenmechanisch dynamische Symmetrie muss nicht unbedingt ein klassisches Analogon haben. Wir untersuchen das Keplerproblem H = p 2/2µ − κ/r, wobei µ die reduzierte Masse bezeichnet und κ fur das verallgemeinerte Wasserstoffatom zu κ = Ze2 gew¨ahlt wird. Klassische Bahnen sind geschlossene Ellipsen (vgl. Abb. 5.8) mit Halbachsen a und b und Exzentrizit¨at e = (1 − b. Erhaltungsgr¨ossen sind die Energie E = −κ/2a und der Drehimpuls L~ ; die Richtung Lˆ legt die Bahnebene fest, der Betrag L bestimmt die Exzentrizit¨at via L2 = µκa(1 − e2). Die Bahn ist somit durch die Erhaltungsgr¨ossen E und L~ festgelegt. Zus¨atzlich zu H und L~ ist auch der Lenz-Runge Vektor M~ erhalten,
-
-公式5.79
-M~ = const. impliziert die Absenz der Periheldrehung, eine Besonderheit des 1/r-Potentials.
-图5.8
-Fur ¨ V ∝ 1/r1+ε resultiert eine Periheldrehung; ein beruhmtes Beispiel sind die Korrekturen zum Kepler Problem infolge der Allgemeinen Relativit¨ats Theorie (ART); die Periheldrehung des Merkurs war eine der ersten experimentellen Best¨atigungen der ART. Auch der isotrope harmonische Oszillator mit r 2 Potential besitzt eine dynamische Symmetrie: Im isotropen harmonischen Oszillator ist die erhaltene Gr¨osse nicht ein Vektor sondern ein Quadrupol, denn Zentrum der Anziehung ist nicht ein Brennpunkt sondern das Zentrum der Ellipsenbahn.
-In der Quantenmechanik definieren wir den Pauli-Lenz Vektor
-公式5.80
-Es gilt immer noch M~ · L~ = 0 = L~ · M~ sowie
-公式5.81
-mit dem zus¨atzlichen Term ∝ ~2. M~ ist ein Vektor, somit gelten die Vertauschungsbeziehungen
-公式5.82
-Die Vertauschung der Komponenten Mi untereinander ergibt
-公式5.83
-Wir definieren K~ = p−µ/2HM~ und schr¨anken M~ auf Eig E<0H ein,K~ = p µ/2|E| M~ ; fur ¨ E < 0 ist K~ ein hermitescher Operator. Die sechs Operatoren {K, ~ L~ } erfullen die Kommutationsbeziehungen
-公式5.84
-Erweitern wir die Variablen xi, pi, i ∈ {1, 2, 3}, um x4, p4, indem wir verlangen dass
-公式5.85
-so bilden die Lij , i ∈ {1, 2, 3, 4} gerade die Lie-Algebra von O(4). Wir finden, dass die Symmetriegruppe von H nicht SO(3) sondern die gr¨ossere Gruppe SO(4) ist. Fur ¨ E > 0 erhalten wir anstelle von SO(4) die Poincare- (oder Lorentz-) gruppe uber ¨ M4 = (t, ~r ), dem Minkowski-Raum. Schliesslich berechnen wir noch das Spektrum zu H: Unter Benutzung von (5.81) k¨onnen wir H schreiben als
-公式5.86
-Die beiden Vektoroperatoren
-公式5.87
-definieren gerade die zwei Casimiroperatoren(3 Der Casimir Operator ist eine bilineare Kombination der Erzeugenden einer LieAlgebra, welche mit diesen Erzeugenden kommutiert. Die Anzahl unabh¨angiger Casimir Operatoren ist gleich dem Rang der Gruppe, d.h., der maximalen Anzahl kommutierender Erzeugender. Als Beispiel betrachte man die Gruppe SO(3) mit [Li, Lj ] = i~εijkLk. Ihr Rang ist 1, der Casimiroperator ist L2. Ein anderes Beispiel ist SO(4), wobei {Si, Dj} fur ein i und ein j ein maximal kommutierendes Set bilden. Der Rang ist 2, die Casimiroperatoren sind D2 und S2.) S2 und D2 zu SO(4):
-公式5.88
-D~ und S~ definieren je eine SO(3) oder SU(2) Algebra. Erlaubte Eigenwerte sind
-公式5.89
-Da weder S~ noch D~ Bahndrehimpulse sind, sind halbzahlige Werte fur ¨ d und s erlaubt. Es ist
-公式5.90
-Da K~ · L~ = 0 ist, gilt (S~ − D~ )·(S~ + D~ ) = S2 − D2 = 0, somit muss d = s sein und wir erhalten die Energieeigenwerte
-
-公式5.91
-mit n = (2s + 1) ganz; die Dimension der Energieeigenr¨aume ist dim Eig EnH = (2s + 1)(2d + 1) = n2.
-
-
+公式111
+图9.9
+Die Zeitevolution von hi|Ψi ist dann gegeben durch
+公式112
+mit E = E(2)i −iΓ/2. Die Fouriertransformation in der Zeit (mit exp(−iωt)) produziert fur einen station ¨ ¨aren Zustand mit Energie E eine δ-funktion δ(~ω − E), d.h., die Energie ist scharf. Der gem¨ass (9.112) zerfallende Zustand wird demgegenuber durch einen Pol in der unteren komplexen Halbebene beschrieben — die Energie ist nicht scharf, der Zustand zerf¨allt mit einer Halbwertszeit 1/Γ, vgl. Abb. 9.10. Interessante Probleme ergeben sich wenn sich zwei Niveaus als Funktion des Parameters α(t) treffen, vgl. Abbildung 9.11. Ublicherweise produziert
+图9.10
+ein Mischterm im Hamiltonian eine Repulsion zwischen den Niveaus (avoided level crossing). Je nachdem wie schnell sich der Parameter α in der Zeit ver¨andert findet man, dass der Zustand |ii seinem Energieniveau folgt (adiabatischer Limes) oder aber auf den n¨achsten Zustand springt (diabatischer Limes). Das zugeh¨orige Stichwort ist ‘Landau-Zener’ Tunneln, das Tunneln durch eine verbotene Zone zwischen Energieniveaus.
+图9.11

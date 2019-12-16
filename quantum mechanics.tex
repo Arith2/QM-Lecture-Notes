@@ -1,5 +1,5 @@
-%!TEX program = pdflatex
-\documentclass[en]{report}
+%!TEX program = xelatex
+\documentclass{report}
 \usepackage{amsmath}
 \numberwithin{equation}{chapter}
 \usepackage{amssymb}
@@ -15,17 +15,23 @@
 \usepackage{titlesec}
 \usepackage{verbatim}
 \usepackage{subfigure}
+\usepackage{color}
 \titleformat*{\section}{\LARGE\bfseries}
 \titleformat*{\subsection}{\Large\bfseries}
 \let\footnotesize\large
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
 \title{Lecture Notes of Quantum Mechanics}
-\author{Transslated by Yu Zhu}
+\author{Translated by Yu Zhu}
 %\date{\today}
 
 
 \begin{document}\Large
 \maketitle
-\setcounter{chapter}{4}
+\tableofcontents
+\listoffigures
+%\listoftables
+\setcounter{chapter}{7}
 
 %\include{0-introduction}
 
@@ -38,5 +44,13 @@
 
 %\include{4-rotation}
 
-\include{5-central_potential}
+%\include{5-central_potential}
+
+%\include{6-scattering_theory}
+
+%\include{7-formalism}
+
+\include{8-variational_approach}
+
+%\include{9-perturbation}
 \end{document}
