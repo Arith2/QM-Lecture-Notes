@@ -1,328 +1,313 @@
-Kapitel 9
-App. Methoden:
-St¨orungstheorie
-Die St¨orungsanalyse h¨angt stark vom Problem ab: wir unterscheiden station¨are (∂tH = 0) von nicht-station¨aren (∂tH 6= 0) Problemen und konzentrieren uns auf diskrete Spektren. Im einfachsten Fall liegt ein nichtentartetes Spektrum vor — wir behandeln deshalb den station¨aren, nichtentarteten Fall zuerst und analysieren dann entartete und fast entartete Eigenwerte. Nichtstation¨are Probleme und Fermis Goldene Regel schliessen die Diskussion ab.
+Kapitel 11
+Spin & Drehimpuls Addition
+Zur Vorbereitung betrachten wir statt einer skalaren Wellenfunktion Ψ(~r ) eine vektorwertige Wellenfunktion mit drei Komponenten, Ψ( ~ ~r ) = [Ψx, Ψy, Ψz](~r ) und studieren ihr Verhalten unter Drehungen. Diese Betrachtung wird uns auf naturliche Weise auf das Konzept des Spins ¨ S~ als internen Freiheitsgrad des Teilchens fuhren. Auch werden wir sehen, dass sich der intrinsische Spin S~ und der orbitale Drehimpuls L~ zum Gesamtdrehimpuls J~ = L~ + S~ addieren und wir mussen verstehen, wie eine derartige Drehimpulsaddition zu handhaben ist. In der Folge er¨ortern wir erst einige allgemeine Eigenschaften des Spins, bevor wir in Kapitel 11.3 zur Drehimpulsaddition kommen, wo wir uns der Clebsch-Gordan Technik zuwenden. Gegen Ende des Kapitels werden wir einige physikalische Beispiele betrachten, die Muonen-Spin-Rotation, die Grundlagen der NMR Spektroskopie, heute besonders relevant im Kontext der Verarbeitung von Quanteninformation, den Zeeman Effekt und die Spin-Bahn Kopplung (im Wasserstoffatom).
 
-9.1 Station¨arer, nichtentarteter Fall
-Gegeben sei das station¨are (∂tH = 0) Eigenwertproblem
+11.1 Vektorwertige Wellenfunktion Ψ( ~ ~r )
+Wir starten mit der ublichen skalaren Wellenfunktion Ψ( ¨ ~r ) und betrachten ihr Verhalten unter einer Drehung um ~ω,
 公式1
-Der Hamiltonoperator zerfalle in H = H0 + H0 , mit H0 einfach genug, so dass eine L¨osung
+Fur kleine ¨ ~ω approximieren wir die Drehung via
 公式2
-bekannt sei. H0 sei eine kleine St¨orung; wir suchen eine St¨orungsreihe in H0. Um die Buchfuhrung zu erleichtern schreiben wir
+und wir finden die gedrehte Wellenfunktion
 公式3
-und setzen einen St¨orungsansatz in λ an,
+mit L~ = ~r ∧ ~p wie ublich definiert. Als n ¨ ¨achstes betrachten wir die vektorwertige Wellenfunktion Ψ( ~ ~r ) und drehen sie ebenfalls um ~ω,
 公式4
-Einsetzen von (9.4) in (9.1) mit (9.3) ergibt in Ordnung
+Einsetzen von (11.2) ergibt
 公式5
-Die Ordnung λ0 ergibt sofort dass
+mit ~ω ∧ Ψ = ~ −(i/~) ~ω · S~ Ψ, wobei der Vektoroperator ~ S~ durch folgende drei Matrizen gegeben ist,
 公式6
-Weiter k¨onnen wir die Ψk iterativ finden da rechts der Gleichheitszeichen nur Ψj mit j < k auftreten. Die Addition von µkΨ0 zu Ψk, Ψk → Ψk+µkΨ0, ver¨andert die Bestimmungsgleichung fur Ψ ¨ k nicht, da
+oder
 公式7
-Ohne Beschr¨ankung der Allgemeinheit k¨onnen wir deshalb von jedem Ψk seine Komponente entlang Ψ0 abz¨ahlen und verlangen
+Die infinitesimalen Erzeugenden (11.7) sind unit¨ar ¨aquivalent zu den l = 1 Erzeugenden in der Tabelle 4.1. Wir identifizieren J~ = L~ + S~ mit dem Gesamtdrehimpuls des Teilchens. L~ behandelt die ~r-Abh¨angigkeit ohne die Vektorkomponenten zu mischen und wir identifizieren L~ mit dem Bahndrehimpuls. S~ wirkt auf die Komponenten von Ψ, das heisst ~ S~ dreht die ‘Struktur des Teilchens’ ohne die Koordinate ~r zu beeinflussen und wir identifizieren S~ mit einem ‘inneren’ Drehimpuls des Teilchens, dem Teilchenspin, hier s = 1. Diese Struktur l¨asst sich verallgemeinern: statt einer vektorwertigen Wellenfunktion k¨onnen wir allgemeiner einen Spinor mit 2, 3, 4, . . . , k Komponenten betrachten—die Matrizen (11.6) werden dann durch die infinitesimalen Erzeugenden zu s = (k − 1)/2 ersetzt. Fur ¨ k = 2 erhalten wir den Spin-1/2 charakteristisch fur viele Elementarteilchen. Die obige Betrachtung entmystifiziert etwas das Konzept des Spins; Spin ist nichts weiter als eine innere Struktur die uns zwingt eine spinorwertige Wellenfunktion zu betrachten, wobei der (k-)Spinor sich unter Drehungen des Raumes gem¨ass der entsprechenden Darstellung im k = 2s + 1 dimensionalen Hilbertraum verh¨alt.
+11.2 Allgemeine Eigenschaften des Spins
+Viele Elementarteilchen wie Elektronen, Protonen, Neutronen, Muonen oder Neutrinos besitzen einen ‘inneren’ Drehimpuls. Misst man diese Drehimpulse entlang einer Achse findet man die Werte ~/2 und −~/2; man sagt, das Teilchen hat den Spin 1/2. Der Spin zeigt alle Charakteristika eines Drehimpulses und wir fuhren deshalb den Spin-Operator ¨ S~ = (Sx, Sy, Sz) ein, mit
 公式8
-was einer Normierungsbedingung
+Da nur zwei Werte gemessen werden, fuhren wir den abstrakten Hilbertraum H1/2 ein, mit dim H1/2 = 2. Wir konstruieren eine Basis in H1/2 indem wir die beiden kommutierenden Operatoren ~n · S~ und S2 (mit einem Richtungsvektor ~n ) gleichzeitig diagonalisieren, siehe Kapitel 4. Zum Beispiel sei ~n = ~ez, dann ist
 公式9
-gleichkommt. Wir wollen (9.5) systematisch l¨osen. Das Skalarprodukt mit Ψ0 der Ordnung λs-Gleichung gibt
+eine Basis in H1/2. Da s = 1/2 fix ist, lassen wir diese Quantenzahl weg. Allgemein schreiben wir dann fur die Basis, welche durch ¨ ~n · S, S ~ 2 definiert ist als
 公式10
+mit
+公式
+Fur die Basis definiert durch ¨ ~n = ~ez schreiben wir kurz | ↑i und | ↓i. Ein allgemeiner Spinzustand |Ψi l¨asst sich schreiben als (α, ϕ ∈ R)
 
 公式11
-die Berechnung von E in Ordnung s setzt die Berechnung von Ψ in der Ordnung s − 1 voraus.
-
-Ein interessantes Zwischenresultat finden wir durch Multiplikation von (9.11) mit λs und anschliessende Summation uber alle Ordnungen ¨ λs; diese Manipulation ergibt eine Beziehung zwischen E und Ψ in der Form
-
+und darstellen als Vektor auf der Bloch Sph¨are, vgl. Abb. 11.1. Oft schreibt
+图1
+man auch den Spinor
 公式12
-Fur eine systematische Berechnung von ¨ E und Ψ brauchen wir einen Ausdruck fur ¨ |Ψsi und wir entwickeln in der Basis |ϕli,
+Die Darstellung der Operatoren Sx, Sy, Sz in dieser Basis ist gegeben durch
 公式13
-Die Summe P0 enth¨alt keinen Term l = n da hϕn|Ψsi = hΨ0|Ψsi = δ0s ist, vgl. Gl. (9.8). Das Skalarprodukt von (9.5) in der Ordnung s mit hϕ| ergibt
+mit den Pauli-Spin-Matrizen (siehe Seite 144, Tabelle 4.1)
 公式14
-wobei der Term mit j = 0 in der Summe, E0hϕl |Ψsi, wiederum |Ψsi enth¨alt. Damit finden wir
+Die Pauli-Matrizen haben einige nutzliche Eigenschaften:
 公式15
-Dieses Gleichungssystem l¨asst sich iterativ l¨osen: Sei E und Ψ bis einschliesslich der Ordnung s − 1 bekannt, das heisst, E0, · · · , Es−1 und Ψ0, · · · , Ψs−1 seien bereits gefunden. Dann ist fur ¨ s ≥ 1:
+
 公式16
-Fur ¨ s = 0 bilden E0 = En und |Ψ0i = |ϕni den Startpunkt fur die Iteration. Die Nichtentartung war wichtig in (9.15): Es darf keinen Vektor |ϕli 6= |ϕni geben mit El = En. Wir werden auf den Spezialfall, wo diese Bedingung nicht erfullt ist, zur ¨ uckkommen. Schliesslich geben wir die Resultate f ¨ ur ¨ s ≤ 2 explizit an, wobei wir die Notation |ϕli = |li verwenden:
+
 公式17
 
 公式18
-
+Beweise: (11.15) folgt aus (11.8) und (11.16) findet man durch nachrechnen. (11.17) folgt aus (11.16) fur ¨ i 6= j. Die Beziehung σ2i = 1l beweist man wiederum durch nachrechnen. (11.18) folgt aus (11.15) und (11.17) 
+Weiter gilt fur beliebige ¨ ~a und ~b :
 公式19
-Die Normierung (in Ordnung s = 2) hat die Form
+S~ definiert aufgrund von (11.8) Drehungen in H1/2. Eine allgemeine Drehung um ~ω wird durch den Operator
+
 公式20
-Beachte: Die 2te Ordnung der St¨orungstheorie fuhrt immer zu einer Erniedrigung der Grundzustandsenergie. 
-Beispiel: Harmonischer Oszillator im Kraftfeld Das Problem wird durch den Hamiltonian
+beschrieben. Zum Beispiel gehe ~n durch eine Drehung um ~ω aus dem Ein heitsvektor ~m hervor wie in Abbildung 11.2 skizziert, dann ist
+图2
 公式21 
-definiert. Das ungest¨orte Problem hat die L¨osung
-公式22
-Wir gehen zu dimensionslosen Variablen uber und f ¨ uhren Auf- und Absteigeoperatoren ein (vergleiche Seite 110 ff)
-公式23
-Die Matrixelemente ergeben sich zu
+und auf die Zust¨ande |~m↑i und |~m↓i ubertragen
+公式22 
+Beweis (11.21): Fur kleine ¨ ~ω ist ~n = ~m + ~ω ∧ ~m und
+公式23 
+Beweis (11.22): Wir wenden (11.21) auf e−iS~·~ω/~|~m↑i an
 公式24
-Damit erhalten wir folgende Resultate bis zur 2-ten Ordnung,1
+und ebenso fur ¨ |~n↓i
+Die Drehung exp[−iS~ · ~ω/~] l¨asst sich in der Basis | ↑i, | ↓i einfach schreiben als
 公式25
 
 公式26
 
 公式27
-Andererseits beschreibt der Hamiltonia
-公式
-
-gerade einen um q0 = F/mω2 verschobenen harmonischen Oszillator; dessen Energien sind um −F2/2mω2 verschoben
+Im Schritt von (11.25) zu (11.26) haben wir den Zusammenhang (~ω · ~σ)2 = ω21l benutzt. Damit erhalten wir fur den ¨ |~n↑i Zustand dargestellt in der ~z Basis
 公式28
-und die Zustandsfunktionen sin
+wobei ~ω gerade ~z nach ~n dreht.
+Beachte:
 公式29
-Die St¨orungsreihe sollte gerade den verschobenen harmonischen Oszillator als Potenzreihe in F ergeben, was der Vergleich von (9.25) – (9.27) mit (9.28) und (9.29) best¨atigt.
+Zu jedem Spinzustand |Ψi gibt es eine Quantisierungsachse ~n, so dass
 
-9.2 Station¨arer, entarteter Fall
-Das Problem der Entartung ¨aussert sich in (9.15)—der Energienenner En−El verschwindet wenn |ni und |li aus demselben Energieeigenraum stammen und daher die gleiche Energie haben. Abhilfe ist einfach: wir mussen die St¨orungstheorie fur entartete Eigenwerte neu aufbauen. Beachte, dass eine Entartung nur relevant ist, wenn wir die St¨orungsanalyse im entarteten Eigenraum ausfuhren, nicht aber wenn wir zwar dim Eig ¨ Em = Dm > 1 haben aber Eig En|En6=Em mit dim Eig En = 1 untersuchen. Im letzteren Fall sind zwar alle Nenner En − Em uber Eig ¨ Em konstant aber En − En 6= 0.
-
-Wir erarbeiten ein konkretes Beispiel mit dim Eig Em = 2, der allgemeine Fall mit dim Eig Em = k > 1 folgt trivial; statt einer 2 × 2 Matrix ist eine k×k Matrix zu diagonalisieren, siehe sp¨ater. Es sei {ϕm, ϕn} der Eigenraum zu E0 = Em = En = E und ϕn ⊥ ϕm.
-
-9.2.1 Aufhebung der Entartung in der Ordnung s = 1
-Die Energie alleine genugt nicht, um den zu untersuchenden Zustand festzulegen da alle Superpositionen
 公式30
-die gleiche Energie E0 = E in Ordnung s = 0 besitzen (wir verwenden die Diracnotation ϕl → |li). Einen guten Startpunkt fur die St ¨ ¨orungsreihe k¨onnen wir finden wenn wir (9.5) in Ordnung s = 1 nehmen und Matrixelemente mit hm| und hn| bilden,
-
+Beweis: via (11.28) definiert jeder Zustand  eine Drehachse ~ω, welche  in  uberf ¨ uhrt.
+Die Drehung um 2π gibt
 公式31 
-und ebenso mit hn|. Die beiden Gleichungen lassen sich in die folgende Matrix-Form bringen,
+Damit stellen die Rotationen
 公式32 
-Mit hm|H0 und sowie erhalten wir das Eigenwertproblem
+im Hilbertraum H1/2 dieselbe Drehung im R3 dar: Die Darstellung ist zweiwertig,
 公式33 
-Eine L¨osung Ψ0 6= 0 existiert falls die Determinante gleich Null ist, also
+Da nur Erwartungswerte, welche bilinear in |Ψi sind, gemessen werden k¨onnen, entstehen durch die Zweideutigkeit keine Probleme, denn die Wellenfunktion und insbesondere ihre Phase ist nicht direkt messbar, nur relative Phasen sind relevant: hΦ, Ψi = hΦe, Ψei mit Ψe, Φ = e U2πωˆΨ, U2πωˆΦ. Die Unterschiede in SO(3) versus SU(2) sind schematisch in Abbildung 11.3 dargestellt.
+Beachte:
 公式34 
-womit wir E1 berechnen k¨onnen zu
+denn Sp ~σ = 0. Mit ~σ hermitsch ist U~ω unit¨ar und die zugeh¨orige Gruppe ist SU(2). 
+图3
+11.3 Drehimpulsaddition
+Wir setzen ~ = 1. Die Problematik l¨asst sich einfach am Beispiel der Addition zweier Spin 1/2 Drehimpulse darstellen. Seien S~1 und S~2 die Spinszweier Teilchen, [S~1, S~2] = 0. Der Hilbertraum H zur Beschreibung der zwei Spins ist der Produktraum H1/2 ⊗ H1/2 und die Wahl einer Richtung ˆez legt eine Basis |i, ji = |ii ⊗ |ji mit i, j ∈ {↑, ↓} fest. Der Produktraum ist 4-dimensional und wir schreiben fur die Basis
 公式35
-Die Bedingungen
+Der Gesamtspin S~ = S~1 + S~2 des Systems ist wieder ein Drehimpuls, denn
 公式36
-charakterisieren die zugeh¨origen Eigenvektoren.
-
-Sei nun En oder δ0 6= 0. In niedrigster Ordnung erhalten wir das Resultat E0 = E und |Ψn durch (9.36) bestimmt. Die n¨achste Ordnung ergibt die Korrektor E1 = E±1 gem¨ass (9.35) und die Entartung wird aufgehoben. Um die Korrekturen |Ψ±1i fur die Wellenfunktionen zu finden betrachten wir zuerst die Ordnung s = 1 von (9.5) und berechnen das Matrixelement mit hl|, l 6= m, n,
+Wir k¨onnen also eine Basis |s, mi finden, welche nicht S~1 und S~ 2 individuell sondern den Gesamtspin, d.h., S2 und Sz, diagonalisiert,
 公式37
-(9.37) legt die Komponenten von |Ψ±1i im Sektor H \ {|mi, |ni} fest,
+Diagonalisieren mittels einfacher Argumente
+Wir l¨osen das Problem erst mit Hilfe einiger einfacher Uberlegungen. Der Hilbertraum H = H1/2 ⊗ H1/2 zerf¨allt in irreduzible Darstellungen von S2 und Sz; die entsprechenden Darstellungen haben Dimensionen 2s + 1 mit s = 0, 1/2, 1, 3/2, 2, · · ·. Zur Basis (11.35) geh¨ort dim H = 4 = 1 + 3 = 2 + 2. Also muss entweder H = H0 ⊕ H1 oder H = H1/2 ⊕ H1/2 sein. Letztere Alternative, H1/2 ⊕ H1/2, enth¨alt keine Spins mit m = ±1, welche aber in (11.35) vorkommen, also muss H = H0 ⊕ H1 sein. Die Basis in H = H1/2 ⊗ H1/2 = H0 ⊕ H1 welche S2 und Sz diagonalisiert ist
 公式38
-wobei der Projektor P = 1l − |mihm| − |nihn| auf H \ {|mi, |ni} projeziert. Daruber hinaus m ¨ ussen wir auch die Komponenten von ¨ |Ψ±1i im Raum {|mi, |ni} bestimmen, wozu wir die n¨achste Ordnung, den λ2-term in (9.5) benutzen. Fur ¨ |Ψ+1i finden wir
+Diagonalisieren durch Rechnen
+Dasselbe Resultat l¨asst sich durch eine einfache Rechnung finden. Da wir bereits eine Basis in H besitzen, vgl. (11.35), muss die neue Basis |s, mi welche S2 und Sz diagonalisiert durch diese Basis ausdruckbar sein (systematisch wird dieses Ziel mit Hilfe der Clebsch-Gordan-Koeffizienten erreicht — vgl. Kap 11.4). Wir mussen demnach geeignete Linearkombinationen der Basisvektoren (11.35) finden die S2 und Sz diagonalisieren. Wir konzentrieren uns zuerst auf Sz. Es ist
 公式39
-Andererseits ist
+also ist Sz bereits diagonal mit den Eigenwerten 0 und ±1. Wir mussen nur noch Kombinationen finden, welche S2 diagonalisieren. Wenn wir die Eigenzust¨ande zu Sz behalten wollen, k¨onnen wir nur noch | ↑, ↓i und | ↓, ↑i mischen. Wir berechnen (es gilt Sj± = Sjx ± iSjy, j = 1, 2)
+
 公式40
-da (1l − P)H0i wie man durch direktes Nachrechnen zeigt. Die Kombination von (9.39) und (9.40) ergibt
+Dann ist
 公式41 
-und damit, unter Verwendung von (9.38), die gesuchte Komponente i. Beachte, dass die Korrektur (9.41) von der Ordnung hm(n)|H0 ist. Eine analoge Rechnung gibt das korrespondierende Resultat fur ¨ |Ψ−1i. Fassen wir die obigen Resultate zusammen so finden wir eine St¨orungsreihe startend mit
+und | ↑, ↑i, | ↓, ↓i geh¨oren zu einem s = 1 Triplett,
 公式42 
-Allgemein Sei dim Eig En = k, {ϕ1n, · · · , ϕkn} ein vONS in Eig En. Wir l¨osen das Eigenwertproblem
+(Beachte: S1+S2−| ↑, ↑i = S1+| ↑i ⊗ S2−| ↑i = 0 ⊗ √· · ·| ↓i = 0.) Wir erhalten den fehlenden Triplett Zustand |1, 0i mit Hilfe von
 公式43 
-und erhalten die Eigenwerte Eα · · , k, und Eigenvektoren |n. Dann k¨onnen wir die Resultate (9.17) bis (9.20) und weitere Ordnungen (9.16) ubernehmen indem wir ersetzen
+aus |1, 1i, also
 公式44 
-zum Beispiel in 2ter Ordnung fur ¨ E
+Der letzte Zustand muss orthogonal auf |1, 0i sein und geh¨ort zu Sz = 0. Weiter muss er eine eindimensionale Darstellung definieren, also muss S = 0 sein. Zusammen ergibt dies
 公式45 
-und in 1ter Ordnung fur Ψ,
-公式46
-wobei wir wiederum die Komponente in Eig En speziell berechnen mussen. ¨
-9.2.2 Aufhebung der Entartung in zweiter Ordnung Betrachte (9.35) sowie (9.36): Wenn E0m = E0n und δ0 = 0 ist, dann resultiert daraus E+1 = E−1 und die Entartung wird in erster Ordnung nicht aufgehoben. Wir gehen dann zur s = 2 Ordnung von (9.5) uber und nehmen das Matrixelement mit hm| und mit hn|,
+Somit haben wir fur zwei Spin-1 ¨ /2 Teilchen folgende Zerlegungen des Hilbertraumes:
+公式46 
+Die obige Bestimmung der Basis {|0, 0i, |1, 1i, |1, 0i, |1, −1i} entspricht gerade der Ausreduktion von S2, Sz in H. Wir interpretieren das Resultat dahingehend, dass die Spins entweder parallel (s = 1) oder antiparallel (s = 0) arrangiert sind, wie in der Abbildung 11.4 verdeutlicht.
+图4
+Interessant ist auch, dass |s, mi Eigenzust¨ande von S~1 · S~2 sind, denn
 公式47
-Wir benutzen die 1-te Ordnung Resultate
+Fur ¨ s = 1 ist demnach
 公式48
-
-公式49 
-Die 2-te Ordnung Gleichung (9.47) l¨asst sich schreiben als
-
+und fur ¨ s = 0 ergibt sich
+公式49
+Damit k¨onnen wir die Projektoren
 公式50
-Der mittlere Term verschwindet da im Raum (1l − P)H = {|mi, |ni} die Entartung in 1-ter Ordnung nicht aufgehoben wird, d.h., (1l−P)H0(1l−P) = E1(1l − P). Wir finden die Gleichung
-公式15
-und Einsetzen von (9.49) ergibt
+definieren.
+11.3.1 Allgemeiner Fall
+Wir wollen die beiden Drehimpulse J~1 und J~2, [J~1, J~2] = 0, addieren. Ausgehend von der (2j1 + 1) × (2j2 + 1) dimensionalen Basis |j1, m1i ⊗ |j2, m2i ≡ |j1, j2, m1, m2i im Produktraum H = Hj1 ⊗ Hj2 wollen wir eine neue Basis |j1, j2, j, mi finden, welche die Operatoren J2 und Jz zum Gesamtdrehimpuls J~ = (J~1 + J~2) gleichzeitig diagonalisiert. Diese Aufgabe ist ¨aquivalent zur Ausreduktion der Drehdarstellung in Hj1 ⊗ Hj2 , welche als Produktdarstellung vorliegt. Es ist
+公式51 
+Die Summe J~ = J~1 + J~2 ist wieder ein Drehimpuls, also gilt
 公式52 
-Ebenso finden wir durch Projektion auf hn|,
+Es ist [J2, Jz] = 0, aber auch [J2i, J~ ] = 0 da J2i ein Skalar ist. Damit ist[J (ebenso fur ¨ J2) und wir k¨onnen die Operatoren J2 und Jz gleichzeitig diagonalisieren; die zugeh¨orige Basis |j1, j2, j, mi wird durch die Quantenzahlen j1, j2, j, m charakterisiert und erfullt (vgl. (11.51))
+
 公式53 
-mit
+Wir k¨onnen die neue Basis |j1, j2, j, mi via Clebsch-Gordan Koeffizienten durch die alte Basis ausdrucken,
 公式54 
-Damit haben wir das Problem auf (9.33) zuruckgef ¨ uhrt. Die Gr ¨ ¨ossen Eund δ0 heissen 2-te Ordnung Matrixelemente. Damit die Entartung in 2-ter Ordnung aufgehoben wird muss wiederum entweder Em oder δ0 6= 0 sein. ⇒ Die Entartung wird sich in
-表
-
-Beispiel: Stark Effekt im Wasserstoffatom. 
-Betrachte ein Wasserstoffatom im elektrischen Feld E~ = (0, 0, E). Dann ist H0 = eEz die St¨orung. Wir untersuchen die Aufhebung der Entartung im n = 2 Niveau mit Zust¨anden |n, l, mi = |2s0i, |2p1i, |2p0i, |2p−1i, also 4-fach entartet. Zur Behandlung w¨are eine 4 × 4-Matrix n¨otig, aber da [Lz, z] = 0 ist mischen die verschiedenen m nicht,
+Glucklicherweise verschwinden viele der C-G Koeffizienten: Es ist
+公式
+also muss j1 = j01 und ebenso j02 = j2 sein. Weiterhin ergeben die Matrixelemente von Jz die Bedingung m = m1 + m2 (wir ersetzen die Indices m01 und m02 durch m1 und m2),
 公式55
-Somit bleiben nur die Matrixelemente h2s0|H0|2p0i = δ0 und δ
-0∗ sowie die Diagonalen. Da aber auch [H0, P] = 0 (mit der Parit¨at P) gilt, haben die Eigenvektoren eine wohldefinierte Parit¨at, n¨amlich die von Ylm, P Ylm =(−1)lYlm. Da aber z Ylm die Parit¨at (−1)l+1 hat, muss hl|H0|li = 0 sein. Daraus folgt, dass auch die Diagonalen verschwinden, und
-公式56
-Es bleibt δ = h2s0|H0|2p0i = −3aBeE zu berechnen und die verbleibende 2 × 2 Matrix zu diagonalisieren,
+Damit finden wir die Transformation
+公式56 
+Als n¨achstes wollen wir die Zust¨ande aufz¨ahlen, was in der alten Basis trivial ist: Gegeben j1 haben wir 2j1+ 1 Zust¨ande |j1, m1i, ebenso 2j2+ 1 Zust¨ande |j2, m2i, somit erhalten wir (2j1+1)×(2j2+1) Zust¨ande in der Produktbasis |j1, j2, m1, m2i. Die Abz¨ahlung der neuen Basis ist schwieriger: Aus dem in Abbildung 11.5 gezeigten Schema ergibt sich folgende Abz¨ahlung:
+公式
+Welches sind die m¨oglichen j-Zust¨ande? Starten wir mit maximalem m1 + m2 = m = j1 + j2 muss es 2j + 1 Zust¨ande zu j = j1 + j2 geben, denn aus |j1, j2, j1 + j2, j1 + j2i k¨onnen wir durch Anwendung von J− = J1− + J2− in Einer-Schritten bis zu |j1, j2, j1 + j2, −j1 − j2i gelangen. Von den zwei Zust¨anden mit m = j1+j2−1 geht eine Linearkombination (LK) fur die ¨ j = j1+j2 Darstellung weg, bleibt noch eine weitere LK, welche 2(j1+j2−1)+ 1 Zust¨ande zu j = j1 + j2 − 1 erzeugt, wiederum durch iterative Anwendung von J−. Dieses Schema k¨onnen wir fortsetzen bis wir m = |j1−j2| erreichen. Wie in Abbildung 11.5 gezeigt, kommen keine neuen m-Zust¨ande hinzu. Das heisst, wir haben bereits alle Zust¨ande |j1, j2, j, mi erzeugt. Die Gesamtzahl der Zust¨ande ergibt sich durch einfaches Nachz¨ahlen,
+图5
+
 公式57
-Die Aufhebung des 4-fach entarteten Zustandes bei e2/8aB in zwei nichtentartete und einen 2-fach entarteten Zustand ist in Abb. 9.1 skizziert.
-图9.1
-Wir sch¨atzen die relative Korrektur ab,
+Damit erhalten wir die Zerlegung (vgl. (11.46))
 公式58
-Das Feld e/a20(typische Feldst¨arke beim e−) ist e/a20 ≈ 5 · 109 V/cm. Dazu der Vergleich mit typischen Feldern in MOSFET’s ∼ 105 − 106 V/cm, oder die Durchbruchfeldst¨arke von einem der besten Isolatoren SiO2 ∼ 106 − 108 V/cm. Diese Gr¨ossenverh¨altnisse rechtfertigen den Ansatz, dass die Labor-Felder wesentlich kleiner sind als die Felder im Atom.
+Der Produktraum Hj1 ⊗Hj2 wird durch die Produktbasis |j1, j2, m1, m2i = |j1, m2i ⊗ |j2, m2i dargestellt. Nachdem wir die Struktur der Zerlegung des Produktraumes in irreduzible ‘Drehr¨aume’ Hj gefunden haben, mussen wir noch die C-G Koeffizienten berechnen damit wir die neue Basis durch die alte und vice versa ausdrucken k ¨ ¨onnen.
 
-9.3 Station¨arer, fast entarteter Fall
-Offensichtlich ist die St¨orungsreihe eine Entwicklung in hn|V |li/(En − El). Wenn En → El geht, ist die Reihe nur langsam konvergent. Wir diskutieren hier den Fall in dem zwei Eigenvektoren |ni und |mi beinahe (oder vollst¨andig) entarten, zum Beispiel ein ‘Level Crossing’ in 0ter Ordnung, vgl. Abb. 9.2.
-图9.2
-Wir schreiben H = H0 + H0 = H0 + H01 + H02 mit
+11.4 Clebsch-Gordan Technologie
+Um es vorweg zu nehmen: Es gibt Clebsch-Gordan Tabellen, zum Beispiel A.R. Edmonds, Angular Momentum in Quantum Mechanics (Princeton University Press, New Jersey, 1957) und sogar Web-Tools zur Berechnung von C-G Koeffizienten; Mathematica berechnet C-G Koeffizienten via ClebschGordan[{j1, m1}, {j2, m2}, {j, m}]. Hier diskutieren wir wie eine C-G Tabelle hergeleitet wird. Mit (11.56) (wir unterdrucken die ‘,’ in den Vektoren),
 公式59
-
+gilt auch die Umkehrung
 公式60
-Wenn H01 die Entartung in 1. Ordnung aufhebt k¨onnen wir H02 in konventioneller Manier l¨osen. Die Idee ist dann zuerst das H1 = H0 + H01-Problem exakt zu l¨osen und anschliessend H02 perturbativ zu behandeln. Betrachte |li mit l 6= m, n. Mit H0|li = El |li ist auch H1|li = El|li da hl|mi = hl|ni = 0 ist ⇒ nichts zu tun in H\{ϕn, ϕm}. Es bleibt der {ϕn, ϕm}-Raum. Dies ist aber gerade das Problem (9.33) mit
-
-公式16
-Beachte, dass hier E0m den Anteil Em in 0ter Ordnung auch beinhaltet. In (9.33) war Em = En und wir haben nur die St¨orung betrachtet, also den Nullpunkt anders gew¨ahlt. Hier ist zwar Em ≈ En, aber dennoch Em 6= En. Die neuen Startvektoren und Energien fur das ¨ H02-Problem sind dann:
-公式26
-Beispiel: 1D periodisches Potential. Wir betrachten das Problem gegeben durch den Hamiltonian H mit periodischem Potential V (x) und periodischen (Born-von Karmann) Randbedingungen,
+Der Zustand hj1j2m01m02| angewandt auf (11.60) ergibt die Orthogonalit¨atsrelation
+公式61 
+Ebenso gibt hj1j2j0m0| angewandt auf (11.56) = (11.59) die Beziehung
+公式62 
+Wir k¨onnen oBdA alle C-G Koeffizienten reel w¨ahlen. Wir setzen j0 = j und m0 = m in (11.62) und normieren die Koeffizienten gem¨ass
 公式63 
-Das ungest¨orte Problem mit H0 = −~2∂2x/2m hat die L¨osungen
+das heisst, wir mussen die Koeffizienten ¨ hj1j2m1m2|j1j2jmi nur noch bis auf einen konstanten Faktor finden. Dazu benutzen wir die Auf- und Absteige Operatoren und berechnen die Matrixelemente
 公式64 
-Durch die Benutzung periodischer Randbedingungen haben wird das kontinuierliche Spektrum quasi-kontinuierlich (→ diskret) gemacht, eine geeignete Technik ein kontinuierliches Spektrum zu behandeln. Wir wollen V st¨orungstheoretisch behandeln. Mit
+mit J± = J1± + J2±. Die Anwendung der Operatoren J± nach rechts ergibt
 公式65 
-(beachte V (x + w) = V (x) periodisch ⇒ V (x) l¨asst sich als Fourierreihe darstellen) erhalten wir fur die Matrixelemente
-公式66
-und finden damit die Wellenfunktionen in erster Ordnung St¨orungstheorie
-公式67
-Die Energie berechnen wir in 2ter Ordnung,
+w¨ahrenddem ihre Anwendung nach links das Resultat
+公式66 
+ergibt. Die Kombination dieser Beziehungen ergeben die Dreiecksrekursionen (aus J+)
+公式67 
+und (aus J−)
 
 公式68
-Dieser Ausdruck divergiert in der Umgebung von Ek ∼ Ek+Kl , vgl. Abb. 9.3: Die k-Werte um −πl/w koppeln via Kl = 2πl/w zu +πl/w und die Nenner Ek − Ek+Kl in (9.68) gehen gegen 0 mit k → −lπ/w. Wir l¨osen deshalb das Problem in der Umgebung von −lπ/w im Rahmen fast entarteter St¨orungstheorie. Mit |mi = ϕk und |ni = ϕk+Kl , k ∼ −lπ/w, haben wir die
-图9.3
-Matrix
+diese Dreieckrelationen sind in Abbildung 11.6 skizziert, oben rechts fur ¨ J+ und unten links fur ¨ J−.
+图6
+Sind zwei der Koeffizienten bekannt folgt daraus aus den Dreiecksbeziehungen der Dritte. Unsere Aufgabe ist es, bei festem aber beliebigem j mit
+图7
+|j1 − j2| ≤ j ≤ j1 + j2 die Koeffizienten fur alle ¨ m1, m2 zu finden. Betrachte das in Abbildung 11.7 skizzierte Schema: wir starten im Punkt X und w¨ahlen hj1j2j1j − j1|j1j2jji ≡ ν mit ν ∈ R+. Wir folgen der Kante α unter Verwendung der Dreiecksrelation (11.68) (beachte, dass m2 < (j − j1)) und benutzen, dass fur ¨ m1 > j1 der Koeffizient hj1j2j1+1m2|j1j2jj1+1+m2i = 0 verschwindet; damit finden wir die Rekursion
 公式69
-zu diagonalisieren. Die Energieeigenwerte sind
+Anschliessend erzeugen wir mit (11.67) die Werte auf der Kante β und arbeiten uns alsdann iterativ durch die Matrix. Schliesslich finden wir ν durch Normierung gem¨ass (11.63).
+Besonders einfach sind die Resultate fur den Fall der Addition eines Spin S~ und eines Drehimpulses L~ , wie zum Beispiel gebraucht bei der Bestimmung des Gesamtdrehimpulses eines gebundenen Elektrons. Wir finden die
+Zerlegung
 
-公式70
-Fur ¨ |Ek − Ek+Kl|  |Vl| erhalten wir in 1-ter Ordnung St¨orungstheorie
-公式17
-Bei k = −lπ/w erhalten wir substanzielle Korrekturen,
-公式27
-das heisst, das Mischen von k und k + Kl erzeugt Bandlucken im Spektrum. Qualitativ erhalten wir damit das Spektrum des Kronig-Penney Modells zuruck, vgl. Abb. ¨ 9.4. Die Bandlucken (Gaps) sind durch die Fourierkoeffizienten 2|Vl| = 2|V (Kl)| gegeben, fur ¨ V = V0 Pδ(x−lw) ist Vl = V0 = const.
+公式70 
+des Produkt Hilbertraumes und erhalten die C-G Koeffizienten
+hl, s, ml, ms|l, s, j, mi in der Form
+公式71
+Schliesslich ist wiederum S~ · L~ diagonal in |l, s, j, mi, denn
+公式72 
 
-Normalerweise ist |Vl| > |Vl0| fur ¨ l < l0 , d.h. die Gaps nehmen mit zunehmender Energie ab; fur das ¨ δ-Potential (Kronig-Penney Modell) sind die Gaps
-图9.4
-2|Vl| = 2V0 maximal. Die Aufspaltung der Blochwellen Ψlk = exp(ikx)ul(x), vgl. (3.81), in eine Modulation (exp(ikx)) und einen periodischen (ul(x)) Anteil und die einhergehende Reduktion auf die erste Brillouin Zone l¨asst sich leicht fur den extremen Fall freier Elektronen (d.h., ¨ V → 0) nachvollziehen:
-公式
-Die Behandlung des periodischen Gitters in dieser (st¨orungstheoretischen) Art und Weise ist als ‘Fast-freie Elektron-Approximation’ (Nearly Free Electron Approximation – NFEA) bekannt. Dagegen startet das ‘Fastgebundene-Elektron-Modell’ (Tight Binding Approximation – TBA) von gebundenen Zust¨anden, also von lokalisierten Elektronen, welche mit kleiner Amplitude von Gitterpunkt zu Gitterpunkt hupfen. Mit zunehmender Modulation im Potential V (x) geht das Spektrum stetig von der steilen NFEA Form ∼ ~
-2k2/2m mit kleinen Lucken zur TBA Form mit flachen B ¨ ¨andern der Form 2t cos(πx/w) oder 2tsin(πx/w) und grossen Lucken ¨ uber. Dabei ist t das Matrixelement fur das h ¨ upfende Elektron, also eine Energie.
-
-9.4 Rayleigh-Schr¨odinger vs. Brillouin-Wigner
-In der Rayleigh-Schr¨odinger Theorie, dem obig behandelten Schema, werden Ψ und E konsistent in λs entwickelt. Die Brillouin-Wigner Theorie entwickelt demgegenuber nur Ψ, nicht aber ¨ E, in Potenzen von H0 . Startpunkt der Brillouin-Wigner St¨orungsreihe ist (9.1),
+und damit ist
 公式73 
-Energien: W¨ahlen wir m = n und die Normierung hn|Ψi = 1 so erhalten wir mit λ = 1
+Fur ¨ j = l + 12, d.h., S~ k L~ , findet man
 公式74 
-identisch mit (9.12).
-Zust¨ande: Mit |Ψi =Plhl|Ψi|li erhalten wir sofort (λ = 1)
+w¨ahrenddem fur ¨ j = l − 12, also S~ antiparallel zu L~ , gilt
+
 公式75 
-Zum Vergleich ergibt die Rayleigh-Schr¨odinger Theorie das Resultat (siehe(9.17) - (9.19))
+11.4.1 Drei Drehimpulse
+Die Addition dreier Drehimpulse erfolgt iterativ gem¨ass
 公式76 
+e C-G Koeffizienten ergeben sich dann als Summe von Produkten von CG Koeffizienten. Der Basiswechsel von der ((12)3) Darstellung zur (1(23)) Darstellung involviert die Racah (W) Koeffizienten oder die Wigner-6j Symbole, siehe Spezialliteratur, z.B., Edmonds, Angular Momentum in Quantum Mechnanics (Princeton University Press). Als einfaches Beispiel untersuche man H⊗31/2 = H1/2 ⊗ H1/2 ⊗ H1/2 = (H0 ⊕ H1) ⊗ H1/2 = 2H1/2 ⊕ H3/2.
 
-公式77
-Andererseits ergibt die Iteration von (9.75)
-公式78
-Offensichtlich ist die Reihe fur ¨ |Ψi im Brillouin-Wigner–Schema viel einfacher aufzuschreiben. Beachte jedoch, dass (9.78) auf der rechten Seite die unbekannte Energie E enth¨alt. Einsetzen der St¨orungsreihe von E in (9.78) reproduziert naturlich das Rayleigh-Schr ¨ ¨odinger-Resultat (9.76). Eine bemerkenswerte Anwendung von (9.78) involviert die Kombination mit (9.12), E = En+λhn|H0|Ψi, mit (9.78) in der s-ten Approximation, |Ψi ∼= |Ψ(s)(E)i. Die L¨osung der nichtlinearen Gleichung
-公式79
-per Computer erlaubt eine im allgemeinen sehr genaue Bestimmung von E und damit von Ψ in der Ordnung s.
-
-9.5 Nichtstation¨are St¨orungstheorie
-Die nichtstation¨are St¨orungstheorie gibt sich mit folgender typischen Problemstellung ab: Gegeben sei ein zeitabh¨angiger Hamiltonoperator mit den Eigenschaften
-公式80
-Die Dynamik sei wie folgt definiert:
-公式18
-mit |Ψi = |Ψ0i der fur ¨ t < t0 pr¨aparierte Ausgangszustand. Gesucht ist |Ψi zu Zeiten t > t0.
-
-Beispiel einer konkreten Fragestellung: Das System sei zu Zeiten t < t0 in einem Eigenzustand von H0 pr¨apariert, |Ψ0i = |ni. Mit H0 = 0 fur ¨ t < t0 und |Ψ0i = |ni entwickelt sich das System zeitlich gem¨ass |Ψ0(t)i = e−iEnt/~|ni. Schalten wir nun H0 ein, so sind die |ni nicht mehr Eigenzust¨ande von H und werden durch die Dynamik entsprechend deformiert, d.h., H0 mischt nun andere Zust¨ande l 6= n in die Zeitevolution von |Ψi hinein ⇒ es resultieren Uberg ¨ ¨ange in andere Zust¨ande. Die Amplituden fur diese ¨ Uberg ¨ ¨ange finden wir durch Entwicklung des durch H0 gest¨orten Zustandes als Superposition |Ψi = Pl al(t)|li ({|li} ist ein vONS); die gesuchten Ubergangsamplituden sind dann durch die ¨ al(t) gegeben. Im Hilbertraum entwickelt sich der Zustand gem¨ass der Skizze 9.5.
-图9.5
-L¨osung: Wir haben den adequaten Formalismus bereits in Kapitel 7 hergeleitet, das Wechselwirkungsbild, siehe Seite 209 ff. Mit
+11.5 Physikalische Beispiele
+11.5.1 Magnetisches Moment
+Ein Teilchen der Ladung q (q = −e fur ein Elektron) und der Masse ¨ m, welches sich auf einem Orbit mit Drehimpuls L~ bewegt, produziert ein magnetisches Moment ~µ wie in Abbildung 11.8 skizziert,
+公式77 
+图8
+Gleichermassen erzeugt der Spin eines Teilchens ein magnetisches Moment, sogar fur ein ungeladenes Teilchen (z.B. ein Neutron, siehe unten). Fur ein Elektron findet man
+公式78 
+mit dem Land´e Faktor g = 2 + α/π + Terme h¨oherer Ordnung in der Feinstrukturkonstanten α = e2/~c = 1/137.04. Beachte, dass ~µ und S~ antiparallel sind, da q = −e < 0. Fur ein Proton ist
+公式79 
+und fur Neutronen ist
+公式80 
+Plaziert man das Teilchen in ein Magnetfeld H, so wird seine Energie spin- ~ abhangig mit dem Hamiltonian
+公式81 
+Parameter und Gr¨ossenordnungen: Das Bohrsche Magneton definiert die Energieskala im Problem; es ist
 公式82 
-und
+und mit typischen Labor-Feldern im Bereich |H~ | ∼ 1 T = 104 Gauss erhalten wir typische Energien im Bereich
 公式83 
-erhalten wir
+Das Saturationsfeld von Eisenbasierten Materialien liegt im Bereich von 2Tesla. Supraleitende Magnete k¨onnen Felder im Bereich um die 20 Tesla erzeugen, hybrid Magnete kommen bis etwa 45 Tesla (Tallahassee), gepulste und explodierende Konfigurationen erreichen um die 100 Tesla.
+11.5.2 Pr¨azession
+Geben wir ein Teilchen mit Spin in ein Magnetfeld H beginnt sein Spin (im ~ allgemeinen) zu pr¨azessieren. Die Dynamik ist gegeben durch den Hamiltonian (hier fur ein ¨ e−)
 公式84 
-9.5.1 1ste Ordnung, Fermis Goldene Regel
-Betrachte ein System, welches fur Zeiten ¨ t < t0 im Eigenzustand |ii =|initiali zu H0 mit Energie Ei pr¨apariert sei. Welches ist die Wahrscheinlichkeit das System zu einem sp¨ateren Zeitpunkt t > t0 im Zustand |fi = |finali zu finden, wobei H0|fi = Ef |fi sei ? Als Beispiel nennen wir das Wasserstoff Atom in Wechselwirkung mit Licht (H-Atom im elektromagnetischen Strahlungsfeld), wobei das Lichtfeld als St¨orung wirkt. In diesem Fall fragen wir nach den Ubergangsraten zwischen den Niveaus. Mit ( ¨ 9.84) erhalten wir sofort in erster Ordnung
+Im Heisenbergbild ist die Dynamik den Operatoren zugeordnet und wir erhalten die Evolutionsgleichung fur den Spin (vgl. ( ¨ 7.31) (wir vereinfachen die Notation und schreiben S~(t) statt S~H(t))
+
 公式85 
-
+Hier haben wir benutzt, dass HH = H, was voraussetzt, dass [H(t), H(t0)] =0. Die entsprechende Bedingung [S~ · H( ~ t), S~ · H( ~ t0)] = 0 impliziert dann die Relation [H( ~ t)∧H( ~ t0)]·~σ = 0 und damit darf das Magnetfeld seine Richtung nicht ¨andern, H( ~ t) = H~0 f(t). Das Resultat (11.85) ist gleichbedeutend mit
 公式86 
-Fur die ¨ Ubergangswahrscheinlichkeit ¨ Pi→f (t) = |hf|Ψ(t)i|2 erhalten wir
-
-公式78
-Um weiter zu kommen mussen wir Annahmen ¨ uber die Zeitabh ¨ ¨angigkeit der St¨orung H0(t) machen. Ubliche und h ¨ ¨aufige F¨alle sind
-表
-– Abruptes Einschalten: H0(t) = V Θ(t − t0),
-– Adiabatisches Einschalten von t < 0 her: H0(t) = V eηt, η → 0+,
-– Harmonische St¨orung: H0(t) = V cos ωt.
-
-In der Folge analysieren wir diese drei F¨alle.
-1. H0(t) = V Θ(t − t0)
-Einsetzen in (9.87) ergibt mit t0 = 0 (oBdA) und der Definition ωif = (Ef − Ei)/~
-
+d.h., auf den Spin im Magnetfeld wirkt ein Moment und der Spin beginnt zu pr¨azessieren. Im folgenden Beispiel betrachten wir ein Elektron mit Ladung q = −e im Magnetfeld H( ~ t) = (0, 0, H0) = const. Es ist
+图9
+公式87 
+mit der L¨osung
 公式88 
-Der Faktor ∝ sin2
-(ωif t/2) hat Nullstellen bei ωif t = 2nπ und verh¨alt sich fur ¨ ωif → 0 wie (ωif t/2)2/(~ωif /2)2 ≈ (t/~)2, vgl. Abb. 9.6. Fur lange Zeiten t → ∞ erhalten wir einen scharfen Peak bei ωif = 0 mit Gewicht ∝ t.
-图9.6
-Interpretation: Nach Einschalten der St¨orung k¨onnen im Prinzip Uberg¨ange zu allen Energien erfolgen. Die relevanten Uberg ¨ ¨ange (diese treten mit grosser Wahrscheinlichkeit auf und oszillieren nicht in der Zeit) sind diejenigen welche die Energie erhalten, ωif = 0 → Ei = Ef . Die Bandbreite der Energieerhaltung ist durch das Heisenbergsche Unsch¨arfe Prinzip gegeben,
+Mit |ω0|/2π = 2.8 MHz · H0[Gauss] finden wir typische Frequenzen im Megahertz bis Gigahertz Bereich. Im Schr¨odingerbild hat die L¨osung die Form
+公式89 
+ein mit der Frequenz ω0 um die z-Achse drehender Spin.
+11.5.3 µSR – Muon-Spin-Rotation
+Die Muonen µ sind Elementarteilchen, Leptonen, mit endlicher Lebenszeit; sie zerfallen gerichtet unter Emission eines Elektrons,
+公式90 
+mit der Elektrongeschwindigkeit ~ve vorzugsweise dem Muonenspin S~µ entgegen gerichtet, vgl. Abb. 11.10. 
 
-公式89
-Das Gewicht dieser energieerhaltenden Prozesse nimmt linear mit der Zeit zu,
-公式90
-Fur grosse Zeiten m ¨ ussen h ¨ ¨ohere Ordnungen berucksichtigt werden. Ist das Spektrum diskret, so ist
+Durch Implantation von Muonen im Festk¨orper (via Muonenbeschuss) kann das lokale Magnetfeld gemessen werden, vgl. Abb. 11.10. Die zeitliche Modulation der Z¨ahlrate im Detektor liefert die Pr¨azessionsfrequenz ω0 welche von der lokalen Magnetfeldst¨arke abh¨angt. Die lokalen Unterschiede im
+图10
+Magnetfeld ergeben die ‘Depolarisation’. Mit diesem Verfahren lassen sich spontan generierte Magnetfelder (Zeitinvarianz brechende Grundzust¨ande), magnetische Ordnungsph¨anomene oder die Eindringtiefe λ in Supraleitern (langsame Muonen) messen.
 
-gs91
-In der Folge betrachten wir ein Kontinuum von Zust¨anden oder eine Gruppe von Finalzust¨anden welche dicht liegen. Die Dichte dieser Zust¨ande im Energieraum sei beschrieben durch ρ(Ef ), das heisst, wir k¨onnen Summen uber Zust ¨ ¨ande |fi ersetzen durch Integrale uber ¨ Ef ,
-公式29 
-Im Weiteren nehmen wir an, dass das Quadrat des Matrixelementes |hf|V |ii|2 von |fi nur via Ef abh¨angt.
+11.5.4 NMR – Nuclear Magnetic Resonance – Spin Resonanz
+Wir betrachten die in Abbildung 11.11(a) gezeigte Konfiguration. Das angelegte Magnetfeld besteht aus einem (dominanten) dc-Anteil H~0 und einem dazu senkrecht angelegten oszillierenden (ac) Anteil H~1,
+公式91 
+Sei |Ψ(t)i der Spinzustand im Schr¨odingerbild. |Ψ(t)i ist gegeben durch die L¨osung der Schr¨odinger-Gleichung
+公式92 
+图11
+mit den Pauli-Matrizen σx und σz. Mit |Ψ(t)i = exp[iωσzt/2] |Ψ0(t)i erhalten wir folgende Gleichung fur die transformierte Wellenfunktion ¨ |Ψ0(t)i,
 
-Beispiel: Freies Teilchen in 3D mit E = ~2k2/2m und ~k = 2π~n/L(Boxnormierung auf L3). Um die Summe in ein Integral zu transformieren verwenden wir den Zusammenhang d3n = (L/2π)3d3k
-公式39
-Beachte, dass |h~k|2 nur via Ek, Ek0 von ~k,~k0 abh¨angen darf, ansonsten muss |h~k0|V |~k i|2 uber Ω ¨ ~k~k0 gemittelt werden. Die obige Zustandsdichte ρ(E) mit dem Volumen L3 hat die Einheit 1/E. Die Wahrscheinlichkeit fur einen ¨ Ubergang in einen Zustand um ¨ |fi herum ist dann gegeben durch
+公式93 
+mit ω0 = µeffH0/~ und ω1 = µeffH1/2~. Es ist
 
-gs94
-Dabei haben wir benutzt, dass sin2 (ωt)/πtω2 → δ(ω) fur ¨ t → ∞, vgl.(2.109); ferner ist dEf = ~dωif und wir haben angenommen, dass die Zustandsdichte ρ(Ef ) und das Matrixelement |hf|V |ii|2 in der Umgebung von Ef stetig/flach sind. Damit erhalten wir fur die ¨ Ubergangsrate ¨ dPi→f /dt = Γ,
-gs 95
-mit 2π~/∆Ef < t  2π~/δε, vgl. Abb. 9.7. 2 Die Zeitrestriktionen haben folgenden Ursprung:
-– Der Peak in Pi→f muss innerhalb der Gruppe von Zust¨anden um f liegen. Wir bezeichnen die Breite dieser Gruppe mit ∆Ef , insbesondere sei das Matrixelement |hi|V |fi| innerhalb von ∆Ef in etwa konstant. Dann muss ∆Ef > 2π~/t sein, vgl. Abb. 9.7.
-– Die Dichte unter dem Peak muss genugend gross sein, d.h., die Energieseparation δε zwischen Zust¨anden klein, so dass viele Zust¨ande innerhalb des zentralen Peaks zu liegen kommen, δε  2π~/t, vgl. Abb. 9.7.
+公式94 
+und damit
+公式95 
+Die Gleichung fur ¨ |Ψ0i hat dann die Form (wir benutzen die Beziehungen cos 2ωt = 2 cos2 ωt − 1, sin 2ωt = 2 sin ωt cos ωt) und wir erhalten die L¨osung
+公式96 
+mit Ω2 = (ω − ω0)2 + ω21, und ˆσ = [(ω − ω0)/Ω]σz − (ω1/Ω)σx. Der ‘misfit’ (detuning) ω−ω0 zwischen der Treiberfrequenz ω und der Resonanzfrequenz ω0 des Systems (hier die Zeeman Energie) erzeugt also eine Korrektur zur Drehung um die z-Achse, w¨ahrenddem der Spin mit Frequenz ω1 um x gedreht wird. Starten wir mit dem Zustand |Ψ(0)i = | ↑i so erhalten wir fur die Wahrscheinlichkeit P↓(t) = | h↓|Ψ(t)i |2 nach der Zeit t den umgekehrten Spin zu messen das Resultat
+公式97 
+wie in Abbildung 11.11(b) dargestellt. Fur ¨ ω → ω0 ist Ω ≈ ω1 und P↓(π/ω1) ≈ 1, das heisst, dass in der N¨ahe der Resonanzfrequenz ω0 die Umdreh- (oder Flip-) Wahrscheinlichkeit nach der Zeit t = π/ω1 gerade ≈ 1 wird (π-pulse). Der Spin entzieht dem rf-Feld (radio-frequency) H~1 Energie und dreht sich um. Die Messung der erh¨ohten Absorption bei ω = ω0 l¨asst dann auf die Resonanzfrequenz ω0 schliessen und damit (bei bekanntem µeff) auf den Wert des lokalen Feldes H~0. Alternativ l¨asst sich bei bekanntem Feld H~0 das effektive lokale Moment µeff finden. Dieses Schema kann auch benutzt werden um Spins zu manipulieren — indem rf-Felder fur genau festgelegte Zeitintervalle ein- und ausgeschaltet werden, lassen sich Spinzust¨ande kontrolliert ver¨andern. NMR Techniken werden h¨aufig genutzt um Protein-Konfigurationen in der Biologie zu finden. Im Rahmen der Verarbeitung von Quanteninformation (gespeichert in quantum bits = qubits |qbi = [|0i + α exp(iϕ)|1i]/√1 + α2, manipulierbare zwei-Niveau Systeme = verallgemeinerte Spinsysteme) werden NMR-Manipulationstechniken genutzt.
 
-Normierung: Fur die Streuung eines freien Teilchens am Potential ¨ V mit Amplitude V0 und Ausdehnung w  λ = 2π/k gibt das Matrixelement |h~k/L6 und die Rate ergibt sich zu Γ =. Der Volumenfaktor 1/L3 tr¨agt der ‘Verdunnung’ der Wellenfunktion auf das Volumen L3 Rechnung. Wenn wir den Streuer durch Nd unabh¨angige zuf¨allig verteilte Defekte ersetzen ergibt sich das volumenunabh¨angige Resultat Γ = mV 20 w6ndp2mεf /π~ 4 mit nd = Nd/L3 die Defektdichte.
-公式
-Eingesetzt in (9.87) ergibt diese Zeitabh¨angigkeit im Grenzfall t0 → −∞
-gs 96
+Beachte: Das Resultat P↓(t) beschreibt Uberg ¨ ¨ange eines Spins vom Zustand | ↑i in den Zustand | ↓i unter Einfluss eines Mikrowellenfeldes (oder Uberg ¨ ¨ange eines Atoms zwischen Grundzustand |gi und angeregtem Zustand |ei unter der Wirkung eines optischen Feldes). Dieser Prozess erinnert an durch die Fermi Goldene Regel induzierte Uberg ¨ ¨ange. Tats¨achlich sind die Themen eng verwandt aber verschieden, sie beschreiben RabiOszillationen versus Zerf¨alle von Zust¨anden. Insbesondere beschreiben die Rabi-Oszillationen die Dynamik eines getriebenen 2 Niveau Systems ohne Pr¨asenz eines Kontinuums. Ein sch¨ones Beispiel ist das Atom (Anregung) in einer Kavi¨at (Photon) wo die Anregung zwischen dem Atom und dem Photon hin und her oszilliert. Diese Anregung ist weder vom Materie- noch vom Licht-typ sonderen dazwischen (eine Superposition) und heisst Polariton (beschrieben durch das Jaynes-Cummings Model). Im Gegensatz beschreibt die FGR den Zerfall eines angeregten Atoms unter Aussendung eines Photons, wobei das Photon im Kontinuuum lebt und wegfliegt. Ein anderer FGR Prozess w¨are die Absorption eines Photons aus dem Photonfeld unter Anregung des Atoms. Wurde das ausgesante Photon wieder zur ¨ uckkommen, zum Beispiel in einer Kavit¨at, dann wurde es vom Atom wieder absorbiert und reemittiert und periodisch weiter, was nichts anderes als die Rabi Oszillationen sind. Mathematisch sind die beiden Prozesse auch verwandt und verschieden: FGR ist ein Resultat der 1. Ordnung St¨orungstheorie und braucht ein Kontinuum. Rabi Oszillation werden durch die exakte L¨osung der Schr¨odingergleichung beschrieben. In der obigen Diskussion entnimmt der Spin dem makroskopischen, klassischen Mikrowellenfeld ein Photon, gibt ein anderes ab, nimmt wieder eines auf, usf. Das makroskopische klassische Mikrowellenfeld ersetzt das Photon in der Kavit¨at. Beachte auch, dass FGR eine Wahrscheinlichkeit ∝ t liefert, die Rabi Oszillationen aber eine Oszillation cos Ωt (→ Summation der St¨orungsreihe). Fur kleine ¨ t ist P↓(t) ∝ t2, was dem Resultat (9.88) oder (9.91) entspricht, nicht dem FGR Resultat welches P ∝ t und lange Zeiten t beschreibt. Weiter ist die FGR perturbativ, w¨are also nie in der Lage eine Ubergangswahrscheinlichkeit der Ordnung 1 zu liefern da die St¨orung dann gross w¨are.
 
-gs97
-图9.7
+11.6 Zeeman Effekt & Spin-Bahn-Kopplung
+Betrachten wir ein Teilchen im R3 mit Spin 1/2 so beschreiben wir seinen Zustand durch eine Produktwellenfunktion
+公式98 
+bestehend aus Bahn- und Spin- Anteilen. Als Beispiel betrachten wir wieder das Wasserstoffatom. Schalten wir ein Magnetfeld Hzeˆz ein, so kommt zum Hamiltonian H0 = p2/2m − e2/r ein magnetischer Term (e > 0)
 
-und wir finden die Ubergangsrate (vgl. wiederum mit ( ¨ 2.109))
+公式99
+dazu. Der zweite Term ist uns von (11.81) her bekannt; der erste folgt aus
+公式100
+und mit A~ = −~r ∧ H~ /2 erhalten wir daraus
 
-gs98
-wiederum in der Form von Fermis Goldener Regel.
-3. H0(t) = V cos ωt. Wir schreiben H0(t) = Ve−iωt + eiωteηt/2 und w¨ahlen t0 → −∞. Einsetzen in (9.87) ergibt (wiederum ist ~ωif = Ef − Ei
-gs99
-Um die Ubergangsrate Γ zu bestimmen berechnen wir die Ableitung ¨ ∂tPi→f ,
-gs100
-Die cos- und sin- Anteile mitteln sich nach kurzer Zeit weg. Mit δ(ω)/~ = δ(~ω) finden wir das Resultat
 公式101
-Der erste Term bei Ef = Ei + ~ω beschreibt einen Absorptionsprozess, der zweite Term bei Ef = Ei − ~ω beschreibt eine Emission.
-9.5.2 2
-te Ordnung Wir w¨ahlen den Fall 2 mit H0(t) = V eηt und nehmen an, es sei hf|V |ii = 0. Dann ist mit (9.84)
+Der zweite Teil entspricht gerade der Energie des magnetischen Momentes (−e/2mc)L~ im Feld H, vgl. ( ~ 11.77).
+HZ ist nicht der einzige Term, welcher die Drehimpuls- und Spinoperatoren enth¨alt. Relativistische Effekte fuhren zus ¨ ¨atzliche Korrekturen ein, zum Beispiel die Spin-Bahn-Kopplung: Das sich im E~-Feld des Kernes bewegende Elektron spuhrt ein Magnetfeld ¨ B~ = −~v ∧ E~/c woran das Spin-Moment koppelt. Die resultierende Energie ist
 公式102
-Einschieben von Pl|lihl|, anschliessende Integration, Quadrierung und Ableiten nach der Zeit t gibt
+Die Thomas Pr¨azession fuhrt eine weitere Korrektur von derselben Form ein: diese ist ein relativistisch kinematischer Effekt und berucksichtigt, dass das Ruhesystem des e− sich relativ zum Laborsystem dreht, siehe Jackson (Elektrodynamik), Seite 541 ff. Die Korrektur ergibt sich gerade zum −1/2- fachen von (11.102) und wir erhalten folgenden Ausdruck fur die Spin-Bahn Kopplung (vgl. auch Kapitel 25, nichtrelativistischer Limes der Diracgleichung),
 公式103
-das Resultat versteht sich als Grenzwert η → 0+. Die Rate involviert das zweite Ordnung Matrixelement |P ······|2 mit Uberg ¨ ¨angen |ii → |fi via |li,
+Damit erhalten wir den Hamiltonian
 公式104
-9.5.3 Zerfall eines Zustandes
-Zur Bestimmung der Zerfallsrate des Zustandes |ii berechnen wir hf|Ψi mit hf| = hi|. Es ist
+und den Korrekturen in HR (siehe QM II)
 公式105
-Wir nehmen das Matrixelement mit hi| und dividieren durch hi|ΨDi,
+Die Terme ∝ p4, ∝ L~ · S~ und ∝ ∆V definieren die Feinstruktur des Spektrums (reduziert um Zα2 bezuglich der f ¨ uhrenden Energien). Der Term ¨ ∝ p4 ist eine relativistische Korrektur h¨oherer Ordnung in der kinetischen Energie. Der Lamb-Shift resultiert aus der Kopplung der Ladung an das elektromagnetische Feld, wodurch angeregte Zust¨ande via Emission von Photonen zerfallen k¨onnen; der mit dem Zerfall einhergehende Energieshift heisst Lamb-Shift, siehe Kapitel 19. Der Darwin Term ist wiederum eine relativistische Korrektur woraus sich die ‘Zitterbewegung’ ergibt, siehe Kapitel 25. Die Hyperfein-Wechselwirkung entsteht durch die Kopplung des Elektrons an das durch das Kernmoment erzeugte Magnetfeld. 
+Wir konzentrieren uns hier auf HZeeman und HSpin-Orbit. Behandeln wir diese Terme in St¨orungstheorie ergibt sich das Problem, dass HZ diagonal in |l, s, ml, msi ist aber HSO in der Basis |l, s, j, mi des Gesamtdrehimpulses.
+Fur grosse Felder ist ¨ HZ dominant und wir erhalten die Korrektur
 公式106
-In Ordnung H0 2 k¨onnen wir schreiben (vgl. (9.85); die Entwicklung bis zur 1.ten Ordnung genugt) 
+zum Beispiel spalten sich die Niveaus eines p-Zustand gem¨ass Abbildung 11.12 auf.
+Fur kleine Felder ¨ < 105 G ist HZ < HSO und wir konzentrieren uns in der St¨orungsrechnung auf den Term HSO. Die angepassten Zust¨ande sind jetzt diejenigen des Gesamtdrehimpulses,
 公式107
-und mit hi|ΨDi ≈ hi|ii = 1 finden wir
-
+und wir erhalten die Korrekturen
 公式108
-Diskretes Spektrum: Mit η → 0+ finden wir
+图12
+Mit
 公式109
-das heisst, wir finden gerade die Zeitevolution welche durch die – in 2ter Ordnung – korrigierte Energie E(2)i des Zustandes gegeben wird. Interpretation: Der diskrete Zustand |ii wird durch H0 adiabatisch deformiert, wie in Abbildung 9.8 dargestellt.
-Kontinuum: Es liege |ii in einem Kontinuum von Zust¨anden. Die Divergenz bei 0 erzeugt durch den Energienenner Ei − El + iη~ behandeln wir im distributiven Sinn wie von der Funktionentheorie vorgegeben, vgl. Abb. 9.9, und gebrauchen dabei Sokhotskis Formel
-图9.8
+und
+公式110 
+ergibt sich die Aufspaltun
+公式111 
+Der Vergleich der Gr¨ossenordnungen erg
+公式112 
+das heisst, dass ∆ESO > ∆EZ fur H ¨ z < 105 Gauss. Im Kapitel 14 werden wir die zus¨atzliche Zeeman-Aufspaltung in kleinen Feldern diskutier.
 
-公式110
-wobei im Integral das Intervall [−ε, ε] ausgeklammert wird (Hauptwert).
-Damit erhalten wir
-
-公式111
-图9.9
-Die Zeitevolution von hi|Ψi ist dann gegeben durch
-公式112
-mit E = E(2)i −iΓ/2. Die Fouriertransformation in der Zeit (mit exp(−iωt)) produziert fur einen station ¨ ¨aren Zustand mit Energie E eine δ-funktion δ(~ω − E), d.h., die Energie ist scharf. Der gem¨ass (9.112) zerfallende Zustand wird demgegenuber durch einen Pol in der unteren komplexen Halbebene beschrieben — die Energie ist nicht scharf, der Zustand zerf¨allt mit einer Halbwertszeit 1/Γ, vgl. Abb. 9.10. Interessante Probleme ergeben sich wenn sich zwei Niveaus als Funktion des Parameters α(t) treffen, vgl. Abbildung 9.11. Ublicherweise produziert
-图9.10
-ein Mischterm im Hamiltonian eine Repulsion zwischen den Niveaus (avoided level crossing). Je nachdem wie schnell sich der Parameter α in der Zeit ver¨andert findet man, dass der Zustand |ii seinem Energieniveau folgt (adiabatischer Limes) oder aber auf den n¨achsten Zustand springt (diabatischer Limes). Das zugeh¨orige Stichwort ist ‘Landau-Zener’ Tunneln, das Tunneln durch eine verbotene Zone zwischen Energieniveaus.
-图9.11
+Ein Elektron (e > 0) mit Spin welches sich (langsam, nicht-relativistisch, wir betrachten hier nicht das Wasserstoffatom) in den elektromagnetischen Feldern A~ und ϕ bewegt wird durch die Pauli-Gleichung beschrieben,
+公式113

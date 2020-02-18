@@ -1,4 +1,4 @@
-%!TEX program = pdflatex
+%!TEX program = xelatex
 \documentclass{report}
 \usepackage{amsmath}
 \numberwithin{equation}{chapter}
@@ -16,13 +16,17 @@
 \usepackage{verbatim}
 \usepackage{subfigure}
 \usepackage{color}
+\usepackage{revsymb}
+%\usepackage{CTEX}
+\usepackage{bbold}
 \titleformat*{\section}{\LARGE\bfseries}
 \titleformat*{\subsection}{\Large\bfseries}
 \let\footnotesize\large
 \setlength{\parskip}{1em}
 \setlength{\parindent}{0pt}
-\title{Lecture Notes of Quantum Mechanics}
-\author{Translated by Yu Zhu}
+\newcommand{\lbar}{{\mkern0.75mu\mathchar '26\mkern -8mu l}}
+\title{Lecture Notes of Quantum Mechanics I}
+\author{Translated by Yu Zhu, ETH Zurich}
 %\date{\today}
 
 
@@ -53,5 +57,9 @@
 \include{8-variational_approach}
 
 \include{9-perturbation}
+
+\include{10-quasi_classical_approximation}
+
+\include{11-spin_angular_momentum_addition}
 
 \end{document}
